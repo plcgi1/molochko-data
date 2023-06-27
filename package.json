@@ -1,11 +1,12 @@
 {
   "name": "molochko-shared",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "plcgi1@gmail.com",
   "license": "ISC",
+  "repository": "git@github.com:plcgi1/molochko-shared.git",
   "scripts": {
     "build": "tsc"
   },
