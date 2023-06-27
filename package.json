@@ -1,17 +1,17 @@
 {
-  "name": "molochko-shared",
-  "version": "1.0.2",
+  "name": "molochko-data",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "plcgi1@gmail.com",
   "license": "ISC",
-  "repository": "git@github.com:plcgi1/molochko-shared.git",
+  "repository": "git@github.com:plcgi1/molochko-data.git",
   "scripts": {
     "build": "tsc"
   },
   "keywords": [
-    "molochko-shared"
+    "molochko-data"
   ],
   "devDependencies": {
     "@types/node": "^9.4.6",
