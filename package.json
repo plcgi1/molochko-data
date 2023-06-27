@@ -1,0 +1,16 @@
+{
+  "name": "molochko-shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "plcgi1@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "typescript": "~4.8.2"
+  }
+}
