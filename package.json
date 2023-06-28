@@ -1,9 +1,9 @@
 {
   "name": "molochko-data",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types.ts",
   "author": "plcgi1@gmail.com",
   "license": "ISC",
   "repository": "git@github.com:plcgi1/molochko-data.git",
@@ -15,6 +15,7 @@
     "molochko-data"
   ],
   "devDependencies": {
+    "@babel/parser": "^7.22.5",
     "@types/node": "^9.4.6",
     "jest": "^29.5.0",
     "ts-jest": "^29.1.0",
