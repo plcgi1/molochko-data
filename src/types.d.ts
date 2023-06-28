@@ -4,4 +4,4 @@ export interface EnumItem {
   readonly color?: string
 }
 
-export type EnumArrayAsObject  = Record<string, string>
+export type EnumArrayAsObject  = { [key: string]: string }
