@@ -1,7 +1,7 @@
 export declare interface EnumItem {
-  readonly id: string
-  readonly label: string
-  readonly color?: string
+  readonly id: string;
+  readonly label: string;
+  readonly color?: string;
 }
 
-export declare type EnumArrayAsObject  = { [key: string]: string }
+export declare type EnumArrayAsObject = { [key: string]: string };
