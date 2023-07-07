@@ -45,6 +45,19 @@ const USER_STATUSES: EnumItem[] = [
 
 const USER_STATUSES_AS_OBJECT = asObject(USER_STATUSES)
 
+const ORG_TYPE: EnumItem[] = [
+  {
+    id: 'org',
+    label: 'Org',
+  },
+  {
+    id: 'location',
+    label: 'Location',
+  },
+]
+
+const ORG_TYPE_AS_OBJECT = asObject(ORG_TYPE)
+
 const TOKEN_TYPE: EnumItem[] = [
   {
     id: 'confirm',
@@ -272,5 +285,7 @@ export {
   EVENT_TYPES_AS_OBJECT,
   SEED_TYPE,
   SEED_TYPE_AS_OBJECT,
-  SEED_STATUS_AS_OBJECT
+  SEED_STATUS_AS_OBJECT,
+  ORG_TYPE,
+  ORG_TYPE_AS_OBJECT
 }
