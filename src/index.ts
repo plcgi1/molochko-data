@@ -1,10 +1,6 @@
-import * as enums from './enums'
-import { BREED, BREED_AS_OBJECT } from './breed'
-import * as types from './types'
+import * as dataEnums from "./enums";
+import { BREED, BREED_AS_OBJECT } from "./breed";
+import * as typeDefinitions from "./types";
 
-export {
-  types,
-  enums,
-  BREED,
-  BREED_AS_OBJECT
-}
+export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
+export const types = typeDefinitions;
