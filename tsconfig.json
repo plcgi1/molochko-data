@@ -21,6 +21,8 @@
     "test"
   ],
   "include": [
-    "./src"
-  ]
+    "./src",
+    "typings"
+  ],
+  "compileOnSave": false
 }
