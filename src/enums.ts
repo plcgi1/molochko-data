@@ -1,288 +1,104 @@
 import { EnumItem } from "./types";
-import { asObject } from "./helpers";
+import { asObject, enumToObject } from "./helpers";
 
-const BCRYPT_SALT: number = 12;
+export const BCRYPT_SALT: number = 12;
 
-const SYSTEM_USER_ROLES: EnumItem[] = [
-  {
-    id: "user",
-    label: "User",
-  },
-  {
-    id: "admin",
-    label: "Admin",
-  },
-  {
-    id: "root",
-    label: "Tsar",
-  },
-];
+export enum SYSTEM_USER_ROLES_ENUM {
+  user = "user",
+  admin = "admin",
+  root = "root"
+}
 
-const SYSTEM_USER_ROLES_AS_OBJECT = asObject(SYSTEM_USER_ROLES);
+export const SYSTEM_USER_ROLES_AS_OBJECT = enumToObject(SYSTEM_USER_ROLES_ENUM);
 
-const USER_STATUSES: EnumItem[] = [
-  {
-    id: "waiting",
-    label: "Waiting for confirmation",
-  },
-  {
-    id: "ready",
-    label: "Ready",
-  },
-  {
-    id: "blocked",
-    label: "Blocked",
-  },
-  {
-    id: "deleted",
-    label: "Deleted",
-  },
-];
+export enum USER_STATUSES_ENUM {
+  waiting = 'waiting',
+  ready = 'ready',
+  blocked = 'blocked',
+  deleted = 'deleted'
+}
 
-const USER_STATUSES_AS_OBJECT = asObject(USER_STATUSES);
+export const USER_STATUSES_AS_OBJECT = enumToObject(USER_STATUSES_ENUM);
 
-const ORG_TYPE: EnumItem[] = [
-  {
-    id: 'org',
-    label: 'Org',
-  },
-  {
-    id: 'location',
-    label: 'Location',
-  },
-]
+export enum ORG_TYPE_ENUM {
+  org = 'org',
+  location = 'location',
+}
 
-const ORG_TYPE_AS_OBJECT = asObject(ORG_TYPE)
+export const ORG_TYPE_AS_OBJECT = enumToObject(ORG_TYPE_ENUM)
 
-const TOKEN_TYPE: EnumItem[] = [
-  {
-    id: "confirm",
-    label: "Confirm",
-  },
-  {
-    id: "auth",
-    label: "Auth",
-  },
-  {
-    id: "refresh",
-    label: "Refresh",
-  },
-  {
-    id: "resetPassword",
-    label: "Reset password",
-  },
-  {
-    id: "invite",
-    label: "Invite",
-  },
-];
-const TOKEN_TYPES_AS_OBJECT = asObject(TOKEN_TYPE);
+export enum TOKEN_TYPE_ENUM {
+  confirm = 'confirm',
+  auth = 'auth',
+  refresh = 'refresh',
+  resetPassword = 'resetPassword',
+  invite = 'invite'
+}
 
-const ANIMAL_GENDER: EnumItem[] = [
-  {
-    id: "cow",
-    label: "Cow",
-  },
-  {
-    id: "bull",
-    label: "Bull",
-  },
-];
-const ANIMAL_GENDER_AS_OBJECT = asObject(ANIMAL_GENDER);
+export const TOKEN_TYPES_AS_OBJECT = enumToObject(TOKEN_TYPE_ENUM);
 
-const ANIMAL_STATUS: EnumItem[] = [
-  {
-    id: "heifer",
-    color: "magenta",
-    label: "Телка",
-  },
-  {
-    id: "bred",
-    color: "blue",
-    label: "Осемененная",
-  },
-  {
-    id: "pregnant",
-    label: "Стельная",
-    color: "volcano",
-  },
-  {
-    id: "open",
-    label: "Яловая",
-    color: "orange",
-  },
-  {
-    id: "fresh",
-    label: "Новотельная",
-    color: "gold",
-  },
-  {
-    id: "dry",
-    label: "Сухостой",
-    color: "lime",
-  },
-  {
-    id: "dnb",
-    label: "Брак",
-    color: "green",
-  },
-  {
-    id: "sold",
-    label: "Продана",
-    color: "cyan",
-  },
-  {
-    id: "died",
-    label: "Сдохла",
-    color: "red",
-  },
-];
-const ANIMAL_STATUS_AS_OBJECT = asObject(ANIMAL_STATUS);
+export enum ANIMAL_GENDER_ENUM {
+  cow = 'cow',
+  bull = 'bull'
+}
 
-const EVENT_TYPES: EnumItem[] = [
-  {
-    id: "otel",
-    label: "ОТЕЛ",
-  },
-  {
-    id: "recheck",
-    label: "ПЕРЕПРОВЕРИТЬ",
-  },
-  {
-    id: "ohota",
-    label: "ОХОТА",
-  },
-  {
-    id: "osemenenie",
-    label: "ОСЕМЕНЕНИЕ",
-  },
-  {
-    id: "stelnaya",
-    label: "СТЕЛЬНАЯ",
-  },
-  {
-    id: "yalovaya",
-    label: "ЯЛОВАЯ (НЕ СТЕЛЬНАЯ)",
-  },
-  {
-    id: "stelneotpos",
-    label: "СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ",
-  },
-  {
-    id: "perevod",
-    label: "ПЕРЕВОД",
-  },
-  {
-    id: "kbiku",
-    label: "КБЫКУ",
-  },
-  {
-    id: "suhostoi",
-    label: "СУХОСТОЙ",
-  },
-  {
-    id: "abort",
-    label: "АБОРТ",
-  },
-  {
-    id: "neosem",
-    label: "НЕОСЕМ (БРАК)",
-  },
-  {
-    id: "prodazha",
-    label: "ПРОДАЖА",
-  },
-  {
-    id: "pala",
-    label: "ПАЛА",
-  },
-  {
-    id: "zamenaNomera",
-    label: "ЗАМЕНА НОМЕРА",
-  },
-  {
-    id: "obrKopit",
-    label: "ОБРАБОТКА КОПЫТ",
-  },
-  {
-    id: "pozSuhostoi",
-    label: "ПОЗСУХОСТОЙ",
-  },
-  {
-    id: "ves",
-    label: "ВЕС",
-  },
-  {
-    id: "rost",
-    label: "РОСТ",
-  },
-  {
-    id: "upitannost",
-    label: "УПИТАННОСТЬ",
-  },
-  {
-    id: "zaboi",
-    label: "ЗАБОЙ",
-  },
-  {
-    id: "sinchronizatsia",
-    label: "СИНХРОНИЗАЦИЯ",
-  },
-];
-const EVENT_TYPES_AS_OBJECT = asObject(EVENT_TYPES);
+export const ANIMAL_GENDER_AS_OBJECT = enumToObject(ANIMAL_GENDER_ENUM);
 
-const SEED_TYPE: EnumItem[] = [
-  {
-    id: "traditional",
-    label: "Традиционное",
-  },
-  {
-    id: "sexytelka",
-    label: "Сексированное телка",
-  },
-  {
-    id: "sexybull",
-    label: "Сексированное бычок",
-  },
-  {
-    id: "meat",
-    label: "Мясное",
-  },
-  {
-    id: "meatSexyTelka",
-    label: "Мясное сексированное телка",
-  },
-  {
-    id: "meatSexyBull",
-    label: "Мясное сексированное бычок",
-  },
-];
-const SEED_TYPE_AS_OBJECT = asObject(SEED_TYPE);
+export enum ANIMAL_STATUS_ENUM {
+  heifer = 'heifer', // Телка
+  bred = 'bred', // Осемененная
+  pregnant = 'pregnant', // Стельная
+  open = 'open', // Яловая
+  fresh = 'fresh', // Новотельная
+  dry = 'dry', // Сухостой
+  dnb = 'dnb', // Брак
+  sold = 'sold', // Продана
+  died = 'died' // Сдохла
+}
 
-const SEED_STATUS: EnumItem[] = [
-  { id: "active", label: "Активно" },
-  { id: "notActive", label: "Не Активно" },
-];
-const SEED_STATUS_AS_OBJECT = asObject(SEED_STATUS);
+export const ANIMAL_STATUS_AS_OBJECT = enumToObject(ANIMAL_STATUS_ENUM);
 
-export {
-  BCRYPT_SALT,
-  SYSTEM_USER_ROLES,
-  SYSTEM_USER_ROLES_AS_OBJECT,
-  USER_STATUSES,
-  USER_STATUSES_AS_OBJECT,
-  TOKEN_TYPE,
-  TOKEN_TYPES_AS_OBJECT,
-  ANIMAL_GENDER,
-  ANIMAL_GENDER_AS_OBJECT,
-  ANIMAL_STATUS,
-  ANIMAL_STATUS_AS_OBJECT,
-  EVENT_TYPES,
-  EVENT_TYPES_AS_OBJECT,
-  SEED_TYPE,
-  SEED_TYPE_AS_OBJECT,
-  SEED_STATUS_AS_OBJECT,
-  ORG_TYPE,
-  ORG_TYPE_AS_OBJECT
-};
+export enum EVENT_TYPES_ENUM {
+  otel = 'otel', // ОТЕЛ
+  recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ
+  ohota = 'ohota', // ОХОТА
+  osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ
+  stelnaya = 'stelnaya', // СТЕЛЬНАЯ
+  yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ)
+  stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ
+  perevod = 'perevod', // ПЕРЕВОД
+  kbiku = 'kbiku', // КБЫКУ
+  suhostoi = 'suhostoi', //'СУХОСТОЙ
+  abort = 'abort', // АБОРТ
+  neosem = 'neosem', // НЕОСЕМ (БРАК)
+  prodazha = 'prodazha', // ПРОДАЖА
+  pala = 'pala', // ПАЛА
+  zamenaNomera = 'zamenaNomera', // ЗАМЕНА НОМЕРА
+  obrKopit = 'obrKopit', // ОБРАБОТКА КОПЫТ
+  pozSuhostoi = 'pozSuhostoi', // ПОЗСУХОСТОЙ
+  ves = 'ves', // ВЕС
+  rost = 'rost', // РОСТ
+  upitannost = 'upitannost', // УПИТАННОСТЬ
+  zaboi = 'zaboi', // ЗАБОЙ
+  sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
+}
 
+export const EVENT_TYPES_AS_OBJECT = enumToObject(EVENT_TYPES_ENUM);
+
+export enum SEED_TYPE_ENUM {
+  traditional = 'traditional', // Традиционное
+  sexytelka = 'sexytelka', // Сексированное телка
+  sexybull = 'sexybull', // Сексированное бычок
+  meat = 'meat', // Мясное
+  meatSexyTelka = 'meatSexyTelka', // Мясное сексированное телка
+  meatSexyBull = 'meatSexyBull', // Мясное сексированное бычок
+}
+
+export const SEED_TYPE_AS_OBJECT = enumToObject(SEED_TYPE_ENUM);
+
+export enum SEED_STATUS_ENUM {
+  active = 'active',
+  notActive = 'notActive'
+}
+
+export const SEED_STATUS_AS_OBJECT = enumToObject(SEED_STATUS_ENUM);
