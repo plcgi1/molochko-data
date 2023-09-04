@@ -102,3 +102,16 @@ export enum SEED_STATUS_ENUM {
 }
 
 export const SEED_STATUS_AS_OBJECT = enumToObject(SEED_STATUS_ENUM);
+
+export enum SEED_CODES_ENUM {
+  DOUBLE_OVSYNC = 'doubleOvsync',
+  PRESYNC = 'dresync',
+  RESYNC = 'resync',
+  OVSYNC = 'ovsync',
+  HEAT = 'heat',
+  ACTIVITY_SENSOR = 'activitySensor',
+  PRID_DELTA = 'PRIDDelta',
+  G6G = 'G6G',
+}
+
+export const SEED_CODES_AS_OBJECT = enumToObject(SEED_CODES_ENUM);
