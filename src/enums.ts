@@ -114,6 +114,8 @@ export enum SEED_CODES_ENUM {
   G6G = 'G6G',
 }
 
+export const SEED_CODES_AS_OBJECT = enumToObject(SEED_CODES_ENUM);
+
 export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowed = 'animal-status-not-allowed',
   notACow = 'animal-not-a-cow',
@@ -121,5 +123,3 @@ export enum EVENT_ERROR_REASON_ENUM {
 }
 
 export const EVENT_ERROR_REASON_AS_OBJECT = enumToObject(EVENT_ERROR_REASON_ENUM);
-
-export const SEED_CODES_AS_OBJECT = enumToObject(SEED_CODES_ENUM);

@@ -1,6 +1,8 @@
 import * as vars from '../src/index';
+import { EVENT_ERROR_REASON_ENUM, EVENT_ERROR_REASON_AS_OBJECT } from '../src/enums';
 
-test('check SYSTEM_USER_ROLES_AS_OBJECT', () => {
-  expect(vars.enums.SYSTEM_USER_ROLES_AS_OBJECT.root).toEqual('root');
+console.info('EVENT_ERROR_REASON_AS_OBJECT', EVENT_ERROR_REASON_AS_OBJECT)
+test('check EVENT_ERROR_REASON_ENUM', () => {
+  expect(vars.enums.EVENT_ERROR_REASON_ENUM.statusNotAllowed).toEqual('animal-status-not-allowed');
 });
 
