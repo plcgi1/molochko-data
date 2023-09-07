@@ -44,20 +44,6 @@ export enum ANIMAL_GENDER_ENUM {
 
 export const ANIMAL_GENDER_AS_OBJECT = enumToObject(ANIMAL_GENDER_ENUM);
 
-export enum ANIMAL_STATUS_ENUM {
-  heifer = 'heifer', // Телка
-  bred = 'bred', // Осемененная
-  pregnant = 'pregnant', // Стельная
-  open = 'open', // Яловая
-  fresh = 'fresh', // Новотельная
-  dry = 'dry', // Сухостой
-  dnb = 'dnb', // Брак
-  sold = 'sold', // Продана
-  died = 'died' // Сдохла
-}
-
-export const ANIMAL_STATUS_AS_OBJECT = enumToObject(ANIMAL_STATUS_ENUM);
-
 export enum EVENT_TYPES_ENUM {
   otel = 'otel', // ОТЕЛ
   recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ
@@ -116,10 +102,37 @@ export enum SEED_CODES_ENUM {
 
 export const SEED_CODES_AS_OBJECT = enumToObject(SEED_CODES_ENUM);
 
+export enum ANIMAL_STATUS_ENUM {
+  heifer = 'heifer', // Телка
+  bred = 'bred', // Осемененная
+  pregnant = 'pregnant', // Стельная
+  open = 'open', // Яловая
+  fresh = 'fresh', // Новотельная
+  dry = 'dry', // Сухостой
+  dnb = 'dnb', // Брак
+  sold = 'sold', // Продана
+  died = 'died' // Сдохла
+}
+
+export const ANIMAL_STATUS_AS_OBJECT = enumToObject(ANIMAL_STATUS_ENUM);
+
+// heifer, bred, open, fresh
 export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowed = 'animal-status-not-allowed',
+  statusNotAlowed_pregnant = 'animal-status-not-allowed-pregnant',
+  statusNotAlowed_dry = 'animal-status-not-allowed-dry',
+  statusNotAlowed_dnb = 'animal-status-not-allowed-dnb',
+  statusNotAlowed_sold = 'animal-status-not-allowed-sold',
+  statusNotAlowed_died = 'animal-status-not-allowed-',
   notACow = 'animal-not-a-cow',
   tooYoung = 'animal-too-yang'
 }
 
 export const EVENT_ERROR_REASON_AS_OBJECT = enumToObject(EVENT_ERROR_REASON_ENUM);
+
+export enum COMMON_SIMPLE_STATUS_ENUM {
+  failed = 'failed',
+  success = 'success'
+}
+
+export const COMMON_SIMPLE_STATUS_AS_OBJECT = enumToObject(COMMON_SIMPLE_STATUS_ENUM);
