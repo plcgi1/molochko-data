@@ -110,13 +110,13 @@ exports.ANIMAL_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(ANIMAL_STATUS_ENUM
 var EVENT_ERROR_REASON_ENUM;
 (function (EVENT_ERROR_REASON_ENUM) {
     EVENT_ERROR_REASON_ENUM["statusNotAllowed"] = "animal-status-not-allowed";
-    EVENT_ERROR_REASON_ENUM["statusNotAlowed_pregnant"] = "animal-status-not-allowed-pregnant";
-    EVENT_ERROR_REASON_ENUM["statusNotAlowed_dry"] = "animal-status-not-allowed-dry";
-    EVENT_ERROR_REASON_ENUM["statusNotAlowed_dnb"] = "animal-status-not-allowed-dnb";
-    EVENT_ERROR_REASON_ENUM["statusNotAlowed_sold"] = "animal-status-not-allowed-sold";
-    EVENT_ERROR_REASON_ENUM["statusNotAlowed_died"] = "animal-status-not-allowed-";
+    EVENT_ERROR_REASON_ENUM["statusNotAllowedPregnant"] = "animal-status-not-allowed-pregnant";
+    EVENT_ERROR_REASON_ENUM["statusNotAllowedDry"] = "animal-status-not-allowed-dry";
+    EVENT_ERROR_REASON_ENUM["statusNotAllowedDnb"] = "animal-status-not-allowed-dnb";
+    EVENT_ERROR_REASON_ENUM["statusNotAllowedSold"] = "animal-status-not-allowed-sold";
+    EVENT_ERROR_REASON_ENUM["statusNotAllowedDied"] = "animal-status-not-allowed-";
     EVENT_ERROR_REASON_ENUM["notACow"] = "animal-not-a-cow";
-    EVENT_ERROR_REASON_ENUM["tooYoung"] = "animal-too-yang";
+    EVENT_ERROR_REASON_ENUM["tooYoung"] = "animal-too-young";
 })(EVENT_ERROR_REASON_ENUM = exports.EVENT_ERROR_REASON_ENUM || (exports.EVENT_ERROR_REASON_ENUM = {}));
 exports.EVENT_ERROR_REASON_AS_OBJECT = (0, helpers_1.enumToObject)(EVENT_ERROR_REASON_ENUM);
 var COMMON_SIMPLE_STATUS_ENUM;

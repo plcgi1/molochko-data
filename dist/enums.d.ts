@@ -114,13 +114,13 @@ export declare const ANIMAL_STATUS_AS_OBJECT: {
 };
 export declare enum EVENT_ERROR_REASON_ENUM {
     statusNotAllowed = "animal-status-not-allowed",
-    statusNotAlowed_pregnant = "animal-status-not-allowed-pregnant",
-    statusNotAlowed_dry = "animal-status-not-allowed-dry",
-    statusNotAlowed_dnb = "animal-status-not-allowed-dnb",
-    statusNotAlowed_sold = "animal-status-not-allowed-sold",
-    statusNotAlowed_died = "animal-status-not-allowed-",
+    statusNotAllowedPregnant = "animal-status-not-allowed-pregnant",
+    statusNotAllowedDry = "animal-status-not-allowed-dry",
+    statusNotAllowedDnb = "animal-status-not-allowed-dnb",
+    statusNotAllowedSold = "animal-status-not-allowed-sold",
+    statusNotAllowedDied = "animal-status-not-allowed-",
     notACow = "animal-not-a-cow",
-    tooYoung = "animal-too-yang"
+    tooYoung = "animal-too-young"
 }
 export declare const EVENT_ERROR_REASON_AS_OBJECT: {
     [key: string]: string;
