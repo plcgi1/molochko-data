@@ -123,7 +123,8 @@ export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowedDry = 'animal-status-not-allowed-dry',
   statusNotAllowedDnb = 'animal-status-not-allowed-dnb',
   statusNotAllowedSold = 'animal-status-not-allowed-sold',
-  statusNotAllowedDied = 'animal-status-not-allowed-',
+  statusNotAllowedDied = 'animal-status-not-allowed',
+  statusForFirstRecheckBredOnly = 'animal-status-for-first-recheck-bred-only',
   notACow = 'animal-not-a-cow',
   tooYoung = 'animal-too-young'
 }
@@ -136,3 +137,11 @@ export enum COMMON_SIMPLE_STATUS_ENUM {
 }
 
 export const COMMON_SIMPLE_STATUS_AS_OBJECT = enumToObject(COMMON_SIMPLE_STATUS_ENUM);
+
+export enum TAG_TYPE_ENUM {
+  user = 'user',
+  system = 'system',
+  event = 'event'
+}
+
+export const TAG_TYPE_AS_OBJECT = enumToObject(TAG_TYPE_ENUM);

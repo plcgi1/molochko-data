@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
+exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
 const helpers_1 = require("./helpers");
 exports.BCRYPT_SALT = 12;
 var SYSTEM_USER_ROLES_ENUM;
@@ -114,7 +114,8 @@ var EVENT_ERROR_REASON_ENUM;
     EVENT_ERROR_REASON_ENUM["statusNotAllowedDry"] = "animal-status-not-allowed-dry";
     EVENT_ERROR_REASON_ENUM["statusNotAllowedDnb"] = "animal-status-not-allowed-dnb";
     EVENT_ERROR_REASON_ENUM["statusNotAllowedSold"] = "animal-status-not-allowed-sold";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedDied"] = "animal-status-not-allowed-";
+    EVENT_ERROR_REASON_ENUM["statusNotAllowedDied"] = "animal-status-not-allowed";
+    EVENT_ERROR_REASON_ENUM["statusForFirstRecheckBredOnly"] = "animal-status-for-first-recheck-bred-only";
     EVENT_ERROR_REASON_ENUM["notACow"] = "animal-not-a-cow";
     EVENT_ERROR_REASON_ENUM["tooYoung"] = "animal-too-young";
 })(EVENT_ERROR_REASON_ENUM = exports.EVENT_ERROR_REASON_ENUM || (exports.EVENT_ERROR_REASON_ENUM = {}));
@@ -125,3 +126,10 @@ var COMMON_SIMPLE_STATUS_ENUM;
     COMMON_SIMPLE_STATUS_ENUM["success"] = "success";
 })(COMMON_SIMPLE_STATUS_ENUM = exports.COMMON_SIMPLE_STATUS_ENUM || (exports.COMMON_SIMPLE_STATUS_ENUM = {}));
 exports.COMMON_SIMPLE_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(COMMON_SIMPLE_STATUS_ENUM);
+var TAG_TYPE_ENUM;
+(function (TAG_TYPE_ENUM) {
+    TAG_TYPE_ENUM["user"] = "user";
+    TAG_TYPE_ENUM["system"] = "system";
+    TAG_TYPE_ENUM["event"] = "event";
+})(TAG_TYPE_ENUM = exports.TAG_TYPE_ENUM || (exports.TAG_TYPE_ENUM = {}));
+exports.TAG_TYPE_AS_OBJECT = (0, helpers_1.enumToObject)(TAG_TYPE_ENUM);

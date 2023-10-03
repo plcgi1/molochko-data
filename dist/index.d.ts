@@ -52,5 +52,9 @@ export declare const enums: {
     COMMON_SIMPLE_STATUS_AS_OBJECT: {
         [key: string]: string;
     };
+    TAG_TYPE_ENUM: typeof dataEnums.TAG_TYPE_ENUM;
+    TAG_TYPE_AS_OBJECT: {
+        [key: string]: string;
+    };
 };
 export declare const types: typeof typeDefinitions;
