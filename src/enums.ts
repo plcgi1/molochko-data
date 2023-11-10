@@ -46,9 +46,9 @@ export const ANIMAL_GENDER_AS_OBJECT = enumToObject(ANIMAL_GENDER_ENUM);
 
 export enum EVENT_TYPES_ENUM {
   otel = 'otel', // ОТЕЛ
-  recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ
+  recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ *
   ohota = 'ohota', // ОХОТА
-  osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ
+  osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
   stelnaya = 'stelnaya', // СТЕЛЬНАЯ
   yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ)
   stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ
@@ -56,7 +56,7 @@ export enum EVENT_TYPES_ENUM {
   kbiku = 'kbiku', // КБЫКУ
   suhostoi = 'suhostoi', //'СУХОСТОЙ
   abort = 'abort', // АБОРТ
-  neosem = 'neosem', // НЕОСЕМ (БРАК)
+  neosem = 'neosem', // НЕОСЕМ (БРАК) *
   prodazha = 'prodazha', // ПРОДАЖА
   pala = 'pala', // ПАЛА
   zamenaNomera = 'zamenaNomera', // ЗАМЕНА НОМЕРА
@@ -123,7 +123,8 @@ export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowedDry = 'animal-status-not-allowed-dry',
   statusNotAllowedDnb = 'animal-status-not-allowed-dnb',
   statusNotAllowedSold = 'animal-status-not-allowed-sold',
-  statusNotAllowedDied = 'animal-status-not-allowed',
+  statusNotAllowedDied = 'animal-status-not-allowed-died',
+  statusNotAllowedBred = 'animal-status-not-allowed-bred',
   statusForFirstRecheckBredOnly = 'animal-status-for-first-recheck-bred-only',
   notACow = 'animal-not-a-cow',
   tooYoung = 'animal-too-young'
