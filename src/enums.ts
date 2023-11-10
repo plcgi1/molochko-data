@@ -1,7 +1,10 @@
 import { EnumItem } from "./types";
 import { asObject, enumToObject } from "./helpers";
+import * as packageJson from '../package.json'
 
 export const BCRYPT_SALT: number = 12;
+
+export const version: string = packageJson.version
 
 export enum SYSTEM_USER_ROLES_ENUM {
   user = "user",
