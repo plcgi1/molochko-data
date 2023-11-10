@@ -118,7 +118,8 @@ export declare enum EVENT_ERROR_REASON_ENUM {
     statusNotAllowedDry = "animal-status-not-allowed-dry",
     statusNotAllowedDnb = "animal-status-not-allowed-dnb",
     statusNotAllowedSold = "animal-status-not-allowed-sold",
-    statusNotAllowedDied = "animal-status-not-allowed",
+    statusNotAllowedDied = "animal-status-not-allowed-died",
+    statusNotAllowedBred = "animal-status-not-allowed-bred",
     statusForFirstRecheckBredOnly = "animal-status-for-first-recheck-bred-only",
     notACow = "animal-not-a-cow",
     tooYoung = "animal-too-young"
