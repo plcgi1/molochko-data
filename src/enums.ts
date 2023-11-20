@@ -125,6 +125,9 @@ export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowedSold = 'animal-status-not-allowed-sold',
   statusNotAllowedDied = 'animal-status-not-allowed-died',
   statusNotAllowedBred = 'animal-status-not-allowed-bred',
+  statusNotAllowedFresh = 'animal-status-not-allowed-fresh',
+  statusNotAllowedHeifer = 'animal-status-not-allowed-heifer',
+  statusNotAllowedOpen = 'animal-status-not-allowed-open',
   statusForFirstRecheckBredOnly = 'animal-status-for-first-recheck-bred-only',
   notACow = 'animal-not-a-cow',
   tooYoung = 'animal-too-young'
