@@ -161,3 +161,13 @@ export enum USER_PERMISSION_ENUM {
 }
 
 export const USER_PERMISSION_AS_OBJECT = enumToObject(USER_PERMISSION_ENUM);
+
+export enum USER_PERMISSION_METHOD_ENUM {
+	post = 'POST',
+	put = 'PUT',
+	delete = 'DELETE',
+	get = 'GET',
+	patch = 'PATCH'
+}
+
+export const USER_PERMISSION_METHOD_AS_OBJECT = enumToObject(USER_PERMISSION_METHOD_ENUM);
