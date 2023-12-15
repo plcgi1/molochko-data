@@ -149,3 +149,12 @@ export enum TAG_TYPE_ENUM {
 }
 
 export const TAG_TYPE_AS_OBJECT = enumToObject(TAG_TYPE_ENUM);
+
+export enum USER_ACTIONS_ENUM {
+  view = 'view',
+  create = 'create',
+  update = 'update',
+  delete = 'delete'
+}
+
+export const USER_ACTIONS_AS_OBJECT = enumToObject(USER_ACTIONS_ENUM);
