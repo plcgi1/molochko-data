@@ -23,19 +23,19 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.view,
                 method: USER_PERMISSION_METHOD_ENUM.get,
-                paths: ["/api/org/list", "/api/org/:id"]
+                paths: ["/api/org/list", "/api/org/{id}"]
             },
             {
                 active: true,
                 permission: USER_PERMISSION_ENUM.update,
                 method: USER_PERMISSION_METHOD_ENUM.put,
-                paths: ["/api/org/:id"]
+                paths: ["/api/org/{id}"]
             },
             {
                 active: true,
                 permission: USER_PERMISSION_ENUM.delete,
                 method: USER_PERMISSION_METHOD_ENUM.delete,
-                paths: ["/api/org/:id"]
+                paths: ["/api/org/{id}"]
             }
         ]
     },
@@ -61,13 +61,13 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.update,
                 method: USER_PERMISSION_METHOD_ENUM.put,
-                paths: ["/api/users/by-admin/:id"]
+                paths: ["/api/users/by-admin/{id}"]
             },
             {
                 active: true,
                 permission: USER_PERMISSION_ENUM.delete,
                 method: USER_PERMISSION_METHOD_ENUM.delete,
-                paths: ["/api/users/by-admin/:id"]
+                paths: ["/api/users/by-admin/{id}"]
             },
             {
                 active: true,
@@ -93,7 +93,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.view,
                 method: USER_PERMISSION_METHOD_ENUM.get,
-                paths: ["/api/seed-bank/:naab"]
+                paths: ["/api/seed-bank/{naab}"]
             },
             {
                 active: true,
@@ -105,13 +105,13 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.update,
                 method: USER_PERMISSION_METHOD_ENUM.put,
-                paths: ["/api/seed-bank/:id"]
+                paths: ["/api/seed-bank/{id}"]
             },
             {
                 active: true,
                 permission: USER_PERMISSION_ENUM.delete,
                 method: USER_PERMISSION_METHOD_ENUM.delete,
-                paths: ["/api/seed-bank/:id"]
+                paths: ["/api/seed-bank/{id}"]
             }
         ]
     },
@@ -131,13 +131,13 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.update,
                 method: USER_PERMISSION_METHOD_ENUM.put,
-                paths: ["/api/animal-tag/:id"]
+                paths: ["/api/animal-tag/{id}"]
             },
             {
                 active: true,
                 permission: USER_PERMISSION_ENUM.delete,
                 method: USER_PERMISSION_METHOD_ENUM.delete,
-                paths: ["/api/animal-tag/:id"]
+                paths: ["/api/animal-tag/{id}"]
             },
             {
                 active: true,
@@ -163,13 +163,13 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.update,
                 method: USER_PERMISSION_METHOD_ENUM.put,
-                paths: ["/api/animal/:id"]
+                paths: ["/api/animal/{id}"]
             },
             {
                 active: true,
                 permission: USER_PERMISSION_ENUM.delete,
                 method: USER_PERMISSION_METHOD_ENUM.delete,
-                paths: ["/api/animal/:id"]
+                paths: ["/api/animal/{id}"]
             },
             {
                 active: true,
@@ -187,7 +187,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.detach,
                 method: USER_PERMISSION_METHOD_ENUM.delete,
-                paths: ["/api/animal/from-tag/:animalId"]
+                paths: ["/api/animal/from-tag/{animalId}"]
             },
             {
                 active: true,
@@ -233,7 +233,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 active: true,
                 permission: USER_PERMISSION_ENUM.view,
                 method: USER_PERMISSION_METHOD_ENUM.get,
-                paths: ["/api/event/:id"]
+                paths: ["/api/event/{id}"]
             }
         ]
     }
