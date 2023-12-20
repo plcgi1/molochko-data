@@ -1,6 +1,11 @@
 import { SYSTEM_USER_ROLES_ENUM, USER_PERMISSION_ENUM, USER_PERMISSION_METHOD_ENUM } from './enums'
 import { IRolePermissionItem } from './types'
 
+export const ROOT_PERMISSIONS: IRolePermissionItem[] = [
+	{
+		name: "*",
+	},
+]
 export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "org",

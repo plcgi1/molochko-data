@@ -17,9 +17,9 @@ export interface IBackendRolePermissionItem {
 
 export interface IRolePermissionItem {
   name: string,
-  frontend: {
+  frontend?: {
     path: string
   }
-  backend: IBackendRolePermissionItem[]
+  backend?: IBackendRolePermissionItem[]
 }
 
