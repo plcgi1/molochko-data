@@ -236,5 +236,37 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
                 paths: ["/api/event/{id}"]
             }
         ]
-    }
+    },
+	{
+		name: "role-permissions",
+		frontend: {
+			path: "/main/role-permissions"
+		},
+		backend: [
+			{
+				active: true,
+				permission: USER_PERMISSION_ENUM.view,
+				method: USER_PERMISSION_METHOD_ENUM.get,
+				paths: ["/api/role-permissions/list"]
+			},
+			{
+				active: true,
+				permission: USER_PERMISSION_ENUM.create,
+				method: USER_PERMISSION_METHOD_ENUM.post,
+				paths: ["/api/role-permissions"]
+			},
+			{
+				active: true,
+				permission: USER_PERMISSION_ENUM.update,
+				method: USER_PERMISSION_METHOD_ENUM.put,
+				paths: ["/api/role-permissions/{id}"]
+			},
+			{
+				active: true,
+				permission: USER_PERMISSION_ENUM.delete,
+				method: USER_PERMISSION_METHOD_ENUM.delete,
+				paths: ["/api/role-permissions/{id}"]
+			}
+		]
+	}
 ]
