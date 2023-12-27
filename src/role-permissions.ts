@@ -10,6 +10,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "org",
         frontend: {
+					  active: true,
             path: "/main/company"
         },
         backend: [
@@ -42,6 +43,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "employees",
         frontend: {
+					active: true,
             path: "/main/employees"
         },
         backend: [
@@ -80,6 +82,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "seed-bank",
         frontend: {
+					active: true,
             path: "/main/seed-bank"
         },
         backend: [
@@ -118,6 +121,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "tags",
         frontend: {
+					active: true,
             path: "/main/tags"
         },
         backend: [
@@ -150,6 +154,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "animal",
         frontend: {
+					active: true,
             path: "/main/animals"
         },
         backend: [
@@ -200,6 +205,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "eventForAnimals",
         frontend: {
+					active: true,
             path: "/main/animals"
         },
         backend: [
@@ -220,6 +226,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
     {
         name: "event",
         frontend: {
+					active: true,
             path: "/main/events-history"
         },
         backend: [
@@ -240,6 +247,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
 	{
 		name: "role-permissions",
 		frontend: {
+			active: true,
 			path: "/main/role-permissions"
 		},
 		backend: [
