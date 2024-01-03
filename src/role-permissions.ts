@@ -119,7 +119,7 @@ export const USER_PERMISSIONS: IRolePermissionItem[] = [
         ]
     },
     {
-        name: "tags",
+        name: "animal-tag",
         frontend: {
 					active: true,
             path: "/main/tags"

@@ -11,6 +11,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "org",
         frontend: {
+            active: true,
             path: "/main/company"
         },
         backend: [
@@ -43,6 +44,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "employees",
         frontend: {
+            active: true,
             path: "/main/employees"
         },
         backend: [
@@ -81,6 +83,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "seed-bank",
         frontend: {
+            active: true,
             path: "/main/seed-bank"
         },
         backend: [
@@ -119,6 +122,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "tags",
         frontend: {
+            active: true,
             path: "/main/tags"
         },
         backend: [
@@ -151,6 +155,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "animal",
         frontend: {
+            active: true,
             path: "/main/animals"
         },
         backend: [
@@ -201,6 +206,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "eventForAnimals",
         frontend: {
+            active: true,
             path: "/main/animals"
         },
         backend: [
@@ -221,6 +227,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "event",
         frontend: {
+            active: true,
             path: "/main/events-history"
         },
         backend: [
@@ -241,6 +248,7 @@ exports.USER_PERMISSIONS = [
     {
         name: "role-permissions",
         frontend: {
+            active: true,
             path: "/main/role-permissions"
         },
         backend: [
