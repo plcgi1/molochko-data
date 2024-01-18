@@ -120,7 +120,7 @@ exports.USER_PERMISSIONS = [
         ]
     },
     {
-        name: "tags",
+        name: "animal-tag",
         frontend: {
             active: true,
             path: "/main/tags"
