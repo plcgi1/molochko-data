@@ -156,6 +156,6 @@ describe('AnimalForEventFilter', () => {
 	})
 
 	it(`event type: ${EVENT_TYPES_ENUM.pozSuhostoi}`, () => {
-		testtObject(EVENT_TYPES_ENUM.pozSuhostoi, 8)
+		testtObject(EVENT_TYPES_ENUM.pozSuhostoi, 1)
 	})
 })

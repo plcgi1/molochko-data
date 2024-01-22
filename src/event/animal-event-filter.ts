@@ -135,7 +135,26 @@ export class AnimalForEventFilter {
 	}
 
 	pozSuhostoiFilter () {
-		return this.abortFilter()
+		const result: IAnimal[] = []
+		this.animals.forEach(animal => {
+			let genderOk = false
+			let statusOk = false
+			let ageOk = false
+
+			if (this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow)) {
+				genderOk = true
+			}
+			if (this.statusFilter(animal, [status.dry])) {
+				statusOk = true
+			}
+			if (this.ageFilter(animal, defaultCowAge)) {
+				ageOk = true
+			}
+			if (genderOk && statusOk && ageOk) {
+				result.push(animal)
+			}
+		})
+		return result
 	}
 
 	filter () {
