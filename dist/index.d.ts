@@ -1,6 +1,7 @@
 import * as dataEnums from "./enums";
 import * as typeDefinitions from "./types";
 import * as _rolePermissions from './role-permissions';
+import * as _animalForEventFilters from './event';
 export declare const enums: {
     BREED: typeDefinitions.EnumItem[];
     BREED_AS_OBJECT: typeDefinitions.EnumArrayAsObject;
@@ -68,3 +69,4 @@ export declare const enums: {
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;
+export declare const animalForEventFilters: typeof _animalForEventFilters;

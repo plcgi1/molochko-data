@@ -134,6 +134,10 @@ export class AnimalForEventFilter {
 		return this.abortFilter()
 	}
 
+	pozSuhostoiFilter () {
+		return this.abortFilter()
+	}
+
 	filter () {
 		switch (this.eventType) {
 			case EVENT_TYPES_ENUM.abort:
@@ -148,6 +152,8 @@ export class AnimalForEventFilter {
 				return this.recheckFilter()
 			case EVENT_TYPES_ENUM.suhostoi:
 				return this.suhostoiFilter()
+			case EVENT_TYPES_ENUM.pozSuhostoi:
+				return this.pozSuhostoiFilter()
 			default:
 				throw new Error(`AnimalForEventFilter.filter.${this.eventType} not implemented`)
 		}
