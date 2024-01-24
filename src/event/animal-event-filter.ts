@@ -173,6 +173,8 @@ export class AnimalForEventFilter {
 				return this.suhostoiFilter()
 			case EVENT_TYPES_ENUM.pozSuhostoi:
 				return this.pozSuhostoiFilter()
+			case EVENT_TYPES_ENUM.perevod:
+				return this.animals
 			default:
 				throw new Error(`AnimalForEventFilter.filter.${this.eventType} not implemented`)
 		}
