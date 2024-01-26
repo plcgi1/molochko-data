@@ -171,3 +171,10 @@ export enum USER_PERMISSION_METHOD_ENUM {
 }
 
 export const USER_PERMISSION_METHOD_AS_OBJECT = enumToObject(USER_PERMISSION_METHOD_ENUM);
+
+export enum ACCESS_ENUM {
+  read = 'read',
+  write = 'write',
+}
+
+export const ACCESS_ENUM_AS_OBJECT = enumToObject(ACCESS_ENUM);
