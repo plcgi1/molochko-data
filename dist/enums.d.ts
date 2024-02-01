@@ -108,7 +108,8 @@ export declare enum ANIMAL_STATUS_ENUM {
     dry = "dry",
     dnb = "dnb",
     sold = "sold",
-    died = "died"
+    died = "died",
+    theft = "theft"
 }
 export declare const ANIMAL_STATUS_AS_OBJECT: {
     [key: string]: string;

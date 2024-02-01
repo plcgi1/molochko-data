@@ -201,7 +201,8 @@ export enum TRANSFEROUT_REASON_ENUM {
   lameness = 'lameness', // Хромота
   breedingSales = 'breedingSales', // Племпродажа
   salesToThePublic = 'salesToThePublic' , // Продажа населению
-  theft = 'theft' // Кража 
+  theft = 'theft', // Кража 
+  dead = 'dead', // сдохла
 }
 
 export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
