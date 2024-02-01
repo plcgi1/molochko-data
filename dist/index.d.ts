@@ -70,6 +70,14 @@ export declare const enums: {
     ACCESS_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
+    TRANSFEROUT_TYPES_ENUM: typeof dataEnums.TRANSFEROUT_TYPES_ENUM;
+    TRANSFEROUT_TYPES_AS_OBJECT: {
+        [key: string]: string;
+    };
+    TRANSFEROUT_REASON_ENUM: typeof dataEnums.TRANSFEROUT_REASON_ENUM;
+    TRANSFEROUT_REASON_AS_OBJECT: {
+        [key: string]: string;
+    };
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;

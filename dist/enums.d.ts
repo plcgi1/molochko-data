@@ -62,7 +62,8 @@ export declare enum EVENT_TYPES_ENUM {
     rost = "rost",
     upitannost = "upitannost",
     zaboi = "zaboi",
-    sinchronizatsia = "sinchronizatsia"
+    sinchronizatsia = "sinchronizatsia",
+    transferOut = "transferOut"
 }
 export declare const EVENT_TYPES_AS_OBJECT: {
     [key: string]: string;
@@ -172,5 +173,30 @@ export declare enum ACCESS_ENUM {
     write = "write"
 }
 export declare const ACCESS_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum TRANSFEROUT_TYPES_ENUM {
+    transferOut = "transferOut",
+    died = "died"
+}
+export declare const TRANSFEROUT_TYPES_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum TRANSFEROUT_REASON_ENUM {
+    leikoz = "leikoz",
+    tuberkulez = "tuberkulez",
+    klostirokoz = "klostirikoz",
+    nekrobacilez = "nekrobacilez",
+    aktinomikoz = "aktinomikoz",
+    ginekologic = "ginekologic",
+    metabolicDisorders = "metabolicDisorders",
+    Infertility = "infertility",
+    udderDiseases = "udderDiseases",
+    lameness = "lameness",
+    breedingSales = "breedingSales",
+    salesToThePublic = "salesToThePublic",
+    theft = "theft"
+}
+export declare const TRANSFEROUT_REASON_AS_OBJECT: {
     [key: string]: string;
 };

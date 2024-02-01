@@ -14,5 +14,6 @@ export declare class AnimalForEventFilter {
     recheckFilter(): IAnimal[];
     suhostoiFilter(): IAnimal[];
     pozSuhostoiFilter(): IAnimal[];
+    outputFilter(): IAnimal[];
     filter(): IAnimal[];
 }

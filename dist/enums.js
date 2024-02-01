@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ACCESS_ENUM_AS_OBJECT = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_AS_OBJECT = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_AS_OBJECT = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
+exports.TRANSFEROUT_REASON_AS_OBJECT = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_AS_OBJECT = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM_AS_OBJECT = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_AS_OBJECT = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_AS_OBJECT = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
 const helpers_1 = require("./helpers");
 exports.BCRYPT_SALT = 12;
 var SYSTEM_USER_ROLES_ENUM;
@@ -63,6 +63,7 @@ var EVENT_TYPES_ENUM;
     EVENT_TYPES_ENUM["upitannost"] = "upitannost";
     EVENT_TYPES_ENUM["zaboi"] = "zaboi";
     EVENT_TYPES_ENUM["sinchronizatsia"] = "sinchronizatsia";
+    EVENT_TYPES_ENUM["transferOut"] = "transferOut";
 })(EVENT_TYPES_ENUM = exports.EVENT_TYPES_ENUM || (exports.EVENT_TYPES_ENUM = {}));
 exports.EVENT_TYPES_AS_OBJECT = (0, helpers_1.enumToObject)(EVENT_TYPES_ENUM);
 var SEED_TYPE_ENUM;
@@ -163,3 +164,26 @@ var ACCESS_ENUM;
     ACCESS_ENUM["write"] = "write";
 })(ACCESS_ENUM = exports.ACCESS_ENUM || (exports.ACCESS_ENUM = {}));
 exports.ACCESS_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(ACCESS_ENUM);
+var TRANSFEROUT_TYPES_ENUM;
+(function (TRANSFEROUT_TYPES_ENUM) {
+    TRANSFEROUT_TYPES_ENUM["transferOut"] = "transferOut";
+    TRANSFEROUT_TYPES_ENUM["died"] = "died";
+})(TRANSFEROUT_TYPES_ENUM = exports.TRANSFEROUT_TYPES_ENUM || (exports.TRANSFEROUT_TYPES_ENUM = {}));
+exports.TRANSFEROUT_TYPES_AS_OBJECT = (0, helpers_1.enumToObject)(TRANSFEROUT_TYPES_ENUM);
+var TRANSFEROUT_REASON_ENUM;
+(function (TRANSFEROUT_REASON_ENUM) {
+    TRANSFEROUT_REASON_ENUM["leikoz"] = "leikoz";
+    TRANSFEROUT_REASON_ENUM["tuberkulez"] = "tuberkulez";
+    TRANSFEROUT_REASON_ENUM["klostirokoz"] = "klostirikoz";
+    TRANSFEROUT_REASON_ENUM["nekrobacilez"] = "nekrobacilez";
+    TRANSFEROUT_REASON_ENUM["aktinomikoz"] = "aktinomikoz";
+    TRANSFEROUT_REASON_ENUM["ginekologic"] = "ginekologic";
+    TRANSFEROUT_REASON_ENUM["metabolicDisorders"] = "metabolicDisorders";
+    TRANSFEROUT_REASON_ENUM["Infertility"] = "infertility";
+    TRANSFEROUT_REASON_ENUM["udderDiseases"] = "udderDiseases";
+    TRANSFEROUT_REASON_ENUM["lameness"] = "lameness";
+    TRANSFEROUT_REASON_ENUM["breedingSales"] = "breedingSales";
+    TRANSFEROUT_REASON_ENUM["salesToThePublic"] = "salesToThePublic";
+    TRANSFEROUT_REASON_ENUM["theft"] = "theft"; // Кража 
+})(TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_REASON_ENUM || (exports.TRANSFEROUT_REASON_ENUM = {}));
+exports.TRANSFEROUT_REASON_AS_OBJECT = (0, helpers_1.enumToObject)(TRANSFEROUT_REASON_ENUM);

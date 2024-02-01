@@ -112,7 +112,8 @@ export enum ANIMAL_STATUS_ENUM {
   dry = 'dry', // Сухостой
   dnb = 'dnb', // Брак
   sold = 'sold', // Продана
-  died = 'died' // Сдохла
+  died = 'died', // Сдохла
+  theft = 'theft' // Кража 
 }
 
 export const ANIMAL_STATUS_AS_OBJECT = enumToObject(ANIMAL_STATUS_ENUM);
