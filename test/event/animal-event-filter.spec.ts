@@ -162,4 +162,8 @@ describe('AnimalForEventFilter', () => {
 	it(`event type: ${EVENT_TYPES_ENUM.perevod}`, () => {
 		testtObject(EVENT_TYPES_ENUM.perevod, 9)
 	})
+
+	it(`event type: ${EVENT_TYPES_ENUM.transferOut}`, () => {
+		testtObject(EVENT_TYPES_ENUM.perevod, 9)
+	})
 })

@@ -179,7 +179,7 @@ export class AnimalForEventFilter {
 				return this.pozSuhostoiFilter()
 			case EVENT_TYPES_ENUM.perevod:
 				return this.animals
-			case EVENT_TYPES_ENUM.output:
+			case EVENT_TYPES_ENUM.transferOut:
 				return this.outputFilter()	
 			default:
 				throw new Error(`AnimalForEventFilter.filter.${this.eventType} not implemented`)
