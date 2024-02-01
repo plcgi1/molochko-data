@@ -113,7 +113,8 @@ export enum ANIMAL_STATUS_ENUM {
   dnb = 'dnb', // Брак
   sold = 'sold', // Продана
   died = 'died', // Сдохла
-  theft = 'theft' // Кража 
+  theft = 'theft', // Кража 
+  transferout = 'transferout' // выбыла
 }
 
 export const ANIMAL_STATUS_AS_OBJECT = enumToObject(ANIMAL_STATUS_ENUM);
@@ -191,7 +192,7 @@ export const TRANSFEROUT_TYPES_AS_OBJECT = enumToObject(TRANSFEROUT_TYPES_ENUM);
 export enum TRANSFEROUT_REASON_ENUM {
   leikoz = 'leikoz', // Лейкоз
   tuberkulez = 'tuberkulez', // Туберкулез
-  klostirokoz = 'klostirikoz', // Клостридиоз
+  klostirikoz = 'klostirikoz', // Клостридиоз
   nekrobacilez = 'nekrobacilez', // Некробациллез
   aktinomikoz = 'aktinomikoz', // Актиномикоз)
   ginekologic = 'ginekologic', // Гинекологические заболевания

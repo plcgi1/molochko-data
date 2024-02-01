@@ -1,2 +1,2 @@
-import { AnimalForEventFilter as _AnimalForEventFilter } from './animal-event-filter';
-export { _AnimalForEventFilter as AnimalForEventFilter };
+import { filter as _filter } from './animal-event-filter';
+export { _filter as filter };
