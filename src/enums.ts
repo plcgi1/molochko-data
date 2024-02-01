@@ -67,6 +67,7 @@ export enum EVENT_TYPES_ENUM {
   upitannost = 'upitannost', // УПИТАННОСТЬ
   zaboi = 'zaboi', // ЗАБОЙ
   sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
+  output = 'output', // выбытие
 }
 
 export const EVENT_TYPES_AS_OBJECT = enumToObject(EVENT_TYPES_ENUM);
@@ -178,3 +179,28 @@ export enum ACCESS_ENUM {
 }
 
 export const ACCESS_ENUM_AS_OBJECT = enumToObject(ACCESS_ENUM);
+
+export enum TRANSFEROUT_TYPES_ENUM {
+  transferOut = 'transferOut',
+  died = 'died',
+}
+
+export const TRANSFEROUT_TYPES_AS_OBJECT = enumToObject(TRANSFEROUT_TYPES_ENUM);
+
+export enum TRANSFEROUT_REASON_ENUM {
+  leikoz = 'leikoz', // Лейкоз
+  tuberkulez = 'tuberkulez', // Туберкулез
+  klostirokoz = 'klostirikoz', // Клостридиоз
+  nekrobacilez = 'nekrobacilez', // Некробациллез
+  aktinomikoz = 'aktinomikoz', // Актиномикоз)
+  ginekologic = 'ginekologic', // Гинекологические заболевания
+  metabolicDisorders = 'metabolicDisorders', // Нарушения обмена веществ
+  Infertility = 'infertility', // Бесплодие
+  udderDiseases = 'udderDiseases', // Болезни вымени
+  lameness = 'lameness', // Хромота
+  breedingSales = 'breedingSales', // Племпродажа
+  salesToThePublic = 'salesToThePublic' , // Продажа населению
+  theft = 'theft' // Кража 
+}
+
+export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);

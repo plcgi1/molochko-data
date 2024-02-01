@@ -66,6 +66,10 @@ export declare const enums: {
     USER_PERMISSION_METHOD_AS_OBJECT: {
         [key: string]: string;
     };
+    ACCESS_ENUM: typeof dataEnums.ACCESS_ENUM;
+    ACCESS_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;

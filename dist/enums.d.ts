@@ -167,3 +167,10 @@ export declare enum USER_PERMISSION_METHOD_ENUM {
 export declare const USER_PERMISSION_METHOD_AS_OBJECT: {
     [key: string]: string;
 };
+export declare enum ACCESS_ENUM {
+    read = "read",
+    write = "write"
+}
+export declare const ACCESS_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
