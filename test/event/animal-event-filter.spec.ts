@@ -1,4 +1,4 @@
-import { AnimalForEventFilter } from '../../src/event';
+import { filter } from '../../src/event';
 import { ANIMAL_GENDER_ENUM, ANIMAL_STATUS_ENUM, EVENT_TYPES_ENUM } from '../../src/enums';
 import { IAnimal } from '../../src/types';
 
@@ -127,8 +127,7 @@ const animals: IAnimal[] = [
 
 describe('AnimalForEventFilter', () => {
 	function testtObject (eventType: EVENT_TYPES_ENUM, expectedAnimalsCount: number) {
-		const filter = new AnimalForEventFilter(animals, eventType)
-		const result = filter.filter()
+		const result = filter(animals, eventType)
 		expect(result.length).toBe(expectedAnimalsCount);
 	}
 	it(`event type: ${EVENT_TYPES_ENUM.abort}`, () => {

@@ -185,6 +185,7 @@ var TRANSFEROUT_REASON_ENUM;
     TRANSFEROUT_REASON_ENUM["lameness"] = "lameness";
     TRANSFEROUT_REASON_ENUM["breedingSales"] = "breedingSales";
     TRANSFEROUT_REASON_ENUM["salesToThePublic"] = "salesToThePublic";
-    TRANSFEROUT_REASON_ENUM["theft"] = "theft"; // Кража 
+    TRANSFEROUT_REASON_ENUM["theft"] = "theft";
+    TRANSFEROUT_REASON_ENUM["dead"] = "dead";
 })(TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_REASON_ENUM || (exports.TRANSFEROUT_REASON_ENUM = {}));
 exports.TRANSFEROUT_REASON_AS_OBJECT = (0, helpers_1.enumToObject)(TRANSFEROUT_REASON_ENUM);

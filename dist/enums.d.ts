@@ -196,7 +196,8 @@ export declare enum TRANSFEROUT_REASON_ENUM {
     lameness = "lameness",
     breedingSales = "breedingSales",
     salesToThePublic = "salesToThePublic",
-    theft = "theft"
+    theft = "theft",
+    dead = "dead"
 }
 export declare const TRANSFEROUT_REASON_AS_OBJECT: {
     [key: string]: string;
