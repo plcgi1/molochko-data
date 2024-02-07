@@ -1,4 +1,4 @@
-import { IAnimal } from '../types';
+import { IAbstractAnimal, IAnimal } from '../types';
 import { ANIMAL_GENDER_ENUM, ANIMAL_STATUS_ENUM, EVENT_TYPES_ENUM } from '../enums';
 import { getMonthFromDate } from '../helpers/date';
 
@@ -12,30 +12,30 @@ const filtered = filter(animals, eventType)
 
 */
 
-function genderFilter (animal: IAnimal, availableGender: ANIMAL_GENDER_ENUM): Boolean {
-	return animal.gender === availableGender
-}
-
-function ageFilter (animal: IAnimal, availableMinAge: number /*month*/): Boolean {
+function ageFilter<T extends IAbstractAnimal> (animal: T, availableMinAge: number /*month*/): Boolean {
 	const months = getMonthFromDate(animal.dob.toISOString())
 	return months > availableMinAge
 }
 
-function statusFilter (animal: IAnimal, availableStatuses: ANIMAL_STATUS_ENUM[]): Boolean {
+function statusFilter<T extends IAbstractAnimal> (animal: T, availableStatuses: ANIMAL_STATUS_ENUM[]): Boolean {
 	return availableStatuses.includes(animal.status)
 }
 
-function abortFilter (animals: IAnimal[]): IAnimal[] {
-	const result: IAnimal[] = animals.filter(animal => genderFilter(animal, ANIMAL_GENDER_ENUM.cow))
+function genderFilter<T extends IAbstractAnimal> (animal: T, availableGender: ANIMAL_GENDER_ENUM): Boolean {
+	return animal.gender === availableGender
+}
+
+function abortFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
+	const result: T[] = animals.filter(animal => genderFilter<T>(animal, ANIMAL_GENDER_ENUM.cow))
 	return result
 }
 
-function neosemFilter (animals: IAnimal[]): IAnimal[] {
+function neosemFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
 	return abortFilter(animals)
 }
 
-function osemenenieFilter(animals: IAnimal[]): IAnimal[] {
-	const result: IAnimal[] = animals.filter(animal => {
+function osemenenieFilter<T extends IAbstractAnimal>(animals: T[]): T[] {
+	const result = animals.filter(animal => {
 		const genderOk = genderFilter(animal, ANIMAL_GENDER_ENUM.cow)
 		const statusOk = statusFilter(animal, [status.heifer, status.bred, status.open, status.fresh])
 		const ageOk = ageFilter(animal, defaultCowAge)
@@ -46,8 +46,8 @@ function osemenenieFilter(animals: IAnimal[]): IAnimal[] {
 	return result
 }
 
-function otelFilter (animals: IAnimal[]): IAnimal[] {
-	const result: IAnimal[] = animals.filter(animal => {
+function otelFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
+	const result = animals.filter(animal => {
 		const genderOk = genderFilter(animal, ANIMAL_GENDER_ENUM.cow)
 		const statusOk = statusFilter(animal, [status.dry, status.pregnant])
 		const ageOk = ageFilter(animal, defaultCowAge)
@@ -57,8 +57,8 @@ function otelFilter (animals: IAnimal[]): IAnimal[] {
 	return result
 }
 
-function recheckFilter (animals: IAnimal[]): IAnimal[] {
-	const result: IAnimal[] = animals.filter(animal => {
+function recheckFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
+	const result = animals.filter(animal => {
 		const genderOk = genderFilter(animal, ANIMAL_GENDER_ENUM.cow)
 		const ageOk = ageFilter(animal, defaultCowAge)
 		
@@ -75,16 +75,15 @@ function recheckFilter (animals: IAnimal[]): IAnimal[] {
 		
 		return genderOk && statusOk && ageOk && animal
 	})
-	console.info('result', result)
 	return result
 }
 
-function suhostoiFilter (animals: IAnimal[]): IAnimal[] {
+function suhostoiFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
 	return abortFilter(animals)
 }
 
-function pozSuhostoiFilter (animals: IAnimal[]): IAnimal[] {
-	const result: IAnimal[] = animals.filter(animal => {
+function pozSuhostoiFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
+	const result = animals.filter(animal => {
 		const genderOk = genderFilter(animal, ANIMAL_GENDER_ENUM.cow)
 		const statusOk = statusFilter(animal, [status.dry])
 		const ageOk = ageFilter(animal, defaultCowAge)
@@ -94,20 +93,20 @@ function pozSuhostoiFilter (animals: IAnimal[]): IAnimal[] {
 	return result
 }
 
-function transferOutFilter (animals: IAnimal[]): IAnimal[] {
+function transferOutFilter<T extends IAbstractAnimal> (animals: T[]): T[] {
 	return animals
 }
 
-function perevodFilter (animals: IAnimal[]) {
+function perevodFilter<T extends IAbstractAnimal> (animals: T[]) {
 	return animals
 }
 
-interface IFilters {
-	[key: string]: (animals: IAnimal[]) => IAnimal[]
+interface IFilters<T extends IAbstractAnimal> {
+	[key: string]: (animals: T[]) => T[]
 }
 
-export function filter (animals: IAnimal[], eventType: EVENT_TYPES_ENUM) {
-	const filters: IFilters = {
+export function filter<T extends IAbstractAnimal>(animals: T[], eventType: EVENT_TYPES_ENUM) {
+	const filters: IFilters<T> = {
 		[EVENT_TYPES_ENUM.abort]: abortFilter,
 		[EVENT_TYPES_ENUM.neosem]: neosemFilter,
 		[EVENT_TYPES_ENUM.osemenenie]: osemenenieFilter,

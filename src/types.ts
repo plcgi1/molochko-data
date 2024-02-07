@@ -54,3 +54,11 @@ export interface IEventDetail {
 	type: EVENT_TYPES_ENUM
 }
 
+export type IAbstractAnimal = {
+	id: string
+	dob: Date
+	gender: ANIMAL_GENDER_ENUM
+	status: ANIMAL_STATUS_ENUM 
+  animalEventRelation?: IAnimalEventRelation[]  
+}
+

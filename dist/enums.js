@@ -105,7 +105,8 @@ var ANIMAL_STATUS_ENUM;
     ANIMAL_STATUS_ENUM["dnb"] = "dnb";
     ANIMAL_STATUS_ENUM["sold"] = "sold";
     ANIMAL_STATUS_ENUM["died"] = "died";
-    ANIMAL_STATUS_ENUM["theft"] = "theft"; // Кража 
+    ANIMAL_STATUS_ENUM["theft"] = "theft";
+    ANIMAL_STATUS_ENUM["transferout"] = "transferout"; // выбыла
 })(ANIMAL_STATUS_ENUM = exports.ANIMAL_STATUS_ENUM || (exports.ANIMAL_STATUS_ENUM = {}));
 exports.ANIMAL_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(ANIMAL_STATUS_ENUM);
 // heifer, bred, open, fresh
@@ -175,7 +176,7 @@ var TRANSFEROUT_REASON_ENUM;
 (function (TRANSFEROUT_REASON_ENUM) {
     TRANSFEROUT_REASON_ENUM["leikoz"] = "leikoz";
     TRANSFEROUT_REASON_ENUM["tuberkulez"] = "tuberkulez";
-    TRANSFEROUT_REASON_ENUM["klostirokoz"] = "klostirikoz";
+    TRANSFEROUT_REASON_ENUM["klostirikoz"] = "klostirikoz";
     TRANSFEROUT_REASON_ENUM["nekrobacilez"] = "nekrobacilez";
     TRANSFEROUT_REASON_ENUM["aktinomikoz"] = "aktinomikoz";
     TRANSFEROUT_REASON_ENUM["ginekologic"] = "ginekologic";

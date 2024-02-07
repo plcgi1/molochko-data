@@ -109,7 +109,8 @@ export declare enum ANIMAL_STATUS_ENUM {
     dnb = "dnb",
     sold = "sold",
     died = "died",
-    theft = "theft"
+    theft = "theft",
+    transferout = "transferout"
 }
 export declare const ANIMAL_STATUS_AS_OBJECT: {
     [key: string]: string;
@@ -186,7 +187,7 @@ export declare const TRANSFEROUT_TYPES_AS_OBJECT: {
 export declare enum TRANSFEROUT_REASON_ENUM {
     leikoz = "leikoz",
     tuberkulez = "tuberkulez",
-    klostirokoz = "klostirikoz",
+    klostirikoz = "klostirikoz",
     nekrobacilez = "nekrobacilez",
     aktinomikoz = "aktinomikoz",
     ginekologic = "ginekologic",
