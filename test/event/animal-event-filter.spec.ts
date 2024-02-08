@@ -1,5 +1,5 @@
 import { filter } from '../../src/event';
-import { ANIMAL_GENDER_ENUM, ANIMAL_STATUS_ENUM, EVENT_TYPES_ENUM } from '../../src/enums';
+import { ANIMAL_GENDER_ENUM, COW_STATUS, EVENT_TYPES_ENUM } from '../../src/enums';
 import { IAnimal } from '../../src/types';
 
 function getYoungDob() {
@@ -16,7 +16,7 @@ const animals: IAnimal[] = [
 		isoId: '234234234',
 		regId: '234234234',
 		activometrId: '234234234',
-		status: ANIMAL_STATUS_ENUM.bred,
+		status: COW_STATUS.BRED,
 		gender: ANIMAL_GENDER_ENUM.bull,
 		dob: new Date('2022-12-12')
 	},
@@ -28,7 +28,7 @@ const animals: IAnimal[] = [
 		isoId: '123123123',
 		regId: '123123123',
 		activometrId: '123123123',
-		status: ANIMAL_STATUS_ENUM.bred,
+		status: COW_STATUS.BRED,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},
@@ -40,7 +40,7 @@ const animals: IAnimal[] = [
 		isoId: '345345345',
 		regId: '345345345',
 		activometrId: '345345345',
-		status: ANIMAL_STATUS_ENUM.heifer,
+		status: COW_STATUS.HEIFER,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},
@@ -52,7 +52,7 @@ const animals: IAnimal[] = [
 		isoId: '456456456',
 		regId: '456456456',
 		activometrId: '456456456',
-		status: ANIMAL_STATUS_ENUM.open,
+		status: COW_STATUS.OPEN,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},
@@ -64,7 +64,7 @@ const animals: IAnimal[] = [
 		isoId: '567567567',
 		regId: '567567567',
 		activometrId: '567567567',
-		status: ANIMAL_STATUS_ENUM.fresh,
+		status: COW_STATUS.FRESH,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},
@@ -76,7 +76,7 @@ const animals: IAnimal[] = [
 		isoId: '678678678',
 		regId: '678678678',
 		activometrId: '678678678',
-		status: ANIMAL_STATUS_ENUM.fresh,
+		status: COW_STATUS.FRESH,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: getYoungDob()
 	},
@@ -88,7 +88,7 @@ const animals: IAnimal[] = [
 		isoId: '567567567',
 		regId: '567567567',
 		activometrId: '567567567',
-		status: ANIMAL_STATUS_ENUM.dry,
+		status: COW_STATUS.DRY,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},
@@ -100,7 +100,7 @@ const animals: IAnimal[] = [
 		isoId: '567567567',
 		regId: '567567567',
 		activometrId: '567567567',
-		status: ANIMAL_STATUS_ENUM.pregnant,
+		status: COW_STATUS.PREGNANT,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},
@@ -119,7 +119,7 @@ const animals: IAnimal[] = [
 				}
 			}
 		],
-		status: ANIMAL_STATUS_ENUM.pregnant,
+		status: COW_STATUS.PREGNANT,
 		gender: ANIMAL_GENDER_ENUM.cow,
 		dob: new Date('2022-12-12')
 	},

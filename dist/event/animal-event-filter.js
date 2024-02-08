@@ -10,15 +10,15 @@ const defaultCowAge = 12;
 const filtered = filter(animals, eventType)
 
 */
-function genderFilter(animal, availableGender) {
-    return animal.gender === availableGender;
-}
 function ageFilter(animal, availableMinAge /*month*/) {
     const months = (0, date_1.getMonthFromDate)(animal.dob.toISOString());
     return months > availableMinAge;
 }
 function statusFilter(animal, availableStatuses) {
     return availableStatuses.includes(animal.status);
+}
+function genderFilter(animal, availableGender) {
+    return animal.gender === availableGender;
 }
 function abortFilter(animals) {
     const result = animals.filter(animal => genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow));
@@ -61,7 +61,6 @@ function recheckFilter(animals) {
         const statusOk = statusFilter(animal, availableStatus);
         return genderOk && statusOk && ageOk && animal;
     });
-    console.info('result', result);
     return result;
 }
 function suhostoiFilter(animals) {
