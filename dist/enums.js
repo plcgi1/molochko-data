@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TRANSFEROUT_REASON_AS_OBJECT = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_AS_OBJECT = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM_AS_OBJECT = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_AS_OBJECT = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_AS_OBJECT = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
+exports.TRANSFEROUT_REASON_AS_OBJECT = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_AS_OBJECT = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM_AS_OBJECT = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_AS_OBJECT = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_AS_OBJECT = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.COW_STATUS = exports.BULL_STATUS = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
 const helpers_1 = require("./helpers");
 exports.BCRYPT_SALT = 12;
 var SYSTEM_USER_ROLES_ENUM;
@@ -106,8 +106,26 @@ var ANIMAL_STATUS_ENUM;
     ANIMAL_STATUS_ENUM["sold"] = "sold";
     ANIMAL_STATUS_ENUM["died"] = "died";
     ANIMAL_STATUS_ENUM["theft"] = "theft";
-    ANIMAL_STATUS_ENUM["transferout"] = "transferout"; // выбыла
+    ANIMAL_STATUS_ENUM["transferout"] = "transferout";
 })(ANIMAL_STATUS_ENUM = exports.ANIMAL_STATUS_ENUM || (exports.ANIMAL_STATUS_ENUM = {}));
+var BULL_STATUS;
+(function (BULL_STATUS) {
+    BULL_STATUS["SOLD"] = "sold";
+    BULL_STATUS["BULL"] = "bull";
+    BULL_STATUS["DIED"] = "died";
+})(BULL_STATUS = exports.BULL_STATUS || (exports.BULL_STATUS = {}));
+var COW_STATUS;
+(function (COW_STATUS) {
+    COW_STATUS["HEIFER"] = "heifer";
+    COW_STATUS["BRED"] = "bred";
+    COW_STATUS["PREGNANT"] = "pregnant";
+    COW_STATUS["OPEN"] = "open";
+    COW_STATUS["FRESH"] = "fresh";
+    COW_STATUS["DRY"] = "dry";
+    COW_STATUS["DNB"] = "dnb";
+    COW_STATUS["SOLD"] = "sold";
+    COW_STATUS["DIED"] = "died";
+})(COW_STATUS = exports.COW_STATUS || (exports.COW_STATUS = {}));
 exports.ANIMAL_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(ANIMAL_STATUS_ENUM);
 // heifer, bred, open, fresh
 var EVENT_ERROR_REASON_ENUM;

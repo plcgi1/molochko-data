@@ -1,4 +1,4 @@
-import { USER_PERMISSION_ENUM, USER_PERMISSION_METHOD_ENUM, EVENT_TYPES_ENUM, ANIMAL_GENDER_ENUM, ANIMAL_STATUS_ENUM } from './enums';
+import { USER_PERMISSION_ENUM, USER_PERMISSION_METHOD_ENUM, EVENT_TYPES_ENUM, ANIMAL_GENDER_ENUM, COW_STATUS, BULL_STATUS } from "./enums";
 export interface EnumItem {
     readonly id: string;
     readonly label: string;
@@ -29,7 +29,7 @@ export interface IAnimal {
     isoId: string;
     regId: string;
     activometrId: string;
-    status: ANIMAL_STATUS_ENUM;
+    status: AnimalStatus;
     gender: ANIMAL_GENDER_ENUM;
     dob: Date;
     breed?: string;
@@ -43,10 +43,11 @@ export interface IAnimalEventRelation {
 export interface IEventDetail {
     type: EVENT_TYPES_ENUM;
 }
-export declare type IAbstractAnimal = {
+export declare type AnimalStatus = COW_STATUS | BULL_STATUS;
+export declare type BaseAnimal = {
     id: string;
     dob: Date;
     gender: ANIMAL_GENDER_ENUM;
-    status: ANIMAL_STATUS_ENUM;
+    status: AnimalStatus;
     animalEventRelation?: IAnimalEventRelation[];
 };

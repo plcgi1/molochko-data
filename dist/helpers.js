@@ -11,8 +11,7 @@ function asObject(arrayOfObjects) {
 exports.asObject = asObject;
 function enumToObject(e) {
     // { [key: string]: string };
-    const result = Object.keys(e)
-        .reduce((obj, key) => {
+    const result = Object.keys(e).reduce((obj, key) => {
         // TypeScript перечисления имеют обратные свойства для обеспечения обратной совместимости
         // Проверяем, что ключ является числом и пропускаем эти ключи
         if (!isNaN(Number(key))) {

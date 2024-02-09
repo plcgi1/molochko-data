@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "node_modules/",
+    "dist",	
+    "package.json"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "max-len": [
+          "error",
+          {
+            "code": 120
+          }
+        ],
+        "array-bracket-newline": [
+          "error",
+          "consistent"
+        ],
+        "no-empty-function": "off"        
+      }
+    }
+  ]
+}

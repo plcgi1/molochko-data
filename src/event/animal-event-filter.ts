@@ -1,11 +1,6 @@
-import { AnimalStatus, BaseAnimal } from "../types";
-import {
-  ANIMAL_GENDER_ENUM,
-  ANIMAL_STATUS_ENUM,
-  COW_STATUS,
-  EVENT_TYPES_ENUM,
-} from "../enums";
-import { getMonthFromDate } from "../helpers/date";
+import { AnimalStatus, BaseAnimal } from '../types';
+import { ANIMAL_GENDER_ENUM, COW_STATUS, EVENT_TYPES_ENUM } from '../enums';
+import { getMonthFromDate } from '../helpers/date';
 
 const status = COW_STATUS;
 
@@ -17,32 +12,24 @@ const filtered = filter(animals, eventType)
 
 */
 
-function ageFilter<T extends BaseAnimal>(
-  animal: T,
-  availableMinAge: number /*month*/
-): boolean {
+function ageFilter<T extends BaseAnimal>(animal: T, availableMinAge: number /*month*/): boolean {
   const months = getMonthFromDate(animal.dob.toISOString());
   return months > availableMinAge;
 }
 
-function statusFilter<T extends BaseAnimal>(
-  animal: T,
-  availableStatuses: AnimalStatus[]
-): boolean {
+function statusFilter<T extends BaseAnimal>(animal: T, availableStatuses: AnimalStatus[]): boolean {
   return availableStatuses.includes(animal.status);
 }
 
 function genderFilter<T extends BaseAnimal>(
   animal: T,
-  availableGender: ANIMAL_GENDER_ENUM
+  availableGender: ANIMAL_GENDER_ENUM,
 ): boolean {
   return animal.gender === availableGender;
 }
 
 function abortFilter<T extends BaseAnimal>(animals: T[]): T[] {
-  const result: T[] = animals.filter((animal) =>
-    genderFilter<T>(animal, ANIMAL_GENDER_ENUM.cow)
-  );
+  const result: T[] = animals.filter((animal) => genderFilter<T>(animal, ANIMAL_GENDER_ENUM.cow));
   return result;
 }
 
@@ -53,12 +40,7 @@ function neosemFilter<T extends BaseAnimal>(animals: T[]): T[] {
 function osemenenieFilter<T extends BaseAnimal>(animals: T[]): T[] {
   const result = animals.filter((animal) => {
     const genderOk = genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
-    const statusOk = statusFilter(animal, [
-      status.HEIFER,
-      status.BRED,
-      status.OPEN,
-      status.FRESH,
-    ]);
+    const statusOk = statusFilter(animal, [status.HEIFER, status.BRED, status.OPEN, status.FRESH]);
     const ageOk = ageFilter(animal, defaultCowAge);
 
     return genderOk && statusOk && ageOk && animal;
@@ -126,10 +108,7 @@ interface IFilters<T extends BaseAnimal> {
   [key: string]: (animals: T[]) => T[];
 }
 
-export function filter<T extends BaseAnimal>(
-  animals: T[],
-  eventType: EVENT_TYPES_ENUM
-) {
+export function filter<T extends BaseAnimal>(animals: T[], eventType: EVENT_TYPES_ENUM) {
   const filters: IFilters<T> = {
     [EVENT_TYPES_ENUM.abort]: abortFilter,
     [EVENT_TYPES_ENUM.neosem]: neosemFilter,

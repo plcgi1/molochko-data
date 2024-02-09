@@ -112,6 +112,22 @@ export declare enum ANIMAL_STATUS_ENUM {
     theft = "theft",
     transferout = "transferout"
 }
+export declare enum BULL_STATUS {
+    SOLD = "sold",
+    BULL = "bull",
+    DIED = "died"
+}
+export declare enum COW_STATUS {
+    HEIFER = "heifer",
+    BRED = "bred",
+    PREGNANT = "pregnant",
+    OPEN = "open",
+    FRESH = "fresh",
+    DRY = "dry",
+    DNB = "dnb",
+    SOLD = "sold",
+    DIED = "died"
+}
 export declare const ANIMAL_STATUS_AS_OBJECT: {
     [key: string]: string;
 };

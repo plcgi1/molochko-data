@@ -1,4 +1,4 @@
-import { EnumItem, EnumArrayAsObject } from "./types";
+import { EnumItem, EnumArrayAsObject } from './types';
 
 export function asObject(arrayOfObjects: EnumItem[]): EnumArrayAsObject {
   const result: EnumArrayAsObject = {};
@@ -19,7 +19,7 @@ export function enumToObject(e: object): { [key: string]: string } {
       return obj;
     }
 
-    // @ts-ignore
+    // @ts-expect-error: skip
     obj[key] = e[key];
     return obj;
   }, {});
