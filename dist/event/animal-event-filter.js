@@ -30,12 +30,7 @@ function neosemFilter(animals) {
 function osemenenieFilter(animals) {
     const result = animals.filter((animal) => {
         const genderOk = genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
-        const statusOk = statusFilter(animal, [
-            status.HEIFER,
-            status.BRED,
-            status.OPEN,
-            status.FRESH,
-        ]);
+        const statusOk = statusFilter(animal, [status.HEIFER, status.BRED, status.OPEN, status.FRESH]);
         const ageOk = ageFilter(animal, defaultCowAge);
         return genderOk && statusOk && ageOk && animal;
     });

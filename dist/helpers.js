@@ -17,7 +17,7 @@ function enumToObject(e) {
         if (!isNaN(Number(key))) {
             return obj;
         }
-        // @ts-ignore
+        // @ts-expect-error: skip
         obj[key] = e[key];
         return obj;
     }, {});

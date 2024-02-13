@@ -224,3 +224,10 @@ export enum TRANSFEROUT_REASON_ENUM {
 }
 
 export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
+
+export enum MEDICAMENT_STATUS_ENUM {
+  active = 'active',
+  notActive = 'notActive',
+}
+
+export const MEDICAMENT_STATUS_AS_OBJECT = enumToObject(MEDICAMENT_STATUS_ENUM);

@@ -1,4 +1,4 @@
-import { USER_PERMISSION_ENUM, USER_PERMISSION_METHOD_ENUM, EVENT_TYPES_ENUM, ANIMAL_GENDER_ENUM, COW_STATUS, BULL_STATUS } from "./enums";
+import { USER_PERMISSION_ENUM, USER_PERMISSION_METHOD_ENUM, EVENT_TYPES_ENUM, ANIMAL_GENDER_ENUM, COW_STATUS, BULL_STATUS } from './enums';
 export interface EnumItem {
     readonly id: string;
     readonly label: string;
