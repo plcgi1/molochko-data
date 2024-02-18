@@ -219,3 +219,10 @@ export declare enum TRANSFEROUT_REASON_ENUM {
 export declare const TRANSFEROUT_REASON_AS_OBJECT: {
     [key: string]: string;
 };
+export declare enum MEDICAMENT_STATUS_ENUM {
+    active = "active",
+    notActive = "notActive"
+}
+export declare const MEDICAMENT_STATUS_AS_OBJECT: {
+    [key: string]: string;
+};

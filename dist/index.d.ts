@@ -80,6 +80,10 @@ export declare const enums: {
     TRANSFEROUT_REASON_AS_OBJECT: {
         [key: string]: string;
     };
+    MEDICAMENT_STATUS_ENUM: typeof dataEnums.MEDICAMENT_STATUS_ENUM;
+    MEDICAMENT_STATUS_AS_OBJECT: {
+        [key: string]: string;
+    };
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;
