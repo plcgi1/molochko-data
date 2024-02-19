@@ -8,7 +8,7 @@ const filtered = filter(animals, eventType)
 
 */
 
-class AnimalEcentFilter {
+class AnimalEventFilter {
   status = COW_STATUS;
   defaultCowAge = 12;
 
@@ -139,7 +139,8 @@ class AnimalEcentFilter {
   }
 }
 
+const f = new AnimalEventFilter();
+
 export function filter<T extends BaseAnimal>(animals: T[], eventType: EVENT_TYPES_ENUM) {
-  const f = new AnimalEcentFilter();
   return f.filter(animals, eventType);
 }
