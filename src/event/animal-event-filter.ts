@@ -52,7 +52,9 @@ class AnimalEventFilter {
         this.status.FRESH,
       ]);
       const ageOk = this.ageFilter(animal, this.defaultCowAge);
-      return genderOk && statusOk && ageOk && animal;
+      if (genderOk && statusOk && ageOk) {
+        return animal;
+      }
     });
 
     return result;
@@ -64,7 +66,9 @@ class AnimalEventFilter {
       const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
       const ageOk = this.ageFilter(animal, this.defaultCowAge);
 
-      return genderOk && statusOk && ageOk && animal;
+      if (genderOk && statusOk && ageOk) {
+        return animal;
+      }
     });
     return result;
   }
@@ -85,7 +89,9 @@ class AnimalEventFilter {
       }
       const statusOk = this.statusFilter(animal, availableStatus);
 
-      return genderOk && statusOk && ageOk && animal;
+      if (genderOk && statusOk && ageOk) {
+        return animal;
+      }
     });
     return result;
   }
@@ -100,7 +106,9 @@ class AnimalEventFilter {
       const statusOk = this.statusFilter(animal, [this.status.DRY]);
       const ageOk = this.ageFilter(animal, this.defaultCowAge);
 
-      return genderOk && statusOk && ageOk && animal;
+      if (genderOk && statusOk && ageOk) {
+        return animal;
+      }
     });
     return result;
   }
