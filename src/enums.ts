@@ -183,11 +183,11 @@ export enum USER_PERMISSION_ENUM {
 export const USER_PERMISSION_AS_OBJECT = enumToObject(USER_PERMISSION_ENUM);
 
 export enum USER_PERMISSION_METHOD_ENUM {
-  post = 'POST',
-  put = 'PUT',
-  delete = 'DELETE',
-  get = 'GET',
-  patch = 'PATCH',
+  post = 'post',
+  put = 'put',
+  delete = 'delete',
+  get = 'get',
+  patch = 'patch',
 }
 
 export const USER_PERMISSION_METHOD_AS_OBJECT = enumToObject(USER_PERMISSION_METHOD_ENUM);
@@ -224,10 +224,3 @@ export enum TRANSFEROUT_REASON_ENUM {
 }
 
 export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
-
-export enum MEDICAMENT_STATUS_ENUM {
-  active = 'active',
-  notActive = 'notActive',
-}
-
-export const MEDICAMENT_STATUS_AS_OBJECT = enumToObject(MEDICAMENT_STATUS_ENUM);
