@@ -224,3 +224,11 @@ export enum TRANSFEROUT_REASON_ENUM {
 }
 
 export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
+
+export enum PROTOCOL_STATUS_ENUM {
+  active = 'active',
+  draft = 'draft',
+  deleted = 'deleted' 
+}
+
+export const PROTOCOL_STATUS_AS_OBJECT = enumToObject(PROTOCOL_STATUS_ENUM);

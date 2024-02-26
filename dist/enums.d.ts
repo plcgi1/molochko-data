@@ -177,11 +177,11 @@ export declare const USER_PERMISSION_AS_OBJECT: {
     [key: string]: string;
 };
 export declare enum USER_PERMISSION_METHOD_ENUM {
-    post = "POST",
-    put = "PUT",
-    delete = "DELETE",
-    get = "GET",
-    patch = "PATCH"
+    post = "post",
+    put = "put",
+    delete = "delete",
+    get = "get",
+    patch = "patch"
 }
 export declare const USER_PERMISSION_METHOD_AS_OBJECT: {
     [key: string]: string;
@@ -217,12 +217,5 @@ export declare enum TRANSFEROUT_REASON_ENUM {
     dead = "dead"
 }
 export declare const TRANSFEROUT_REASON_AS_OBJECT: {
-    [key: string]: string;
-};
-export declare enum MEDICAMENT_STATUS_ENUM {
-    active = "active",
-    notActive = "notActive"
-}
-export declare const MEDICAMENT_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
