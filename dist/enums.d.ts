@@ -219,3 +219,11 @@ export declare enum TRANSFEROUT_REASON_ENUM {
 export declare const TRANSFEROUT_REASON_AS_OBJECT: {
     [key: string]: string;
 };
+export declare enum PROTOCOL_STATUS_ENUM {
+    active = "active",
+    draft = "draft",
+    deleted = "deleted"
+}
+export declare const PROTOCOL_STATUS_AS_OBJECT: {
+    [key: string]: string;
+};
