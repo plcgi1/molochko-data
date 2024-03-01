@@ -225,17 +225,40 @@ export enum TRANSFEROUT_REASON_ENUM {
 
 export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
 
-export enum PROTOCOL_STATUS_ENUM {
-  active = 'active',
-  draft = 'draft',
-  deleted = 'deleted',
+export enum DISEASES_ENUM {
+  Prevention = 'Prevention', // Профилактика
+  Vaccination = 'Vaccination', // Вакцинация
+  Mastitis = 'Mastitis', // Мастит
+  Metritis = 'Metritis', // Метрит
+  Paresis = 'Paresis', // Парез
+  Temperature = 'Temperature', // Температура
+  AbomasumDisplacement = 'Abomasum displacement', // Смещение сычуга
+  Lameness = 'Lameness', // Хромота
+  Injury = 'Injury', // Травма
+  Dehorning = 'Dehorning', // Обезроживание
+  MetabolicDisease = 'Metabolic disease', // Нарушение обмена веществ
+  Diarrhea = 'Diarrhea', // Диарея
+  Atony = 'Atony', // Атония
+  Pneumonia = 'Pneumonia', // Пневмония
+  Tympany = 'Tympany', // Тимпания
+  Healthy = 'Healthy', // Здорова
+  Ketosis = 'Ketosis', // Кетоз
+  Conjunctevitis = 'Conjunctevitis', // Коньюктевит
+  Dipepsia = 'Dipepsia', // Дипепсия
+  Synchronization = 'Synchronization', // Синхронизация
+  Other = 'Other', // Иное
 }
 
-export const PROTOCOL_STATUS_AS_OBJECT = enumToObject(PROTOCOL_STATUS_ENUM);
+export const DISEASES_AS_OBJECT = enumToObject(DISEASES_ENUM);
 
-export enum PROCEDURE_STATUS_ENUM {
-  todo = 'todo',
-  ready = 'ready',
+export enum MEDMETHOD_ENUM {
+  subcutaneously = 'subcutaneously', // подкожно
+  nasally = 'nasally', // нозально
+  intramuscularly = 'intramuscularly', // внутримышечно
+  intracesternally = 'intracesternally', // внутрицестернально
+  orally = 'orally', // орально
+  intravenously = 'intravenously', // внутривенно
+  intrauterine = 'intrauterine', // внутриматочно
+  intravaginally = 'intravaginally', // внутривагинально
 }
-
-export const PROCEDURE_STATUS_AS_OBJECT = enumToObject(PROCEDURE_STATUS_ENUM);
+export const MEDMETHOD_ENUM_AS_OBJECT = enumToObject(MEDMETHOD_ENUM);
