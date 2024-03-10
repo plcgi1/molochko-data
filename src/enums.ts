@@ -226,39 +226,39 @@ export enum TRANSFEROUT_REASON_ENUM {
 export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
 
 export enum DISEASES_ENUM {
-  Prevention = 'Prevention', // Профилактика
-  Vaccination = 'Vaccination', // Вакцинация
-  Mastitis = 'Mastitis', // Мастит
-  Metritis = 'Metritis', // Метрит
-  Paresis = 'Paresis', // Парез
-  Temperature = 'Temperature', // Температура
-  AbomasumDisplacement = 'Abomasum displacement', // Смещение сычуга
-  Lameness = 'Lameness', // Хромота
-  Injury = 'Injury', // Травма
-  Dehorning = 'Dehorning', // Обезроживание
-  MetabolicDisease = 'Metabolic disease', // Нарушение обмена веществ
-  Diarrhea = 'Diarrhea', // Диарея
-  Atony = 'Atony', // Атония
-  Pneumonia = 'Pneumonia', // Пневмония
-  Tympany = 'Tympany', // Тимпания
-  Healthy = 'Healthy', // Здорова
-  Ketosis = 'Ketosis', // Кетоз
-  Conjunctevitis = 'Conjunctevitis', // Коньюктевит
-  Dipepsia = 'Dipepsia', // Дипепсия
-  Synchronization = 'Synchronization', // Синхронизация
-  Other = 'Other', // Иное
+  PREVENTION = 'prevention', // Профилактика
+  VACCTINATION = 'vaccination', // Вакцинация
+  MASTITIS = 'mastitis', // Мастит
+  METRITIS = 'metritis', // Метрит
+  PARESIS = 'paresis', // Парез
+  TEMPERATURE = 'temperature', // Температура
+  ABOMASUM_DISPLACEMENT = 'abomasum_displacement', // Смещение сычуга
+  LAMENESS = 'lameness', // Хромота
+  INJURY = 'injury', // Травма
+  DEHORNING = 'dehorning', // Обезроживание
+  METABOLIC_DISEASE = 'metabolic disease', // Нарушение обмена веществ
+  DIARRHEA = 'diarrhea', // Диарея
+  ATONY = 'atony', // Атония
+  PNEUMONIA = 'pneumonia', // Пневмония
+  TYMPANY = 'tympany', // Тимпания
+  HEALTHY = 'healthy', // Здорова
+  KETOSIS = 'ketosis', // Кетоз
+  CONJUNCTEVITIS = 'conjunctevitis', // Коньюктевит
+  DIPEPSIA = 'dipepsia', // Дипепсия
+  SYNCHRONIZATION = 'synchronization', // Синхронизация
+  OTHER = 'other', // Иное
 }
 
 export const DISEASES_AS_OBJECT = enumToObject(DISEASES_ENUM);
 
 export enum MEDMETHOD_ENUM {
-  subcutaneously = 'subcutaneously', // подкожно
-  nasally = 'nasally', // нозально
-  intramuscularly = 'intramuscularly', // внутримышечно
-  intracesternally = 'intracesternally', // внутрицестернально
-  orally = 'orally', // орально
-  intravenously = 'intravenously', // внутривенно
-  intrauterine = 'intrauterine', // внутриматочно
-  intravaginally = 'intravaginally', // внутривагинально
+  SUBCUTANEOUSLY = 'subcutaneously', // подкожно
+  NASALLY = 'nasally', // нозально
+  INTRAMUSCULARLY = 'intramuscularly', // внутримышечно
+  INTRACISTERNALLY = 'intracesternally', // внутрицестернально
+  ORALLY = 'orally', // орально
+  INTRAVENOUSLY = 'intravenously', // внутривенно
+  INTRAUTERINE = 'intrauterine', // внутриматочно
+  INTRAVAGINALLY = 'intravaginally', // внутривагинально
 }
 export const MEDMETHOD_ENUM_AS_OBJECT = enumToObject(MEDMETHOD_ENUM);

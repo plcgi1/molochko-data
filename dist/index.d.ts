@@ -84,6 +84,10 @@ export declare const enums: {
     PROTOCOL_STATUS_AS_OBJECT: {
         [key: string]: string;
     };
+    PROCEDURE_STATUS_ENUM: typeof dataEnums.PROCEDURE_STATUS_ENUM;
+    PROCEDURE_STATUS_AS_OBJECT: {
+        [key: string]: string;
+    };
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;

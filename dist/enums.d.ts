@@ -227,3 +227,10 @@ export declare enum PROTOCOL_STATUS_ENUM {
 export declare const PROTOCOL_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
+export declare enum PROCEDURE_STATUS_ENUM {
+    todo = "todo",
+    ready = "ready"
+}
+export declare const PROCEDURE_STATUS_AS_OBJECT: {
+    [key: string]: string;
+};
