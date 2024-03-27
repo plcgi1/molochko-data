@@ -219,18 +219,42 @@ export declare enum TRANSFEROUT_REASON_ENUM {
 export declare const TRANSFEROUT_REASON_AS_OBJECT: {
     [key: string]: string;
 };
-export declare enum PROTOCOL_STATUS_ENUM {
-    active = "active",
-    draft = "draft",
-    deleted = "deleted"
+export declare enum DISEASES_ENUM {
+    PREVENTION = "prevention",
+    VACCTINATION = "vaccination",
+    MASTITIS = "mastitis",
+    METRITIS = "metritis",
+    PARESIS = "paresis",
+    TEMPERATURE = "temperature",
+    ABOMASUM_DISPLACEMENT = "abomasum_displacement",
+    LAMENESS = "lameness",
+    INJURY = "injury",
+    DEHORNING = "dehorning",
+    METABOLIC_DISEASE = "metabolic disease",
+    DIARRHEA = "diarrhea",
+    ATONY = "atony",
+    PNEUMONIA = "pneumonia",
+    TYMPANY = "tympany",
+    HEALTHY = "healthy",
+    KETOSIS = "ketosis",
+    CONJUNCTEVITIS = "conjunctevitis",
+    DIPEPSIA = "dipepsia",
+    SYNCHRONIZATION = "synchronization",
+    OTHER = "other"
 }
-export declare const PROTOCOL_STATUS_AS_OBJECT: {
+export declare const DISEASES_AS_OBJECT: {
     [key: string]: string;
 };
-export declare enum PROCEDURE_STATUS_ENUM {
-    todo = "todo",
-    ready = "ready"
+export declare enum MEDMETHOD_ENUM {
+    SUBCUTANEOUSLY = "subcutaneously",
+    NASALLY = "nasally",
+    INTRAMUSCULARLY = "intramuscularly",
+    INTRACISTERNALLY = "intracesternally",
+    ORALLY = "orally",
+    INTRAVENOUSLY = "intravenously",
+    INTRAUTERINE = "intrauterine",
+    INTRAVAGINALLY = "intravaginally"
 }
-export declare const PROCEDURE_STATUS_AS_OBJECT: {
+export declare const MEDMETHOD_ENUM_AS_OBJECT: {
     [key: string]: string;
 };

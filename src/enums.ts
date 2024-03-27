@@ -262,3 +262,11 @@ export enum MEDMETHOD_ENUM {
   INTRAVAGINALLY = 'intravaginally', // внутривагинально
 }
 export const MEDMETHOD_ENUM_AS_OBJECT = enumToObject(MEDMETHOD_ENUM);
+
+export enum VET_TASK_STATUS_ENUM {
+  waiting = 'waiting',
+  working = 'working',
+  ready = 'ready',
+  outdated = 'outdated',
+}
+export const VET_TASK_STATUS_AS_OBJECT = enumToObject(VET_TASK_STATUS_ENUM);

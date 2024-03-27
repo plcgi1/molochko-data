@@ -80,12 +80,12 @@ export declare const enums: {
     TRANSFEROUT_REASON_AS_OBJECT: {
         [key: string]: string;
     };
-    PROTOCOL_STATUS_ENUM: typeof dataEnums.PROTOCOL_STATUS_ENUM;
-    PROTOCOL_STATUS_AS_OBJECT: {
+    DISEASES_ENUM: typeof dataEnums.DISEASES_ENUM;
+    DISEASES_AS_OBJECT: {
         [key: string]: string;
     };
-    PROCEDURE_STATUS_ENUM: typeof dataEnums.PROCEDURE_STATUS_ENUM;
-    PROCEDURE_STATUS_AS_OBJECT: {
+    MEDMETHOD_ENUM: typeof dataEnums.MEDMETHOD_ENUM;
+    MEDMETHOD_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
 };
