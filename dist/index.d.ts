@@ -88,6 +88,10 @@ export declare const enums: {
     MEDMETHOD_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
+    VET_TASK_STATUS_ENUM: typeof dataEnums.VET_TASK_STATUS_ENUM;
+    VET_TASK_STATUS_AS_OBJECT: {
+        [key: string]: string;
+    };
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;

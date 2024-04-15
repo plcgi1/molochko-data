@@ -97,6 +97,9 @@ class AnimalEventFilter {
     perevodFilter(animals) {
         return animals;
     }
+    treatmentFilter(animals) {
+        return animals;
+    }
     filter(animals, eventType) {
         switch (eventType) {
             case enums_1.EVENT_TYPES_ENUM.abort:
@@ -117,8 +120,10 @@ class AnimalEventFilter {
                 return this.perevodFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.transferOut:
                 return this.transferOutFilter(animals);
+            case enums_1.EVENT_TYPES_ENUM.treatment:
+                return this.treatmentFilter(animals);
             default:
-                throw new Error(`AnimalForEventFilter.filter.${eventType} not implemented`);
+                return animals;
         }
     }
 }

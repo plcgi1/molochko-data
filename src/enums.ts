@@ -67,6 +67,7 @@ export enum EVENT_TYPES_ENUM {
   zaboi = 'zaboi', // ЗАБОЙ
   sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
   transferOut = 'transferOut', // выбытие
+  treatment = 'treatment', // лечение
 }
 
 export const EVENT_TYPES_AS_OBJECT = enumToObject(EVENT_TYPES_ENUM);

@@ -121,6 +121,10 @@ class AnimalEventFilter {
     return animals;
   }
 
+  treatmentFilter<T extends BaseAnimal>(animals: T[]) {
+    return animals;
+  }
+
   filter<T extends BaseAnimal>(animals: T[], eventType: EVENT_TYPES_ENUM) {
     switch (eventType) {
       case EVENT_TYPES_ENUM.abort:
@@ -141,8 +145,10 @@ class AnimalEventFilter {
         return this.perevodFilter(animals);
       case EVENT_TYPES_ENUM.transferOut:
         return this.transferOutFilter(animals);
+      case EVENT_TYPES_ENUM.treatment:
+        return this.treatmentFilter(animals);
       default:
-        throw new Error(`AnimalForEventFilter.filter.${eventType} not implemented`);
+        return animals;
     }
   }
 }

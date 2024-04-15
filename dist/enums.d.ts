@@ -63,7 +63,8 @@ export declare enum EVENT_TYPES_ENUM {
     upitannost = "upitannost",
     zaboi = "zaboi",
     sinchronizatsia = "sinchronizatsia",
-    transferOut = "transferOut"
+    transferOut = "transferOut",
+    treatment = "treatment"
 }
 export declare const EVENT_TYPES_AS_OBJECT: {
     [key: string]: string;
@@ -256,5 +257,14 @@ export declare enum MEDMETHOD_ENUM {
     INTRAVAGINALLY = "intravaginally"
 }
 export declare const MEDMETHOD_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum VET_TASK_STATUS_ENUM {
+    waiting = "waiting",
+    working = "working",
+    ready = "ready",
+    outdated = "outdated"
+}
+export declare const VET_TASK_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
