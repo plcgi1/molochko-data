@@ -264,10 +264,10 @@ export enum MEDMETHOD_ENUM {
 }
 export const MEDMETHOD_ENUM_AS_OBJECT = enumToObject(MEDMETHOD_ENUM);
 
-export enum VET_TASK_STATUS_ENUM {
+export enum SUBTASK_STATUS_ENUM {
   waiting = 'waiting',
   working = 'working',
   ready = 'ready',
   outdated = 'outdated',
 }
-export const VET_TASK_STATUS_AS_OBJECT = enumToObject(VET_TASK_STATUS_ENUM);
+export const SUBTASK_STATUS_AS_OBJECT = enumToObject(SUBTASK_STATUS_ENUM);
