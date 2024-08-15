@@ -89,6 +89,7 @@ export declare const enums: {
         [key: string]: string;
     };
     SUBTASK_STATUS_ENUM: typeof dataEnums.SUBTASK_STATUS_ENUM;
+    EVENT_EXEC_STATUS_ENUM: typeof dataEnums.EVENT_EXEC_STATUS_ENUM;
     SUBTASK_STATUS_AS_OBJECT: {
         [key: string]: string;
     };

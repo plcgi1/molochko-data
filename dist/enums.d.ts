@@ -265,6 +265,12 @@ export declare enum SUBTASK_STATUS_ENUM {
     ready = "ready",
     outdated = "outdated"
 }
+export declare enum EVENT_EXEC_STATUS_ENUM {
+    waiting = "waiting",
+    done = "done",
+    cancel = "cancel",
+    block = "block"
+}
 export declare const SUBTASK_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
