@@ -43,22 +43,30 @@ export enum ANIMAL_GENDER_ENUM {
 
 export const ANIMAL_GENDER_AS_OBJECT = enumToObject(ANIMAL_GENDER_ENUM);
 
+// перевод,
+// аборт,
+// проверка стельности,
+// выбытие,
+// осеменение,
+// брак,
+// обрезка копыт,
+
 export enum EVENT_TYPES_ENUM {
-  otel = 'otel', // ОТЕЛ
-  recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ *
-  ohota = 'ohota', // ОХОТА
+  otel = 'otel', // ОТЕЛ ----- addTocalendar
+  recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ * ----- addTocalendar
+  ohota = 'ohota', // ОХОТА ----- addTocalendar
   osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
   stelnaya = 'stelnaya', // СТЕЛЬНАЯ
-  yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ)
-  stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ
+  yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ) ----- addTocalendar
+  stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ ----- addTocalendar
   perevod = 'perevod', // ПЕРЕВОД
-  kbiku = 'kbiku', // КБЫКУ
-  suhostoi = 'suhostoi', //'СУХОСТОЙ
+  kbiku = 'kbiku', // КБЫКУ ----- addTocalendar
+  suhostoi = 'suhostoi', //'СУХОСТОЙ ----- addTocalendar
   abort = 'abort', // АБОРТ
   neosem = 'neosem', // НЕОСЕМ (БРАК) *
-  prodazha = 'prodazha', // ПРОДАЖА
-  pala = 'pala', // ПАЛА
-  zamenaNomera = 'zamenaNomera', // ЗАМЕНА НОМЕРА
+  prodazha = 'prodazha', // ПРОДАЖА ----- addTocalendar
+  pala = 'pala', // ПАЛА ----- addTocalendar
+  zamenaNomera = 'zamenaNomera', // ЗАМЕНА НОМЕРА ----- addTocalendar
   obrKopit = 'obrKopit', // ОБРАБОТКА КОПЫТ
   pozSuhostoi = 'pozSuhostoi', // ПОЗСУХОСТОЙ
   ves = 'ves', // ВЕС
@@ -264,10 +272,19 @@ export enum MEDMETHOD_ENUM {
 }
 export const MEDMETHOD_ENUM_AS_OBJECT = enumToObject(MEDMETHOD_ENUM);
 
+// TODO удалить
 export enum SUBTASK_STATUS_ENUM {
   waiting = 'waiting',
   working = 'working',
   ready = 'ready',
   outdated = 'outdated',
 }
+
+export enum EVENT_EXEC_STATUS_ENUM {
+	waiting = 'waiting',
+	done = 'done',
+	cancel = 'cancel',
+	block = 'block',
+}
+
 export const SUBTASK_STATUS_AS_OBJECT = enumToObject(SUBTASK_STATUS_ENUM);

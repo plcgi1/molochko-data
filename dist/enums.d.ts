@@ -259,12 +259,12 @@ export declare enum MEDMETHOD_ENUM {
 export declare const MEDMETHOD_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare enum VET_TASK_STATUS_ENUM {
+export declare enum SUBTASK_STATUS_ENUM {
     waiting = "waiting",
     working = "working",
     ready = "ready",
     outdated = "outdated"
 }
-export declare const VET_TASK_STATUS_AS_OBJECT: {
+export declare const SUBTASK_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
