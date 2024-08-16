@@ -280,6 +280,8 @@ export enum SUBTASK_STATUS_ENUM {
   outdated = 'outdated',
 }
 
+export const SUBTASK_STATUS_AS_OBJECT = enumToObject(SUBTASK_STATUS_ENUM);
+
 export enum EVENT_EXEC_STATUS_ENUM {
   waiting = 'waiting',
   done = 'done',
@@ -287,4 +289,4 @@ export enum EVENT_EXEC_STATUS_ENUM {
   block = 'block',
 }
 
-export const SUBTASK_STATUS_AS_OBJECT = enumToObject(SUBTASK_STATUS_ENUM);
+export const EVENT_EXEC_STATUS_AS_OBJECT = enumToObject(EVENT_EXEC_STATUS_ENUM);
