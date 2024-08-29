@@ -316,3 +316,10 @@ export const REPORT_CONDITION_ENUM = {
 };
 
 export const REPORT_CONDITION_ENUM_AS_OBJECT = enumToObject(REPORT_CONDITION_ENUM);
+
+export const REPORT_DATASOURCE_ENUM = {
+	animals: 'animals',
+	events: 'events',
+};
+
+export const REPORT_DATASOURCE_ENUM_AS_OBJECT = enumToObject(REPORT_DATASOURCE_ENUM);

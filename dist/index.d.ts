@@ -89,8 +89,38 @@ export declare const enums: {
         [key: string]: string;
     };
     SUBTASK_STATUS_ENUM: typeof dataEnums.SUBTASK_STATUS_ENUM;
-    EVENT_EXEC_STATUS_ENUM: typeof dataEnums.EVENT_EXEC_STATUS_ENUM;
     SUBTASK_STATUS_AS_OBJECT: {
+        [key: string]: string;
+    };
+    EVENT_EXEC_STATUS_ENUM: typeof dataEnums.EVENT_EXEC_STATUS_ENUM;
+    EVENT_EXEC_STATUS_AS_OBJECT: {
+        [key: string]: string;
+    };
+    REPORT_OPERATOR_ENUM: {
+        eq: string;
+        gte: string;
+        lte: string;
+        lt: string;
+        gt: string;
+        between: string;
+    };
+    REPORT_OPERATOR_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    REPORT_TYPE_ENUM: {
+        string: string;
+        number: string;
+        date: string;
+        datetime: string;
+    };
+    REPORT_TYPE_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    REPORT_CONDITION_ENUM: {
+        and: string;
+        or: string;
+    };
+    REPORT_CONDITION_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
 };

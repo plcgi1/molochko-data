@@ -265,12 +265,42 @@ export declare enum SUBTASK_STATUS_ENUM {
     ready = "ready",
     outdated = "outdated"
 }
+export declare const SUBTASK_STATUS_AS_OBJECT: {
+    [key: string]: string;
+};
 export declare enum EVENT_EXEC_STATUS_ENUM {
     waiting = "waiting",
     done = "done",
     cancel = "cancel",
     block = "block"
 }
-export declare const SUBTASK_STATUS_AS_OBJECT: {
+export declare const EVENT_EXEC_STATUS_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare const REPORT_OPERATOR_ENUM: {
+    eq: string;
+    gte: string;
+    lte: string;
+    lt: string;
+    gt: string;
+    between: string;
+};
+export declare const REPORT_OPERATOR_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare const REPORT_TYPE_ENUM: {
+    string: string;
+    number: string;
+    date: string;
+    datetime: string;
+};
+export declare const REPORT_TYPE_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare const REPORT_CONDITION_ENUM: {
+    and: string;
+    or: string;
+};
+export declare const REPORT_CONDITION_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
