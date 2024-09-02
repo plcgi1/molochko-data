@@ -296,8 +296,7 @@ export const REPORT_OPERATOR_ENUM = {
   gte: 'gte',
   lte: 'lte',
   lt: 'lt',
-  gt: '>',
-  between: 'between',
+  gt: 'gt'
 };
 
 export const REPORT_OPERATOR_ENUM_AS_OBJECT = enumToObject(REPORT_OPERATOR_ENUM);
