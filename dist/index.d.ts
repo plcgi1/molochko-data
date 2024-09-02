@@ -102,7 +102,6 @@ export declare const enums: {
         lte: string;
         lt: string;
         gt: string;
-        between: string;
     };
     REPORT_OPERATOR_ENUM_AS_OBJECT: {
         [key: string]: string;
@@ -121,6 +120,13 @@ export declare const enums: {
         or: string;
     };
     REPORT_CONDITION_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    REPORT_DATASOURCE_ENUM: {
+        animals: string;
+        events: string;
+    };
+    REPORT_DATASOURCE_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
 };

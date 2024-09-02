@@ -291,34 +291,34 @@ export enum EVENT_EXEC_STATUS_ENUM {
 
 export const EVENT_EXEC_STATUS_AS_OBJECT = enumToObject(EVENT_EXEC_STATUS_ENUM);
 
-export const REPORT_OPERATOR_ENUM = {
+export const CLIST_OPERATOR_ENUM = {
   eq: 'eq',
   gte: 'gte',
   lte: 'lte',
   lt: 'lt',
-  gt: 'gt'
+  gt: 'gt',
 };
 
-export const REPORT_OPERATOR_ENUM_AS_OBJECT = enumToObject(REPORT_OPERATOR_ENUM);
+export const CLIST_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_OPERATOR_ENUM);
 
-export const REPORT_TYPE_ENUM = {
+export const CLIST_TYPE_ENUM = {
   string: 'string',
   number: 'number',
   date: 'date',
   datetime: 'datetime',
 };
-export const REPORT_TYPE_ENUM_AS_OBJECT = enumToObject(REPORT_TYPE_ENUM);
+export const CLIST_TYPE_ENUM_AS_OBJECT = enumToObject(CLIST_TYPE_ENUM);
 
-export const REPORT_CONDITION_ENUM = {
+export const CLIST_CONDITION_ENUM = {
   and: 'and',
   or: 'or',
 };
 
-export const REPORT_CONDITION_ENUM_AS_OBJECT = enumToObject(REPORT_CONDITION_ENUM);
+export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM);
 
-export const REPORT_DATASOURCE_ENUM = {
-	animals: 'animals',
-	events: 'events',
+export const CLIST_DATASOURCE_ENUM = {
+  animals: 'animals',
+  events: 'events',
 };
 
-export const REPORT_DATASOURCE_ENUM_AS_OBJECT = enumToObject(REPORT_DATASOURCE_ENUM);
+export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);

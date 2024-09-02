@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.REPORT_TYPE_ENUM = exports.REPORT_OPERATOR_ENUM_AS_OBJECT = exports.REPORT_OPERATOR_ENUM = exports.EVENT_EXEC_STATUS_AS_OBJECT = exports.EVENT_EXEC_STATUS_ENUM = exports.SUBTASK_STATUS_AS_OBJECT = exports.SUBTASK_STATUS_ENUM = exports.MEDMETHOD_ENUM_AS_OBJECT = exports.MEDMETHOD_ENUM = exports.DISEASES_AS_OBJECT = exports.DISEASES_ENUM = exports.TRANSFEROUT_REASON_AS_OBJECT = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_AS_OBJECT = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM_AS_OBJECT = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_AS_OBJECT = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_AS_OBJECT = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.COW_STATUS = exports.BULL_STATUS = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
-exports.REPORT_CONDITION_ENUM_AS_OBJECT = exports.REPORT_CONDITION_ENUM = exports.REPORT_TYPE_ENUM_AS_OBJECT = void 0;
+exports.REPORT_DATASOURCE_ENUM_AS_OBJECT = exports.REPORT_DATASOURCE_ENUM = exports.REPORT_CONDITION_ENUM_AS_OBJECT = exports.REPORT_CONDITION_ENUM = exports.REPORT_TYPE_ENUM_AS_OBJECT = void 0;
 const helpers_1 = require("./helpers");
 exports.BCRYPT_SALT = 12;
 var SYSTEM_USER_ROLES_ENUM;
@@ -276,8 +276,7 @@ exports.REPORT_OPERATOR_ENUM = {
     gte: 'gte',
     lte: 'lte',
     lt: 'lt',
-    gt: '>',
-    between: 'between',
+    gt: 'gt',
 };
 exports.REPORT_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(exports.REPORT_OPERATOR_ENUM);
 exports.REPORT_TYPE_ENUM = {
@@ -292,3 +291,8 @@ exports.REPORT_CONDITION_ENUM = {
     or: 'or',
 };
 exports.REPORT_CONDITION_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(exports.REPORT_CONDITION_ENUM);
+exports.REPORT_DATASOURCE_ENUM = {
+    animals: 'animals',
+    events: 'events',
+};
+exports.REPORT_DATASOURCE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(exports.REPORT_DATASOURCE_ENUM);

@@ -283,7 +283,6 @@ export declare const REPORT_OPERATOR_ENUM: {
     lte: string;
     lt: string;
     gt: string;
-    between: string;
 };
 export declare const REPORT_OPERATOR_ENUM_AS_OBJECT: {
     [key: string]: string;
@@ -302,5 +301,12 @@ export declare const REPORT_CONDITION_ENUM: {
     or: string;
 };
 export declare const REPORT_CONDITION_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare const REPORT_DATASOURCE_ENUM: {
+    animals: string;
+    events: string;
+};
+export declare const REPORT_DATASOURCE_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
