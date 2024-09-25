@@ -277,36 +277,36 @@ export declare enum EVENT_EXEC_STATUS_ENUM {
 export declare const EVENT_EXEC_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const REPORT_OPERATOR_ENUM: {
+export declare const CLIST_OPERATOR_ENUM: {
     eq: string;
     gte: string;
     lte: string;
     lt: string;
     gt: string;
 };
-export declare const REPORT_OPERATOR_ENUM_AS_OBJECT: {
+export declare const CLIST_OPERATOR_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const REPORT_TYPE_ENUM: {
+export declare const CLIST_TYPE_ENUM: {
     string: string;
     number: string;
     date: string;
     datetime: string;
 };
-export declare const REPORT_TYPE_ENUM_AS_OBJECT: {
+export declare const CLIST_TYPE_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const REPORT_CONDITION_ENUM: {
+export declare const CLIST_CONDITION_ENUM: {
     and: string;
     or: string;
 };
-export declare const REPORT_CONDITION_ENUM_AS_OBJECT: {
+export declare const CLIST_CONDITION_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const REPORT_DATASOURCE_ENUM: {
+export declare const CLIST_DATASOURCE_ENUM: {
     animals: string;
     events: string;
 };
-export declare const REPORT_DATASOURCE_ENUM_AS_OBJECT: {
+export declare const CLIST_DATASOURCE_ENUM_AS_OBJECT: {
     [key: string]: string;
 };

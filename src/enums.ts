@@ -322,3 +322,10 @@ export const CLIST_DATASOURCE_ENUM = {
 };
 
 export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);
+
+export const SUPPORTED_LANG_ENUM = {
+  ru: 'ru',
+  en: 'en'
+}
+
+export const SUPPORTED_LANG_ENUM_AS_OBJECT = enumToObject(SUPPORTED_LANG_ENUM);
