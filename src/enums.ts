@@ -291,41 +291,48 @@ export enum EVENT_EXEC_STATUS_ENUM {
 
 export const EVENT_EXEC_STATUS_AS_OBJECT = enumToObject(EVENT_EXEC_STATUS_ENUM);
 
-export enum CLIST_OPERATOR_ENUM  {
+export enum CLIST_OPERATOR_ENUM {
   eq = 'eq',
   gte = 'gte',
   lte = 'lte',
   lt = 'lt',
   gt = 'gt',
-};
+}
 
 export const CLIST_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_OPERATOR_ENUM);
 
-export enum CLIST_TYPE_ENUM  {
+export enum CLIST_TYPE_ENUM {
   string = 'string',
   number = 'number',
   date = 'date',
   datetime = 'datetime',
-};
+}
 export const CLIST_TYPE_ENUM_AS_OBJECT = enumToObject(CLIST_TYPE_ENUM);
 
-export enum CLIST_CONDITION_ENUM  {
+export enum CLIST_CONDITION_ENUM {
   and = 'and',
   or = 'or',
-};
+}
 
 export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM);
 
-export enum CLIST_DATASOURCE_ENUM  {
+export enum CLIST_DATASOURCE_ENUM {
   animals = 'animals',
   events = 'events',
-};
+}
 
 export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);
 
-export enum SUPPORTED_LANG_ENUM  {
+export enum CLIST_STATUS_ENUM {
+  working = 'working',
+  published = 'published',
+}
+
+export const CLIST_STATUS_ENUM_AS_OBJECT = enumToObject(CLIST_STATUS_ENUM);
+
+export enum SUPPORTED_LANG_ENUM {
   ru = 'ru',
-  en = 'en'
+  en = 'en',
 }
 
 export const SUPPORTED_LANG_ENUM_AS_OBJECT = enumToObject(SUPPORTED_LANG_ENUM);

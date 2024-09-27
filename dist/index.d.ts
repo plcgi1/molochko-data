@@ -96,37 +96,24 @@ export declare const enums: {
     EVENT_EXEC_STATUS_AS_OBJECT: {
         [key: string]: string;
     };
-    CLIST_OPERATOR_ENUM: {
-        eq: string;
-        gte: string;
-        lte: string;
-        lt: string;
-        gt: string;
-    };
+    CLIST_OPERATOR_ENUM: typeof dataEnums.CLIST_OPERATOR_ENUM;
     CLIST_OPERATOR_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
-    CLIST_TYPE_ENUM: {
-        string: string;
-        number: string;
-        date: string;
-        datetime: string;
-    };
+    CLIST_TYPE_ENUM: typeof dataEnums.CLIST_TYPE_ENUM;
     CLIST_TYPE_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
-    CLIST_CONDITION_ENUM: {
-        and: string;
-        or: string;
-    };
+    CLIST_CONDITION_ENUM: typeof dataEnums.CLIST_CONDITION_ENUM;
     CLIST_CONDITION_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
-    CLIST_DATASOURCE_ENUM: {
-        animals: string;
-        events: string;
-    };
+    CLIST_DATASOURCE_ENUM: typeof dataEnums.CLIST_DATASOURCE_ENUM;
     CLIST_DATASOURCE_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    SUPPORTED_LANG_ENUM: typeof dataEnums.SUPPORTED_LANG_ENUM;
+    SUPPORTED_LANG_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
 };

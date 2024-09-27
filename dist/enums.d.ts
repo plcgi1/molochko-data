@@ -277,36 +277,43 @@ export declare enum EVENT_EXEC_STATUS_ENUM {
 export declare const EVENT_EXEC_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const CLIST_OPERATOR_ENUM: {
-    eq: string;
-    gte: string;
-    lte: string;
-    lt: string;
-    gt: string;
-};
+export declare enum CLIST_OPERATOR_ENUM {
+    eq = "eq",
+    gte = "gte",
+    lte = "lte",
+    lt = "lt",
+    gt = "gt"
+}
 export declare const CLIST_OPERATOR_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const CLIST_TYPE_ENUM: {
-    string: string;
-    number: string;
-    date: string;
-    datetime: string;
-};
+export declare enum CLIST_TYPE_ENUM {
+    string = "string",
+    number = "number",
+    date = "date",
+    datetime = "datetime"
+}
 export declare const CLIST_TYPE_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const CLIST_CONDITION_ENUM: {
-    and: string;
-    or: string;
-};
+export declare enum CLIST_CONDITION_ENUM {
+    and = "and",
+    or = "or"
+}
 export declare const CLIST_CONDITION_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
-export declare const CLIST_DATASOURCE_ENUM: {
-    animals: string;
-    events: string;
-};
+export declare enum CLIST_DATASOURCE_ENUM {
+    animals = "animals",
+    events = "events"
+}
 export declare const CLIST_DATASOURCE_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum SUPPORTED_LANG_ENUM {
+    ru = "ru",
+    en = "en"
+}
+export declare const SUPPORTED_LANG_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
