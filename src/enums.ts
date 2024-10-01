@@ -330,6 +330,16 @@ export enum CLIST_STATUS_ENUM {
 
 export const CLIST_STATUS_ENUM_AS_OBJECT = enumToObject(CLIST_STATUS_ENUM);
 
+export enum CLIST_AFUNCTIONS_ENUM {
+	count = 'count',
+	min = 'min',
+	max = 'max',
+	avg = 'avg',
+	sum = 'sum',
+}
+
+export const CLIST_AFUNCTIONS_ENUM_AS_OBJECT = enumToObject(CLIST_AFUNCTIONS_ENUM);
+
 export enum SUPPORTED_LANG_ENUM {
   ru = 'ru',
   en = 'en',
