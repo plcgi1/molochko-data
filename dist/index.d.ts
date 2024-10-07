@@ -112,6 +112,14 @@ export declare const enums: {
     CLIST_DATASOURCE_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
+    CLIST_STATUS_ENUM: typeof dataEnums.CLIST_STATUS_ENUM;
+    CLIST_STATUS_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    CLIST_AFUNCTIONS_ENUM: typeof dataEnums.CLIST_AFUNCTIONS_ENUM;
+    CLIST_AFUNCTIONS_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
     SUPPORTED_LANG_ENUM: typeof dataEnums.SUPPORTED_LANG_ENUM;
     SUPPORTED_LANG_ENUM_AS_OBJECT: {
         [key: string]: string;

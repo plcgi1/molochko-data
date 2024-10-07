@@ -310,6 +310,23 @@ export declare enum CLIST_DATASOURCE_ENUM {
 export declare const CLIST_DATASOURCE_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
+export declare enum CLIST_STATUS_ENUM {
+    working = "working",
+    published = "published"
+}
+export declare const CLIST_STATUS_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum CLIST_AFUNCTIONS_ENUM {
+    count = "count",
+    min = "min",
+    max = "max",
+    avg = "avg",
+    sum = "sum"
+}
+export declare const CLIST_AFUNCTIONS_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
 export declare enum SUPPORTED_LANG_ENUM {
     ru = "ru",
     en = "en"

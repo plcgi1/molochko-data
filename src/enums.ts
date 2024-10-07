@@ -319,6 +319,11 @@ export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM)
 export enum CLIST_DATASOURCE_ENUM {
   animals = 'animals',
   events = 'events',
+	seedBank = 'seedBank',
+	employee = 'employee',
+  org = 'org',
+  protocol = 'protocol',
+  treatment = 'treatment'
 }
 
 export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);
@@ -331,11 +336,11 @@ export enum CLIST_STATUS_ENUM {
 export const CLIST_STATUS_ENUM_AS_OBJECT = enumToObject(CLIST_STATUS_ENUM);
 
 export enum CLIST_AFUNCTIONS_ENUM {
-	count = 'count',
-	min = 'min',
-	max = 'max',
-	avg = 'avg',
-	sum = 'sum',
+  count = 'count',
+  min = 'min',
+  max = 'max',
+  avg = 'avg',
+  sum = 'sum',
 }
 
 export const CLIST_AFUNCTIONS_ENUM_AS_OBJECT = enumToObject(CLIST_AFUNCTIONS_ENUM);
