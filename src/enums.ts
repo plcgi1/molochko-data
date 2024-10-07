@@ -302,26 +302,25 @@ export enum CLIST_NUMBER_OPERATOR_ENUM {
 export const CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_NUMBER_OPERATOR_ENUM);
 
 export enum CLIST_STRING_OPERATOR_ENUM {
-	eq = 'eq',
-	consists = 'consists',
+  eq = 'eq',
+  consists = 'consists',
 }
 
 export const CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_STRING_OPERATOR_ENUM);
 
 export enum CLIST_DATE_OPERATOR_ENUM {
-	eq = 'eq',
-	between = 'between',
+  eq = 'eq',
+  between = 'between',
 }
 
 export const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_DATE_OPERATOR_ENUM);
-
 
 export enum CLIST_TYPE_ENUM {
   string = 'string',
   number = 'number',
   date = 'date',
-  datetime = 'datetime',
 }
+
 export const CLIST_TYPE_ENUM_AS_OBJECT = enumToObject(CLIST_TYPE_ENUM);
 
 export enum CLIST_CONDITION_ENUM {

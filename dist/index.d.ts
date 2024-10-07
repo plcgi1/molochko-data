@@ -96,8 +96,16 @@ export declare const enums: {
     EVENT_EXEC_STATUS_AS_OBJECT: {
         [key: string]: string;
     };
-    CLIST_OPERATOR_ENUM: typeof dataEnums.CLIST_OPERATOR_ENUM;
-    CLIST_OPERATOR_ENUM_AS_OBJECT: {
+    CLIST_NUMBER_OPERATOR_ENUM: typeof dataEnums.CLIST_NUMBER_OPERATOR_ENUM;
+    CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    CLIST_STRING_OPERATOR_ENUM: typeof dataEnums.CLIST_STRING_OPERATOR_ENUM;
+    CLIST_STRING_OPERATOR_ENUM_AS_OBJECT: {
+        [key: string]: string;
+    };
+    CLIST_DATE_OPERATOR_ENUM: typeof dataEnums.CLIST_DATE_OPERATOR_ENUM;
+    CLIST_DATE_OPERATOR_ENUM_AS_OBJECT: {
         [key: string]: string;
     };
     CLIST_TYPE_ENUM: typeof dataEnums.CLIST_TYPE_ENUM;

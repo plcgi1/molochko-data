@@ -277,14 +277,28 @@ export declare enum EVENT_EXEC_STATUS_ENUM {
 export declare const EVENT_EXEC_STATUS_AS_OBJECT: {
     [key: string]: string;
 };
-export declare enum CLIST_OPERATOR_ENUM {
+export declare enum CLIST_NUMBER_OPERATOR_ENUM {
     eq = "eq",
     gte = "gte",
     lte = "lte",
     lt = "lt",
     gt = "gt"
 }
-export declare const CLIST_OPERATOR_ENUM_AS_OBJECT: {
+export declare const CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum CLIST_STRING_OPERATOR_ENUM {
+    eq = "eq",
+    consists = "consists"
+}
+export declare const CLIST_STRING_OPERATOR_ENUM_AS_OBJECT: {
+    [key: string]: string;
+};
+export declare enum CLIST_DATE_OPERATOR_ENUM {
+    eq = "eq",
+    between = "between"
+}
+export declare const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
 export declare enum CLIST_TYPE_ENUM {
