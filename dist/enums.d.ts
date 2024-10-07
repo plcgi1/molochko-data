@@ -305,7 +305,12 @@ export declare const CLIST_CONDITION_ENUM_AS_OBJECT: {
 };
 export declare enum CLIST_DATASOURCE_ENUM {
     animals = "animals",
-    events = "events"
+    events = "events",
+    seedBank = "seedBank",
+    employee = "employee",
+    org = "org",
+    protocol = "protocol",
+    treatment = "treatment"
 }
 export declare const CLIST_DATASOURCE_ENUM_AS_OBJECT: {
     [key: string]: string;

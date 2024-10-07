@@ -298,6 +298,11 @@ var CLIST_DATASOURCE_ENUM;
 (function (CLIST_DATASOURCE_ENUM) {
     CLIST_DATASOURCE_ENUM["animals"] = "animals";
     CLIST_DATASOURCE_ENUM["events"] = "events";
+    CLIST_DATASOURCE_ENUM["seedBank"] = "seedBank";
+    CLIST_DATASOURCE_ENUM["employee"] = "employee";
+    CLIST_DATASOURCE_ENUM["org"] = "org";
+    CLIST_DATASOURCE_ENUM["protocol"] = "protocol";
+    CLIST_DATASOURCE_ENUM["treatment"] = "treatment";
 })(CLIST_DATASOURCE_ENUM = exports.CLIST_DATASOURCE_ENUM || (exports.CLIST_DATASOURCE_ENUM = {}));
 exports.CLIST_DATASOURCE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_DATASOURCE_ENUM);
 var CLIST_STATUS_ENUM;

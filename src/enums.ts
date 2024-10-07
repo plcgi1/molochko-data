@@ -291,7 +291,7 @@ export enum EVENT_EXEC_STATUS_ENUM {
 
 export const EVENT_EXEC_STATUS_AS_OBJECT = enumToObject(EVENT_EXEC_STATUS_ENUM);
 
-export enum CLIST_OPERATOR_ENUM {
+export enum CLIST_NUMBER_OPERATOR_ENUM {
   eq = 'eq',
   gte = 'gte',
   lte = 'lte',
@@ -299,7 +299,22 @@ export enum CLIST_OPERATOR_ENUM {
   gt = 'gt',
 }
 
-export const CLIST_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_OPERATOR_ENUM);
+export const CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_NUMBER_OPERATOR_ENUM);
+
+export enum CLIST_STRING_OPERATOR_ENUM {
+	eq = 'eq',
+	consists = 'consists',
+}
+
+export const CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_STRING_OPERATOR_ENUM);
+
+export enum CLIST_DATE_OPERATOR_ENUM {
+	eq = 'eq',
+	between = 'between',
+}
+
+export const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_DATE_OPERATOR_ENUM);
+
 
 export enum CLIST_TYPE_ENUM {
   string = 'string',
@@ -319,11 +334,11 @@ export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM)
 export enum CLIST_DATASOURCE_ENUM {
   animals = 'animals',
   events = 'events',
-	seedBank = 'seedBank',
-	employee = 'employee',
+  seedBank = 'seedBank',
+  employee = 'employee',
   org = 'org',
   protocol = 'protocol',
-  treatment = 'treatment'
+  treatment = 'treatment',
 }
 
 export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);
