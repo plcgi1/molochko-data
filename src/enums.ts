@@ -326,6 +326,7 @@ export const CLIST_TYPE_ENUM_AS_OBJECT = enumToObject(CLIST_TYPE_ENUM);
 export enum CLIST_CONDITION_ENUM {
   and = 'and',
   or = 'or',
+  not = 'not'
 }
 
 export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM);
