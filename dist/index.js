@@ -23,13 +23,15 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.animalForEventFilters = exports.types = exports.rolePermissions = exports.enums = void 0;
+exports.animalForEventFilters = exports.customListEnums = exports.types = exports.rolePermissions = exports.enums = void 0;
 const dataEnums = __importStar(require("./enums"));
 const breed_1 = require("./breed");
 const typeDefinitions = __importStar(require("./types"));
 const _rolePermissions = __importStar(require("./role-permissions"));
 const _animalForEventFilters = __importStar(require("./event"));
+const _clEnums = __importStar(require("./custom-list"));
 exports.enums = Object.assign(Object.assign({}, dataEnums), { BREED: breed_1.BREED, BREED_AS_OBJECT: breed_1.BREED_AS_OBJECT });
 exports.rolePermissions = _rolePermissions;
 exports.types = typeDefinitions;
+exports.customListEnums = _clEnums;
 exports.animalForEventFilters = _animalForEventFilters;
