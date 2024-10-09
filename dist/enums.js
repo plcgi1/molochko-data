@@ -271,6 +271,7 @@ var EVENT_EXEC_STATUS_ENUM;
     EVENT_EXEC_STATUS_ENUM["block"] = "block";
 })(EVENT_EXEC_STATUS_ENUM = exports.EVENT_EXEC_STATUS_ENUM || (exports.EVENT_EXEC_STATUS_ENUM = {}));
 exports.EVENT_EXEC_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(EVENT_EXEC_STATUS_ENUM);
+// TODO removeme
 var CLIST_NUMBER_OPERATOR_ENUM;
 (function (CLIST_NUMBER_OPERATOR_ENUM) {
     CLIST_NUMBER_OPERATOR_ENUM["eq"] = "eq";
@@ -279,33 +280,43 @@ var CLIST_NUMBER_OPERATOR_ENUM;
     CLIST_NUMBER_OPERATOR_ENUM["lt"] = "lt";
     CLIST_NUMBER_OPERATOR_ENUM["gt"] = "gt";
 })(CLIST_NUMBER_OPERATOR_ENUM = exports.CLIST_NUMBER_OPERATOR_ENUM || (exports.CLIST_NUMBER_OPERATOR_ENUM = {}));
+// TODO removeme
 exports.CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_NUMBER_OPERATOR_ENUM);
+// TODO removeme
 var CLIST_STRING_OPERATOR_ENUM;
 (function (CLIST_STRING_OPERATOR_ENUM) {
     CLIST_STRING_OPERATOR_ENUM["eq"] = "eq";
     CLIST_STRING_OPERATOR_ENUM["consists"] = "consists";
 })(CLIST_STRING_OPERATOR_ENUM = exports.CLIST_STRING_OPERATOR_ENUM || (exports.CLIST_STRING_OPERATOR_ENUM = {}));
+// TODO removeme
 exports.CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_STRING_OPERATOR_ENUM);
+// TODO removeme
 var CLIST_DATE_OPERATOR_ENUM;
 (function (CLIST_DATE_OPERATOR_ENUM) {
     CLIST_DATE_OPERATOR_ENUM["eq"] = "eq";
     CLIST_DATE_OPERATOR_ENUM["between"] = "between";
 })(CLIST_DATE_OPERATOR_ENUM = exports.CLIST_DATE_OPERATOR_ENUM || (exports.CLIST_DATE_OPERATOR_ENUM = {}));
+// TODO removeme
 exports.CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_DATE_OPERATOR_ENUM);
+// TODO removeme
 var CLIST_TYPE_ENUM;
 (function (CLIST_TYPE_ENUM) {
     CLIST_TYPE_ENUM["string"] = "string";
     CLIST_TYPE_ENUM["number"] = "number";
     CLIST_TYPE_ENUM["date"] = "date";
 })(CLIST_TYPE_ENUM = exports.CLIST_TYPE_ENUM || (exports.CLIST_TYPE_ENUM = {}));
+// TODO removeme
 exports.CLIST_TYPE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_TYPE_ENUM);
+// TODO removeme
 var CLIST_CONDITION_ENUM;
 (function (CLIST_CONDITION_ENUM) {
     CLIST_CONDITION_ENUM["and"] = "and";
     CLIST_CONDITION_ENUM["or"] = "or";
     CLIST_CONDITION_ENUM["not"] = "not";
 })(CLIST_CONDITION_ENUM = exports.CLIST_CONDITION_ENUM || (exports.CLIST_CONDITION_ENUM = {}));
+// TODO removeme
 exports.CLIST_CONDITION_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_CONDITION_ENUM);
+// TODO removeme
 var CLIST_DATASOURCE_ENUM;
 (function (CLIST_DATASOURCE_ENUM) {
     CLIST_DATASOURCE_ENUM["animals"] = "animals";
@@ -316,13 +327,17 @@ var CLIST_DATASOURCE_ENUM;
     CLIST_DATASOURCE_ENUM["protocol"] = "protocol";
     CLIST_DATASOURCE_ENUM["treatment"] = "treatment";
 })(CLIST_DATASOURCE_ENUM = exports.CLIST_DATASOURCE_ENUM || (exports.CLIST_DATASOURCE_ENUM = {}));
+// TODO removeme
 exports.CLIST_DATASOURCE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_DATASOURCE_ENUM);
+// TODO removeme
 var CLIST_STATUS_ENUM;
 (function (CLIST_STATUS_ENUM) {
     CLIST_STATUS_ENUM["working"] = "working";
     CLIST_STATUS_ENUM["published"] = "published";
 })(CLIST_STATUS_ENUM = exports.CLIST_STATUS_ENUM || (exports.CLIST_STATUS_ENUM = {}));
+// TODO removeme
 exports.CLIST_STATUS_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_STATUS_ENUM);
+// TODO removeme
 var CLIST_AFUNCTIONS_ENUM;
 (function (CLIST_AFUNCTIONS_ENUM) {
     CLIST_AFUNCTIONS_ENUM["count"] = "count";
@@ -331,6 +346,7 @@ var CLIST_AFUNCTIONS_ENUM;
     CLIST_AFUNCTIONS_ENUM["avg"] = "avg";
     CLIST_AFUNCTIONS_ENUM["sum"] = "sum";
 })(CLIST_AFUNCTIONS_ENUM = exports.CLIST_AFUNCTIONS_ENUM || (exports.CLIST_AFUNCTIONS_ENUM = {}));
+// TODO removeme
 exports.CLIST_AFUNCTIONS_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_AFUNCTIONS_ENUM);
 var SUPPORTED_LANG_ENUM;
 (function (SUPPORTED_LANG_ENUM) {
