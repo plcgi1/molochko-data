@@ -304,15 +304,15 @@ export declare const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT: {
 export declare enum CLIST_TYPE_ENUM {
     string = "string",
     number = "number",
-    date = "date",
-    datetime = "datetime"
+    date = "date"
 }
 export declare const CLIST_TYPE_ENUM_AS_OBJECT: {
     [key: string]: string;
 };
 export declare enum CLIST_CONDITION_ENUM {
     and = "and",
-    or = "or"
+    or = "or",
+    not = "not"
 }
 export declare const CLIST_CONDITION_ENUM_AS_OBJECT: {
     [key: string]: string;

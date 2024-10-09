@@ -291,6 +291,7 @@ export enum EVENT_EXEC_STATUS_ENUM {
 
 export const EVENT_EXEC_STATUS_AS_OBJECT = enumToObject(EVENT_EXEC_STATUS_ENUM);
 
+// TODO removeme
 export enum CLIST_NUMBER_OPERATOR_ENUM {
   eq = 'eq',
   gte = 'gte',
@@ -298,39 +299,39 @@ export enum CLIST_NUMBER_OPERATOR_ENUM {
   lt = 'lt',
   gt = 'gt',
 }
-
+// TODO removeme
 export const CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_NUMBER_OPERATOR_ENUM);
-
+// TODO removeme
 export enum CLIST_STRING_OPERATOR_ENUM {
   eq = 'eq',
   consists = 'consists',
 }
-
+// TODO removeme
 export const CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_STRING_OPERATOR_ENUM);
-
+// TODO removeme
 export enum CLIST_DATE_OPERATOR_ENUM {
   eq = 'eq',
   between = 'between',
 }
-
+// TODO removeme
 export const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_DATE_OPERATOR_ENUM);
-
+// TODO removeme
 export enum CLIST_TYPE_ENUM {
   string = 'string',
   number = 'number',
   date = 'date',
 }
-
+// TODO removeme
 export const CLIST_TYPE_ENUM_AS_OBJECT = enumToObject(CLIST_TYPE_ENUM);
-
+// TODO removeme
 export enum CLIST_CONDITION_ENUM {
   and = 'and',
   or = 'or',
-  not = 'not'
+  not = 'not',
 }
-
+// TODO removeme
 export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM);
-
+// TODO removeme
 export enum CLIST_DATASOURCE_ENUM {
   animals = 'animals',
   events = 'events',
@@ -340,16 +341,16 @@ export enum CLIST_DATASOURCE_ENUM {
   protocol = 'protocol',
   treatment = 'treatment',
 }
-
+// TODO removeme
 export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);
-
+// TODO removeme
 export enum CLIST_STATUS_ENUM {
   working = 'working',
   published = 'published',
 }
-
+// TODO removeme
 export const CLIST_STATUS_ENUM_AS_OBJECT = enumToObject(CLIST_STATUS_ENUM);
-
+// TODO removeme
 export enum CLIST_AFUNCTIONS_ENUM {
   count = 'count',
   min = 'min',
@@ -357,7 +358,7 @@ export enum CLIST_AFUNCTIONS_ENUM {
   avg = 'avg',
   sum = 'sum',
 }
-
+// TODO removeme
 export const CLIST_AFUNCTIONS_ENUM_AS_OBJECT = enumToObject(CLIST_AFUNCTIONS_ENUM);
 
 export enum SUPPORTED_LANG_ENUM {

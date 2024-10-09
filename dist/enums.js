@@ -297,13 +297,13 @@ var CLIST_TYPE_ENUM;
     CLIST_TYPE_ENUM["string"] = "string";
     CLIST_TYPE_ENUM["number"] = "number";
     CLIST_TYPE_ENUM["date"] = "date";
-    CLIST_TYPE_ENUM["datetime"] = "datetime";
 })(CLIST_TYPE_ENUM = exports.CLIST_TYPE_ENUM || (exports.CLIST_TYPE_ENUM = {}));
 exports.CLIST_TYPE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_TYPE_ENUM);
 var CLIST_CONDITION_ENUM;
 (function (CLIST_CONDITION_ENUM) {
     CLIST_CONDITION_ENUM["and"] = "and";
     CLIST_CONDITION_ENUM["or"] = "or";
+    CLIST_CONDITION_ENUM["not"] = "not";
 })(CLIST_CONDITION_ENUM = exports.CLIST_CONDITION_ENUM || (exports.CLIST_CONDITION_ENUM = {}));
 exports.CLIST_CONDITION_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_CONDITION_ENUM);
 var CLIST_DATASOURCE_ENUM;
