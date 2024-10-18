@@ -136,5 +136,5 @@ export declare const enums: {
 };
 export declare const rolePermissions: typeof _rolePermissions;
 export declare const types: typeof typeDefinitions;
-export declare const customListEnums: typeof _clEnums;
+export declare const customListEnums: typeof _clEnums.enums;
 export declare const animalForEventFilters: typeof _animalForEventFilters;

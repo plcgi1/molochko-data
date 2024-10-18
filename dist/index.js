@@ -33,5 +33,5 @@ const _clEnums = __importStar(require("./custom-list"));
 exports.enums = Object.assign(Object.assign({}, dataEnums), { BREED: breed_1.BREED, BREED_AS_OBJECT: breed_1.BREED_AS_OBJECT });
 exports.rolePermissions = _rolePermissions;
 exports.types = typeDefinitions;
-exports.customListEnums = _clEnums;
+exports.customListEnums = _clEnums.enums;
 exports.animalForEventFilters = _animalForEventFilters;
