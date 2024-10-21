@@ -10,5 +10,5 @@ export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
 export const rolePermissions = _rolePermissions;
 export const types = typeDefinitions;
 export const customListEnums = _clEnums.enums;
-export const importEnums = _importEnums
+export const importEnums = _importEnums.enums
 export const animalForEventFilters = _animalForEventFilters;
