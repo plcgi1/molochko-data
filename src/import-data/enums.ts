@@ -1,5 +1,5 @@
 export enum IMPDATA_SOURCES_ENUM {
-  diaryComp = 'diaryComp',
+  dairyComp = 'dairyComp',
 }
 
 export enum IMPDATA_STATUS_ENUM {
