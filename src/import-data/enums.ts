@@ -1,15 +1,12 @@
 import { enumToObject } from '../helpers';
 
 export enum IMPDATA_SOURCES_ENUM {
-  dc = 'dc',
+  diaryComp = 'diaryComp',
 }
-
-export const IMPDATA_SOURCES_ENUM_AS_OBJECT = enumToObject(IMPDATA_SOURCES_ENUM);
 
 export enum IMPDATA_STATUS_ENUM {
+	waiting = 'waiting',
   working = 'working',
   ready = 'ready',
-  error = 'error'
+  error = 'error',
 }
-
-export const IMPDATA_STATUS_ENUM_AS_OBJECT = enumToObject(IMPDATA_STATUS_ENUM);
