@@ -30,6 +30,15 @@ class AnimalEventFilter {
     neosemFilter(animals) {
         return this.abortFilter(animals);
     }
+    weightFilter(animals) {
+        return animals;
+    }
+    heightFilter(animals) {
+        return animals;
+    }
+    fatnessFilter(animals) {
+        return animals;
+    }
     osemenenieFilter(animals) {
         const result = animals.filter((animal) => {
             const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
@@ -122,6 +131,8 @@ class AnimalEventFilter {
                 return this.transferOutFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.treatment:
                 return this.treatmentFilter(animals);
+            case (enums_1.EVENT_TYPES_ENUM.ves, enums_1.EVENT_TYPES_ENUM.rost, enums_1.EVENT_TYPES_ENUM.upitannost):
+                return this.weightFilter(animals);
             default:
                 return animals;
         }
