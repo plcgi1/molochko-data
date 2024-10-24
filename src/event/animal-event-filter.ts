@@ -42,7 +42,15 @@ class AnimalEventFilter {
     return this.abortFilter(animals);
   }
 
-	vesFilter<T extends BaseAnimal>(animals: T[]): T[] {
+	weightFilter<T extends BaseAnimal>(animals: T[]): T[] {
+		return animals;
+	}
+
+	heightFilter<T extends BaseAnimal>(animals: T[]): T[] {
+		return animals;
+	}
+
+	fatnessFilter<T extends BaseAnimal>(animals: T[]): T[] {
 		return animals;
 	}
 
@@ -151,8 +159,8 @@ class AnimalEventFilter {
         return this.transferOutFilter(animals);
       case EVENT_TYPES_ENUM.treatment:
         return this.treatmentFilter(animals);
-      case EVENT_TYPES_ENUM.ves:
-				return this.vesFilter(animals);
+      case EVENT_TYPES_ENUM.ves, EVENT_TYPES_ENUM.rost, EVENT_TYPES_ENUM.upitannost:
+				return this.weightFilter(animals);
       default:
         return animals;
     }
