@@ -42,6 +42,10 @@ class AnimalEventFilter {
     return this.abortFilter(animals);
   }
 
+	vesFilter<T extends BaseAnimal>(animals: T[]): T[] {
+		return animals;
+	}
+
   osemenenieFilter<T extends BaseAnimal>(animals: T[]): T[] {
     const result = animals.filter((animal) => {
       const genderOk = this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
@@ -147,6 +151,8 @@ class AnimalEventFilter {
         return this.transferOutFilter(animals);
       case EVENT_TYPES_ENUM.treatment:
         return this.treatmentFilter(animals);
+      case EVENT_TYPES_ENUM.ves:
+				return this.vesFilter(animals);
       default:
         return animals;
     }
