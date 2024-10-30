@@ -8,8 +8,6 @@ export enum SYSTEM_USER_ROLES_ENUM {
   root = 'root',
 }
 
-export const SYSTEM_USER_ROLES_AS_OBJECT = enumToObject(SYSTEM_USER_ROLES_ENUM);
-
 export enum USER_STATUSES_ENUM {
   waiting = 'waiting',
   ready = 'ready',
@@ -17,14 +15,10 @@ export enum USER_STATUSES_ENUM {
   deleted = 'deleted',
 }
 
-export const USER_STATUSES_AS_OBJECT = enumToObject(USER_STATUSES_ENUM);
-
 export enum ORG_TYPE_ENUM {
   org = 'org',
   location = 'location',
 }
-
-export const ORG_TYPE_AS_OBJECT = enumToObject(ORG_TYPE_ENUM);
 
 export enum TOKEN_TYPE_ENUM {
   confirm = 'confirm',
@@ -34,14 +28,10 @@ export enum TOKEN_TYPE_ENUM {
   invite = 'invite',
 }
 
-export const TOKEN_TYPES_AS_OBJECT = enumToObject(TOKEN_TYPE_ENUM);
-
 export enum ANIMAL_GENDER_ENUM {
   cow = 'cow',
   bull = 'bull',
 }
-
-export const ANIMAL_GENDER_AS_OBJECT = enumToObject(ANIMAL_GENDER_ENUM);
 
 // перевод,
 // аборт,
@@ -78,8 +68,6 @@ export enum EVENT_TYPES_ENUM {
   treatment = 'treatment', // лечение
 }
 
-export const EVENT_TYPES_AS_OBJECT = enumToObject(EVENT_TYPES_ENUM);
-
 export enum SEED_TYPE_ENUM {
   traditional = 'traditional', // Традиционное
   sexytelka = 'sexytelka', // Сексированное телка
@@ -89,14 +77,10 @@ export enum SEED_TYPE_ENUM {
   meatSexyBull = 'meatSexyBull', // Мясное сексированное бычок
 }
 
-export const SEED_TYPE_AS_OBJECT = enumToObject(SEED_TYPE_ENUM);
-
 export enum SEED_STATUS_ENUM {
   active = 'active',
   notActive = 'notActive',
 }
-
-export const SEED_STATUS_AS_OBJECT = enumToObject(SEED_STATUS_ENUM);
 
 export enum SEED_CODES_ENUM {
   DOUBLE_OVSYNC = 'doubleOvsync',
@@ -108,8 +92,6 @@ export enum SEED_CODES_ENUM {
   PRID_DELTA = 'PRIDDelta',
   G6G = 'G6G',
 }
-
-export const SEED_CODES_AS_OBJECT = enumToObject(SEED_CODES_ENUM);
 
 export enum ANIMAL_STATUS_ENUM {
   heifer = 'heifer', // Телка
@@ -143,8 +125,6 @@ export enum COW_STATUS {
   DIED = 'died',
 }
 
-export const ANIMAL_STATUS_AS_OBJECT = enumToObject(ANIMAL_STATUS_ENUM);
-
 // heifer, bred, open, fresh
 export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowed = 'animal-status-not-allowed',
@@ -162,22 +142,16 @@ export enum EVENT_ERROR_REASON_ENUM {
   tooYoung = 'animal-too-young',
 }
 
-export const EVENT_ERROR_REASON_AS_OBJECT = enumToObject(EVENT_ERROR_REASON_ENUM);
-
 export enum COMMON_SIMPLE_STATUS_ENUM {
   failed = 'failed',
   success = 'success',
 }
-
-export const COMMON_SIMPLE_STATUS_AS_OBJECT = enumToObject(COMMON_SIMPLE_STATUS_ENUM);
 
 export enum TAG_TYPE_ENUM {
   user = 'user',
   system = 'system',
   event = 'event',
 }
-
-export const TAG_TYPE_AS_OBJECT = enumToObject(TAG_TYPE_ENUM);
 
 export enum USER_PERMISSION_ENUM {
   view = 'view',
@@ -189,8 +163,6 @@ export enum USER_PERMISSION_ENUM {
   detach = 'detach',
 }
 
-export const USER_PERMISSION_AS_OBJECT = enumToObject(USER_PERMISSION_ENUM);
-
 export enum USER_PERMISSION_METHOD_ENUM {
   post = 'post',
   put = 'put',
@@ -199,21 +171,15 @@ export enum USER_PERMISSION_METHOD_ENUM {
   patch = 'patch',
 }
 
-export const USER_PERMISSION_METHOD_AS_OBJECT = enumToObject(USER_PERMISSION_METHOD_ENUM);
-
 export enum ACCESS_ENUM {
   read = 'read',
   write = 'write',
 }
 
-export const ACCESS_ENUM_AS_OBJECT = enumToObject(ACCESS_ENUM);
-
 export enum TRANSFEROUT_TYPES_ENUM {
   transferOut = 'transferOut',
   died = 'died',
 }
-
-export const TRANSFEROUT_TYPES_AS_OBJECT = enumToObject(TRANSFEROUT_TYPES_ENUM);
 
 export enum TRANSFEROUT_REASON_ENUM {
   leikoz = 'leikoz', // Лейкоз
@@ -231,8 +197,6 @@ export enum TRANSFEROUT_REASON_ENUM {
   theft = 'theft', // Кража
   dead = 'dead', // сдохла
 }
-
-export const TRANSFEROUT_REASON_AS_OBJECT = enumToObject(TRANSFEROUT_REASON_ENUM);
 
 export enum DISEASES_ENUM {
   PREVENTION = 'prevention', // Профилактика
@@ -258,8 +222,6 @@ export enum DISEASES_ENUM {
   OTHER = 'other', // Иное
 }
 
-export const DISEASES_AS_OBJECT = enumToObject(DISEASES_ENUM);
-
 export enum MEDMETHOD_ENUM {
   SUBCUTANEOUSLY = 'subcutaneously', // подкожно
   NASALLY = 'nasally', // нозально
@@ -270,17 +232,6 @@ export enum MEDMETHOD_ENUM {
   INTRAUTERINE = 'intrauterine', // внутриматочно
   INTRAVAGINALLY = 'intravaginally', // внутривагинально
 }
-export const MEDMETHOD_ENUM_AS_OBJECT = enumToObject(MEDMETHOD_ENUM);
-
-// TODO удалить
-export enum SUBTASK_STATUS_ENUM {
-  waiting = 'waiting',
-  working = 'working',
-  ready = 'ready',
-  outdated = 'outdated',
-}
-
-export const SUBTASK_STATUS_AS_OBJECT = enumToObject(SUBTASK_STATUS_ENUM);
 
 export enum EVENT_EXEC_STATUS_ENUM {
   waiting = 'waiting',
@@ -288,8 +239,6 @@ export enum EVENT_EXEC_STATUS_ENUM {
   cancel = 'cancel',
   block = 'block',
 }
-
-export const EVENT_EXEC_STATUS_AS_OBJECT = enumToObject(EVENT_EXEC_STATUS_ENUM);
 
 // TODO removeme
 export enum CLIST_NUMBER_OPERATOR_ENUM {
@@ -300,21 +249,15 @@ export enum CLIST_NUMBER_OPERATOR_ENUM {
   gt = 'gt',
 }
 // TODO removeme
-export const CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_NUMBER_OPERATOR_ENUM);
-// TODO removeme
 export enum CLIST_STRING_OPERATOR_ENUM {
   eq = 'eq',
   consists = 'consists',
 }
 // TODO removeme
-export const CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_STRING_OPERATOR_ENUM);
-// TODO removeme
 export enum CLIST_DATE_OPERATOR_ENUM {
   eq = 'eq',
   between = 'between',
 }
-// TODO removeme
-export const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = enumToObject(CLIST_DATE_OPERATOR_ENUM);
 // TODO removeme
 export enum CLIST_TYPE_ENUM {
   string = 'string',
@@ -322,15 +265,11 @@ export enum CLIST_TYPE_ENUM {
   date = 'date',
 }
 // TODO removeme
-export const CLIST_TYPE_ENUM_AS_OBJECT = enumToObject(CLIST_TYPE_ENUM);
-// TODO removeme
 export enum CLIST_CONDITION_ENUM {
   and = 'and',
   or = 'or',
   not = 'not',
 }
-// TODO removeme
-export const CLIST_CONDITION_ENUM_AS_OBJECT = enumToObject(CLIST_CONDITION_ENUM);
 // TODO removeme
 export enum CLIST_DATASOURCE_ENUM {
   animals = 'animals',
@@ -342,14 +281,10 @@ export enum CLIST_DATASOURCE_ENUM {
   treatment = 'treatment',
 }
 // TODO removeme
-export const CLIST_DATASOURCE_ENUM_AS_OBJECT = enumToObject(CLIST_DATASOURCE_ENUM);
-// TODO removeme
 export enum CLIST_STATUS_ENUM {
   working = 'working',
   published = 'published',
 }
-// TODO removeme
-export const CLIST_STATUS_ENUM_AS_OBJECT = enumToObject(CLIST_STATUS_ENUM);
 // TODO removeme
 export enum CLIST_AFUNCTIONS_ENUM {
   count = 'count',
@@ -358,12 +293,8 @@ export enum CLIST_AFUNCTIONS_ENUM {
   avg = 'avg',
   sum = 'sum',
 }
-// TODO removeme
-export const CLIST_AFUNCTIONS_ENUM_AS_OBJECT = enumToObject(CLIST_AFUNCTIONS_ENUM);
 
 export enum SUPPORTED_LANG_ENUM {
   ru = 'ru',
   en = 'en',
 }
-
-export const SUPPORTED_LANG_ENUM_AS_OBJECT = enumToObject(SUPPORTED_LANG_ENUM);
