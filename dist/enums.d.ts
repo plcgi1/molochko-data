@@ -4,25 +4,16 @@ export declare enum SYSTEM_USER_ROLES_ENUM {
     admin = "admin",
     root = "root"
 }
-export declare const SYSTEM_USER_ROLES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum USER_STATUSES_ENUM {
     waiting = "waiting",
     ready = "ready",
     blocked = "blocked",
     deleted = "deleted"
 }
-export declare const USER_STATUSES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum ORG_TYPE_ENUM {
     org = "org",
     location = "location"
 }
-export declare const ORG_TYPE_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum TOKEN_TYPE_ENUM {
     confirm = "confirm",
     auth = "auth",
@@ -30,16 +21,10 @@ export declare enum TOKEN_TYPE_ENUM {
     resetPassword = "resetPassword",
     invite = "invite"
 }
-export declare const TOKEN_TYPES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum ANIMAL_GENDER_ENUM {
     cow = "cow",
     bull = "bull"
 }
-export declare const ANIMAL_GENDER_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum EVENT_TYPES_ENUM {
     otel = "otel",
     recheck = "recheck",
@@ -66,9 +51,6 @@ export declare enum EVENT_TYPES_ENUM {
     transferOut = "transferOut",
     treatment = "treatment"
 }
-export declare const EVENT_TYPES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum SEED_TYPE_ENUM {
     traditional = "traditional",
     sexytelka = "sexytelka",
@@ -77,16 +59,10 @@ export declare enum SEED_TYPE_ENUM {
     meatSexyTelka = "meatSexyTelka",
     meatSexyBull = "meatSexyBull"
 }
-export declare const SEED_TYPE_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum SEED_STATUS_ENUM {
     active = "active",
     notActive = "notActive"
 }
-export declare const SEED_STATUS_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum SEED_CODES_ENUM {
     DOUBLE_OVSYNC = "doubleOvsync",
     PRESYNC = "dresync",
@@ -97,9 +73,6 @@ export declare enum SEED_CODES_ENUM {
     PRID_DELTA = "PRIDDelta",
     G6G = "G6G"
 }
-export declare const SEED_CODES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum ANIMAL_STATUS_ENUM {
     heifer = "heifer",
     bred = "bred",
@@ -129,9 +102,6 @@ export declare enum COW_STATUS {
     SOLD = "sold",
     DIED = "died"
 }
-export declare const ANIMAL_STATUS_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum EVENT_ERROR_REASON_ENUM {
     statusNotAllowed = "animal-status-not-allowed",
     statusNotAllowedPregnant = "animal-status-not-allowed-pregnant",
@@ -147,24 +117,15 @@ export declare enum EVENT_ERROR_REASON_ENUM {
     notACow = "animal-not-a-cow",
     tooYoung = "animal-too-young"
 }
-export declare const EVENT_ERROR_REASON_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum COMMON_SIMPLE_STATUS_ENUM {
     failed = "failed",
     success = "success"
 }
-export declare const COMMON_SIMPLE_STATUS_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum TAG_TYPE_ENUM {
     user = "user",
     system = "system",
     event = "event"
 }
-export declare const TAG_TYPE_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum USER_PERMISSION_ENUM {
     view = "view",
     create = "create",
@@ -174,9 +135,6 @@ export declare enum USER_PERMISSION_ENUM {
     attach = "attach",
     detach = "detach"
 }
-export declare const USER_PERMISSION_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum USER_PERMISSION_METHOD_ENUM {
     post = "post",
     put = "put",
@@ -184,23 +142,14 @@ export declare enum USER_PERMISSION_METHOD_ENUM {
     get = "get",
     patch = "patch"
 }
-export declare const USER_PERMISSION_METHOD_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum ACCESS_ENUM {
     read = "read",
     write = "write"
 }
-export declare const ACCESS_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum TRANSFEROUT_TYPES_ENUM {
     transferOut = "transferOut",
     died = "died"
 }
-export declare const TRANSFEROUT_TYPES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum TRANSFEROUT_REASON_ENUM {
     leikoz = "leikoz",
     tuberkulez = "tuberkulez",
@@ -217,9 +166,6 @@ export declare enum TRANSFEROUT_REASON_ENUM {
     theft = "theft",
     dead = "dead"
 }
-export declare const TRANSFEROUT_REASON_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum DISEASES_ENUM {
     PREVENTION = "prevention",
     VACCTINATION = "vaccination",
@@ -243,9 +189,6 @@ export declare enum DISEASES_ENUM {
     SYNCHRONIZATION = "synchronization",
     OTHER = "other"
 }
-export declare const DISEASES_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum MEDMETHOD_ENUM {
     SUBCUTANEOUSLY = "subcutaneously",
     NASALLY = "nasally",
@@ -256,27 +199,12 @@ export declare enum MEDMETHOD_ENUM {
     INTRAUTERINE = "intrauterine",
     INTRAVAGINALLY = "intravaginally"
 }
-export declare const MEDMETHOD_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
-export declare enum SUBTASK_STATUS_ENUM {
-    waiting = "waiting",
-    working = "working",
-    ready = "ready",
-    outdated = "outdated"
-}
-export declare const SUBTASK_STATUS_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum EVENT_EXEC_STATUS_ENUM {
     waiting = "waiting",
     done = "done",
     cancel = "cancel",
     block = "block"
 }
-export declare const EVENT_EXEC_STATUS_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_NUMBER_OPERATOR_ENUM {
     eq = "eq",
     gte = "gte",
@@ -284,39 +212,24 @@ export declare enum CLIST_NUMBER_OPERATOR_ENUM {
     lt = "lt",
     gt = "gt"
 }
-export declare const CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_STRING_OPERATOR_ENUM {
     eq = "eq",
     consists = "consists"
 }
-export declare const CLIST_STRING_OPERATOR_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_DATE_OPERATOR_ENUM {
     eq = "eq",
     between = "between"
 }
-export declare const CLIST_DATE_OPERATOR_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_TYPE_ENUM {
     string = "string",
     number = "number",
     date = "date"
 }
-export declare const CLIST_TYPE_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_CONDITION_ENUM {
     and = "and",
     or = "or",
     not = "not"
 }
-export declare const CLIST_CONDITION_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_DATASOURCE_ENUM {
     animals = "animals",
     events = "events",
@@ -326,16 +239,10 @@ export declare enum CLIST_DATASOURCE_ENUM {
     protocol = "protocol",
     treatment = "treatment"
 }
-export declare const CLIST_DATASOURCE_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_STATUS_ENUM {
     working = "working",
     published = "published"
 }
-export declare const CLIST_STATUS_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum CLIST_AFUNCTIONS_ENUM {
     count = "count",
     min = "min",
@@ -343,13 +250,7 @@ export declare enum CLIST_AFUNCTIONS_ENUM {
     avg = "avg",
     sum = "sum"
 }
-export declare const CLIST_AFUNCTIONS_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};
 export declare enum SUPPORTED_LANG_ENUM {
     ru = "ru",
     en = "en"
 }
-export declare const SUPPORTED_LANG_ENUM_AS_OBJECT: {
-    [key: string]: string;
-};

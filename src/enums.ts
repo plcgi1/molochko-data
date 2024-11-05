@@ -26,6 +26,7 @@ export enum TOKEN_TYPE_ENUM {
   invite = 'invite',
 }
 
+// TODO удалить - перенесено в animal
 export enum ANIMAL_GENDER_ENUM {
   cow = 'cow',
   bull = 'bull',
@@ -91,6 +92,7 @@ export enum SEED_CODES_ENUM {
   G6G = 'G6G',
 }
 
+// TODO удалить - перенесено в animal
 export enum ANIMAL_STATUS_ENUM {
   heifer = 'heifer', // Телка
   bred = 'bred', // Осемененная
@@ -104,13 +106,13 @@ export enum ANIMAL_STATUS_ENUM {
   theft = 'theft', // Кража
   transferout = 'transferout', // выбыла
 }
-
+// TODO удалить - перенесено в animal
 export enum BULL_STATUS {
   SOLD = 'sold',
   BULL = 'bull',
   DIED = 'died',
 }
-
+// TODO удалить - перенесено в animal
 export enum COW_STATUS {
   HEIFER = 'heifer',
   BRED = 'bred',

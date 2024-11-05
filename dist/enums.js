@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CLIST_STRING_OPERATOR_ENUM = exports.CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = exports.CLIST_NUMBER_OPERATOR_ENUM = exports.EVENT_EXEC_STATUS_AS_OBJECT = exports.EVENT_EXEC_STATUS_ENUM = exports.SUBTASK_STATUS_AS_OBJECT = exports.SUBTASK_STATUS_ENUM = exports.MEDMETHOD_ENUM_AS_OBJECT = exports.MEDMETHOD_ENUM = exports.DISEASES_AS_OBJECT = exports.DISEASES_ENUM = exports.TRANSFEROUT_REASON_AS_OBJECT = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_AS_OBJECT = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM_AS_OBJECT = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_AS_OBJECT = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_AS_OBJECT = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_AS_OBJECT = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_AS_OBJECT = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_AS_OBJECT = exports.EVENT_ERROR_REASON_ENUM = exports.ANIMAL_STATUS_AS_OBJECT = exports.COW_STATUS = exports.BULL_STATUS = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_AS_OBJECT = exports.SEED_CODES_ENUM = exports.SEED_STATUS_AS_OBJECT = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_AS_OBJECT = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_AS_OBJECT = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_AS_OBJECT = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPES_AS_OBJECT = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_AS_OBJECT = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_AS_OBJECT = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_AS_OBJECT = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
-exports.SUPPORTED_LANG_ENUM_AS_OBJECT = exports.SUPPORTED_LANG_ENUM = exports.CLIST_AFUNCTIONS_ENUM_AS_OBJECT = exports.CLIST_AFUNCTIONS_ENUM = exports.CLIST_STATUS_ENUM_AS_OBJECT = exports.CLIST_STATUS_ENUM = exports.CLIST_DATASOURCE_ENUM_AS_OBJECT = exports.CLIST_DATASOURCE_ENUM = exports.CLIST_CONDITION_ENUM_AS_OBJECT = exports.CLIST_CONDITION_ENUM = exports.CLIST_TYPE_ENUM_AS_OBJECT = exports.CLIST_TYPE_ENUM = exports.CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = exports.CLIST_DATE_OPERATOR_ENUM = exports.CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = void 0;
-const helpers_1 = require("./helpers");
+exports.SUPPORTED_LANG_ENUM = exports.CLIST_AFUNCTIONS_ENUM = exports.CLIST_STATUS_ENUM = exports.CLIST_DATASOURCE_ENUM = exports.CLIST_CONDITION_ENUM = exports.CLIST_TYPE_ENUM = exports.CLIST_DATE_OPERATOR_ENUM = exports.CLIST_STRING_OPERATOR_ENUM = exports.CLIST_NUMBER_OPERATOR_ENUM = exports.EVENT_EXEC_STATUS_ENUM = exports.MEDMETHOD_ENUM = exports.DISEASES_ENUM = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_ENUM = exports.COW_STATUS = exports.BULL_STATUS = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_ENUM = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
 exports.BCRYPT_SALT = 12;
 var SYSTEM_USER_ROLES_ENUM;
 (function (SYSTEM_USER_ROLES_ENUM) {
@@ -10,7 +8,6 @@ var SYSTEM_USER_ROLES_ENUM;
     SYSTEM_USER_ROLES_ENUM["admin"] = "admin";
     SYSTEM_USER_ROLES_ENUM["root"] = "root";
 })(SYSTEM_USER_ROLES_ENUM = exports.SYSTEM_USER_ROLES_ENUM || (exports.SYSTEM_USER_ROLES_ENUM = {}));
-exports.SYSTEM_USER_ROLES_AS_OBJECT = (0, helpers_1.enumToObject)(SYSTEM_USER_ROLES_ENUM);
 var USER_STATUSES_ENUM;
 (function (USER_STATUSES_ENUM) {
     USER_STATUSES_ENUM["waiting"] = "waiting";
@@ -18,13 +15,11 @@ var USER_STATUSES_ENUM;
     USER_STATUSES_ENUM["blocked"] = "blocked";
     USER_STATUSES_ENUM["deleted"] = "deleted";
 })(USER_STATUSES_ENUM = exports.USER_STATUSES_ENUM || (exports.USER_STATUSES_ENUM = {}));
-exports.USER_STATUSES_AS_OBJECT = (0, helpers_1.enumToObject)(USER_STATUSES_ENUM);
 var ORG_TYPE_ENUM;
 (function (ORG_TYPE_ENUM) {
     ORG_TYPE_ENUM["org"] = "org";
     ORG_TYPE_ENUM["location"] = "location";
 })(ORG_TYPE_ENUM = exports.ORG_TYPE_ENUM || (exports.ORG_TYPE_ENUM = {}));
-exports.ORG_TYPE_AS_OBJECT = (0, helpers_1.enumToObject)(ORG_TYPE_ENUM);
 var TOKEN_TYPE_ENUM;
 (function (TOKEN_TYPE_ENUM) {
     TOKEN_TYPE_ENUM["confirm"] = "confirm";
@@ -33,13 +28,11 @@ var TOKEN_TYPE_ENUM;
     TOKEN_TYPE_ENUM["resetPassword"] = "resetPassword";
     TOKEN_TYPE_ENUM["invite"] = "invite";
 })(TOKEN_TYPE_ENUM = exports.TOKEN_TYPE_ENUM || (exports.TOKEN_TYPE_ENUM = {}));
-exports.TOKEN_TYPES_AS_OBJECT = (0, helpers_1.enumToObject)(TOKEN_TYPE_ENUM);
 var ANIMAL_GENDER_ENUM;
 (function (ANIMAL_GENDER_ENUM) {
     ANIMAL_GENDER_ENUM["cow"] = "cow";
     ANIMAL_GENDER_ENUM["bull"] = "bull";
 })(ANIMAL_GENDER_ENUM = exports.ANIMAL_GENDER_ENUM || (exports.ANIMAL_GENDER_ENUM = {}));
-exports.ANIMAL_GENDER_AS_OBJECT = (0, helpers_1.enumToObject)(ANIMAL_GENDER_ENUM);
 // перевод,
 // аборт,
 // проверка стельности,
@@ -74,7 +67,6 @@ var EVENT_TYPES_ENUM;
     EVENT_TYPES_ENUM["transferOut"] = "transferOut";
     EVENT_TYPES_ENUM["treatment"] = "treatment";
 })(EVENT_TYPES_ENUM = exports.EVENT_TYPES_ENUM || (exports.EVENT_TYPES_ENUM = {}));
-exports.EVENT_TYPES_AS_OBJECT = (0, helpers_1.enumToObject)(EVENT_TYPES_ENUM);
 var SEED_TYPE_ENUM;
 (function (SEED_TYPE_ENUM) {
     SEED_TYPE_ENUM["traditional"] = "traditional";
@@ -84,13 +76,11 @@ var SEED_TYPE_ENUM;
     SEED_TYPE_ENUM["meatSexyTelka"] = "meatSexyTelka";
     SEED_TYPE_ENUM["meatSexyBull"] = "meatSexyBull";
 })(SEED_TYPE_ENUM = exports.SEED_TYPE_ENUM || (exports.SEED_TYPE_ENUM = {}));
-exports.SEED_TYPE_AS_OBJECT = (0, helpers_1.enumToObject)(SEED_TYPE_ENUM);
 var SEED_STATUS_ENUM;
 (function (SEED_STATUS_ENUM) {
     SEED_STATUS_ENUM["active"] = "active";
     SEED_STATUS_ENUM["notActive"] = "notActive";
 })(SEED_STATUS_ENUM = exports.SEED_STATUS_ENUM || (exports.SEED_STATUS_ENUM = {}));
-exports.SEED_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(SEED_STATUS_ENUM);
 var SEED_CODES_ENUM;
 (function (SEED_CODES_ENUM) {
     SEED_CODES_ENUM["DOUBLE_OVSYNC"] = "doubleOvsync";
@@ -102,7 +92,6 @@ var SEED_CODES_ENUM;
     SEED_CODES_ENUM["PRID_DELTA"] = "PRIDDelta";
     SEED_CODES_ENUM["G6G"] = "G6G";
 })(SEED_CODES_ENUM = exports.SEED_CODES_ENUM || (exports.SEED_CODES_ENUM = {}));
-exports.SEED_CODES_AS_OBJECT = (0, helpers_1.enumToObject)(SEED_CODES_ENUM);
 var ANIMAL_STATUS_ENUM;
 (function (ANIMAL_STATUS_ENUM) {
     ANIMAL_STATUS_ENUM["heifer"] = "heifer";
@@ -135,7 +124,6 @@ var COW_STATUS;
     COW_STATUS["SOLD"] = "sold";
     COW_STATUS["DIED"] = "died";
 })(COW_STATUS = exports.COW_STATUS || (exports.COW_STATUS = {}));
-exports.ANIMAL_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(ANIMAL_STATUS_ENUM);
 // heifer, bred, open, fresh
 var EVENT_ERROR_REASON_ENUM;
 (function (EVENT_ERROR_REASON_ENUM) {
@@ -153,20 +141,17 @@ var EVENT_ERROR_REASON_ENUM;
     EVENT_ERROR_REASON_ENUM["notACow"] = "animal-not-a-cow";
     EVENT_ERROR_REASON_ENUM["tooYoung"] = "animal-too-young";
 })(EVENT_ERROR_REASON_ENUM = exports.EVENT_ERROR_REASON_ENUM || (exports.EVENT_ERROR_REASON_ENUM = {}));
-exports.EVENT_ERROR_REASON_AS_OBJECT = (0, helpers_1.enumToObject)(EVENT_ERROR_REASON_ENUM);
 var COMMON_SIMPLE_STATUS_ENUM;
 (function (COMMON_SIMPLE_STATUS_ENUM) {
     COMMON_SIMPLE_STATUS_ENUM["failed"] = "failed";
     COMMON_SIMPLE_STATUS_ENUM["success"] = "success";
 })(COMMON_SIMPLE_STATUS_ENUM = exports.COMMON_SIMPLE_STATUS_ENUM || (exports.COMMON_SIMPLE_STATUS_ENUM = {}));
-exports.COMMON_SIMPLE_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(COMMON_SIMPLE_STATUS_ENUM);
 var TAG_TYPE_ENUM;
 (function (TAG_TYPE_ENUM) {
     TAG_TYPE_ENUM["user"] = "user";
     TAG_TYPE_ENUM["system"] = "system";
     TAG_TYPE_ENUM["event"] = "event";
 })(TAG_TYPE_ENUM = exports.TAG_TYPE_ENUM || (exports.TAG_TYPE_ENUM = {}));
-exports.TAG_TYPE_AS_OBJECT = (0, helpers_1.enumToObject)(TAG_TYPE_ENUM);
 var USER_PERMISSION_ENUM;
 (function (USER_PERMISSION_ENUM) {
     USER_PERMISSION_ENUM["view"] = "view";
@@ -177,7 +162,6 @@ var USER_PERMISSION_ENUM;
     USER_PERMISSION_ENUM["attach"] = "attach";
     USER_PERMISSION_ENUM["detach"] = "detach";
 })(USER_PERMISSION_ENUM = exports.USER_PERMISSION_ENUM || (exports.USER_PERMISSION_ENUM = {}));
-exports.USER_PERMISSION_AS_OBJECT = (0, helpers_1.enumToObject)(USER_PERMISSION_ENUM);
 var USER_PERMISSION_METHOD_ENUM;
 (function (USER_PERMISSION_METHOD_ENUM) {
     USER_PERMISSION_METHOD_ENUM["post"] = "post";
@@ -186,19 +170,16 @@ var USER_PERMISSION_METHOD_ENUM;
     USER_PERMISSION_METHOD_ENUM["get"] = "get";
     USER_PERMISSION_METHOD_ENUM["patch"] = "patch";
 })(USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_METHOD_ENUM || (exports.USER_PERMISSION_METHOD_ENUM = {}));
-exports.USER_PERMISSION_METHOD_AS_OBJECT = (0, helpers_1.enumToObject)(USER_PERMISSION_METHOD_ENUM);
 var ACCESS_ENUM;
 (function (ACCESS_ENUM) {
     ACCESS_ENUM["read"] = "read";
     ACCESS_ENUM["write"] = "write";
 })(ACCESS_ENUM = exports.ACCESS_ENUM || (exports.ACCESS_ENUM = {}));
-exports.ACCESS_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(ACCESS_ENUM);
 var TRANSFEROUT_TYPES_ENUM;
 (function (TRANSFEROUT_TYPES_ENUM) {
     TRANSFEROUT_TYPES_ENUM["transferOut"] = "transferOut";
     TRANSFEROUT_TYPES_ENUM["died"] = "died";
 })(TRANSFEROUT_TYPES_ENUM = exports.TRANSFEROUT_TYPES_ENUM || (exports.TRANSFEROUT_TYPES_ENUM = {}));
-exports.TRANSFEROUT_TYPES_AS_OBJECT = (0, helpers_1.enumToObject)(TRANSFEROUT_TYPES_ENUM);
 var TRANSFEROUT_REASON_ENUM;
 (function (TRANSFEROUT_REASON_ENUM) {
     TRANSFEROUT_REASON_ENUM["leikoz"] = "leikoz";
@@ -216,7 +197,6 @@ var TRANSFEROUT_REASON_ENUM;
     TRANSFEROUT_REASON_ENUM["theft"] = "theft";
     TRANSFEROUT_REASON_ENUM["dead"] = "dead";
 })(TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_REASON_ENUM || (exports.TRANSFEROUT_REASON_ENUM = {}));
-exports.TRANSFEROUT_REASON_AS_OBJECT = (0, helpers_1.enumToObject)(TRANSFEROUT_REASON_ENUM);
 var DISEASES_ENUM;
 (function (DISEASES_ENUM) {
     DISEASES_ENUM["PREVENTION"] = "prevention";
@@ -241,7 +221,6 @@ var DISEASES_ENUM;
     DISEASES_ENUM["SYNCHRONIZATION"] = "synchronization";
     DISEASES_ENUM["OTHER"] = "other";
 })(DISEASES_ENUM = exports.DISEASES_ENUM || (exports.DISEASES_ENUM = {}));
-exports.DISEASES_AS_OBJECT = (0, helpers_1.enumToObject)(DISEASES_ENUM);
 var MEDMETHOD_ENUM;
 (function (MEDMETHOD_ENUM) {
     MEDMETHOD_ENUM["SUBCUTANEOUSLY"] = "subcutaneously";
@@ -253,16 +232,6 @@ var MEDMETHOD_ENUM;
     MEDMETHOD_ENUM["INTRAUTERINE"] = "intrauterine";
     MEDMETHOD_ENUM["INTRAVAGINALLY"] = "intravaginally";
 })(MEDMETHOD_ENUM = exports.MEDMETHOD_ENUM || (exports.MEDMETHOD_ENUM = {}));
-exports.MEDMETHOD_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(MEDMETHOD_ENUM);
-// TODO удалить
-var SUBTASK_STATUS_ENUM;
-(function (SUBTASK_STATUS_ENUM) {
-    SUBTASK_STATUS_ENUM["waiting"] = "waiting";
-    SUBTASK_STATUS_ENUM["working"] = "working";
-    SUBTASK_STATUS_ENUM["ready"] = "ready";
-    SUBTASK_STATUS_ENUM["outdated"] = "outdated";
-})(SUBTASK_STATUS_ENUM = exports.SUBTASK_STATUS_ENUM || (exports.SUBTASK_STATUS_ENUM = {}));
-exports.SUBTASK_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(SUBTASK_STATUS_ENUM);
 var EVENT_EXEC_STATUS_ENUM;
 (function (EVENT_EXEC_STATUS_ENUM) {
     EVENT_EXEC_STATUS_ENUM["waiting"] = "waiting";
@@ -270,7 +239,6 @@ var EVENT_EXEC_STATUS_ENUM;
     EVENT_EXEC_STATUS_ENUM["cancel"] = "cancel";
     EVENT_EXEC_STATUS_ENUM["block"] = "block";
 })(EVENT_EXEC_STATUS_ENUM = exports.EVENT_EXEC_STATUS_ENUM || (exports.EVENT_EXEC_STATUS_ENUM = {}));
-exports.EVENT_EXEC_STATUS_AS_OBJECT = (0, helpers_1.enumToObject)(EVENT_EXEC_STATUS_ENUM);
 // TODO removeme
 var CLIST_NUMBER_OPERATOR_ENUM;
 (function (CLIST_NUMBER_OPERATOR_ENUM) {
@@ -281,23 +249,17 @@ var CLIST_NUMBER_OPERATOR_ENUM;
     CLIST_NUMBER_OPERATOR_ENUM["gt"] = "gt";
 })(CLIST_NUMBER_OPERATOR_ENUM = exports.CLIST_NUMBER_OPERATOR_ENUM || (exports.CLIST_NUMBER_OPERATOR_ENUM = {}));
 // TODO removeme
-exports.CLIST_NUMBER_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_NUMBER_OPERATOR_ENUM);
-// TODO removeme
 var CLIST_STRING_OPERATOR_ENUM;
 (function (CLIST_STRING_OPERATOR_ENUM) {
     CLIST_STRING_OPERATOR_ENUM["eq"] = "eq";
     CLIST_STRING_OPERATOR_ENUM["consists"] = "consists";
 })(CLIST_STRING_OPERATOR_ENUM = exports.CLIST_STRING_OPERATOR_ENUM || (exports.CLIST_STRING_OPERATOR_ENUM = {}));
 // TODO removeme
-exports.CLIST_STRING_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_STRING_OPERATOR_ENUM);
-// TODO removeme
 var CLIST_DATE_OPERATOR_ENUM;
 (function (CLIST_DATE_OPERATOR_ENUM) {
     CLIST_DATE_OPERATOR_ENUM["eq"] = "eq";
     CLIST_DATE_OPERATOR_ENUM["between"] = "between";
 })(CLIST_DATE_OPERATOR_ENUM = exports.CLIST_DATE_OPERATOR_ENUM || (exports.CLIST_DATE_OPERATOR_ENUM = {}));
-// TODO removeme
-exports.CLIST_DATE_OPERATOR_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_DATE_OPERATOR_ENUM);
 // TODO removeme
 var CLIST_TYPE_ENUM;
 (function (CLIST_TYPE_ENUM) {
@@ -306,16 +268,12 @@ var CLIST_TYPE_ENUM;
     CLIST_TYPE_ENUM["date"] = "date";
 })(CLIST_TYPE_ENUM = exports.CLIST_TYPE_ENUM || (exports.CLIST_TYPE_ENUM = {}));
 // TODO removeme
-exports.CLIST_TYPE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_TYPE_ENUM);
-// TODO removeme
 var CLIST_CONDITION_ENUM;
 (function (CLIST_CONDITION_ENUM) {
     CLIST_CONDITION_ENUM["and"] = "and";
     CLIST_CONDITION_ENUM["or"] = "or";
     CLIST_CONDITION_ENUM["not"] = "not";
 })(CLIST_CONDITION_ENUM = exports.CLIST_CONDITION_ENUM || (exports.CLIST_CONDITION_ENUM = {}));
-// TODO removeme
-exports.CLIST_CONDITION_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_CONDITION_ENUM);
 // TODO removeme
 var CLIST_DATASOURCE_ENUM;
 (function (CLIST_DATASOURCE_ENUM) {
@@ -328,15 +286,11 @@ var CLIST_DATASOURCE_ENUM;
     CLIST_DATASOURCE_ENUM["treatment"] = "treatment";
 })(CLIST_DATASOURCE_ENUM = exports.CLIST_DATASOURCE_ENUM || (exports.CLIST_DATASOURCE_ENUM = {}));
 // TODO removeme
-exports.CLIST_DATASOURCE_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_DATASOURCE_ENUM);
-// TODO removeme
 var CLIST_STATUS_ENUM;
 (function (CLIST_STATUS_ENUM) {
     CLIST_STATUS_ENUM["working"] = "working";
     CLIST_STATUS_ENUM["published"] = "published";
 })(CLIST_STATUS_ENUM = exports.CLIST_STATUS_ENUM || (exports.CLIST_STATUS_ENUM = {}));
-// TODO removeme
-exports.CLIST_STATUS_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_STATUS_ENUM);
 // TODO removeme
 var CLIST_AFUNCTIONS_ENUM;
 (function (CLIST_AFUNCTIONS_ENUM) {
@@ -346,11 +300,8 @@ var CLIST_AFUNCTIONS_ENUM;
     CLIST_AFUNCTIONS_ENUM["avg"] = "avg";
     CLIST_AFUNCTIONS_ENUM["sum"] = "sum";
 })(CLIST_AFUNCTIONS_ENUM = exports.CLIST_AFUNCTIONS_ENUM || (exports.CLIST_AFUNCTIONS_ENUM = {}));
-// TODO removeme
-exports.CLIST_AFUNCTIONS_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(CLIST_AFUNCTIONS_ENUM);
 var SUPPORTED_LANG_ENUM;
 (function (SUPPORTED_LANG_ENUM) {
     SUPPORTED_LANG_ENUM["ru"] = "ru";
     SUPPORTED_LANG_ENUM["en"] = "en";
 })(SUPPORTED_LANG_ENUM = exports.SUPPORTED_LANG_ENUM || (exports.SUPPORTED_LANG_ENUM = {}));
-exports.SUPPORTED_LANG_ENUM_AS_OBJECT = (0, helpers_1.enumToObject)(SUPPORTED_LANG_ENUM);
