@@ -15,4 +15,4 @@ export const customListEnums = _clEnums.enums;
 export const animalTagEnums = _animalTagEnums.enums;
 export const importEnums = _importEnums.enums;
 export const animalForEventFilters = _animalForEventFilters;
-export const animalEnums = _animalEnums;
+export const animalEnums = _animalEnums.enums;

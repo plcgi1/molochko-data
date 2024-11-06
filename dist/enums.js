@@ -28,6 +28,7 @@ var TOKEN_TYPE_ENUM;
     TOKEN_TYPE_ENUM["resetPassword"] = "resetPassword";
     TOKEN_TYPE_ENUM["invite"] = "invite";
 })(TOKEN_TYPE_ENUM = exports.TOKEN_TYPE_ENUM || (exports.TOKEN_TYPE_ENUM = {}));
+// TODO удалить - перенесено в animal
 var ANIMAL_GENDER_ENUM;
 (function (ANIMAL_GENDER_ENUM) {
     ANIMAL_GENDER_ENUM["cow"] = "cow";
@@ -92,6 +93,7 @@ var SEED_CODES_ENUM;
     SEED_CODES_ENUM["PRID_DELTA"] = "PRIDDelta";
     SEED_CODES_ENUM["G6G"] = "G6G";
 })(SEED_CODES_ENUM = exports.SEED_CODES_ENUM || (exports.SEED_CODES_ENUM = {}));
+// TODO удалить - перенесено в animal
 var ANIMAL_STATUS_ENUM;
 (function (ANIMAL_STATUS_ENUM) {
     ANIMAL_STATUS_ENUM["heifer"] = "heifer";
@@ -106,12 +108,14 @@ var ANIMAL_STATUS_ENUM;
     ANIMAL_STATUS_ENUM["theft"] = "theft";
     ANIMAL_STATUS_ENUM["transferout"] = "transferout";
 })(ANIMAL_STATUS_ENUM = exports.ANIMAL_STATUS_ENUM || (exports.ANIMAL_STATUS_ENUM = {}));
+// TODO удалить - перенесено в animal
 var BULL_STATUS;
 (function (BULL_STATUS) {
     BULL_STATUS["SOLD"] = "sold";
     BULL_STATUS["BULL"] = "bull";
     BULL_STATUS["DIED"] = "died";
 })(BULL_STATUS = exports.BULL_STATUS || (exports.BULL_STATUS = {}));
+// TODO удалить - перенесено в animal
 var COW_STATUS;
 (function (COW_STATUS) {
     COW_STATUS["HEIFER"] = "heifer";

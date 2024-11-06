@@ -5,6 +5,7 @@ import * as _animalForEventFilters from './event';
 import * as _clEnums from './custom-list';
 import * as _importEnums from './import-data';
 import * as _animalTagEnums from './animal-tag';
+import * as _animalEnums from './animals';
 export declare const enums: {
     BREED: typeDefinitions.EnumItem[];
     BREED_AS_OBJECT: typeDefinitions.EnumArrayAsObject;
@@ -48,3 +49,4 @@ export declare const customListEnums: typeof _clEnums.enums;
 export declare const animalTagEnums: typeof _animalTagEnums.enums;
 export declare const importEnums: typeof _importEnums.enums;
 export declare const animalForEventFilters: typeof _animalForEventFilters;
+export declare const animalEnums: typeof _animalEnums;
