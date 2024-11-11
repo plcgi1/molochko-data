@@ -41,6 +41,7 @@ var ANIMAL_GENDER_ENUM;
 // осеменение,
 // брак,
 // обрезка копыт,
+// TODO removeme
 var EVENT_TYPES_ENUM;
 (function (EVENT_TYPES_ENUM) {
     EVENT_TYPES_ENUM["otel"] = "otel";
@@ -128,6 +129,7 @@ var COW_STATUS;
     COW_STATUS["SOLD"] = "sold";
     COW_STATUS["DIED"] = "died";
 })(COW_STATUS = exports.COW_STATUS || (exports.COW_STATUS = {}));
+// TODO removeme
 // heifer, bred, open, fresh
 var EVENT_ERROR_REASON_ENUM;
 (function (EVENT_ERROR_REASON_ENUM) {
@@ -179,11 +181,13 @@ var ACCESS_ENUM;
     ACCESS_ENUM["read"] = "read";
     ACCESS_ENUM["write"] = "write";
 })(ACCESS_ENUM = exports.ACCESS_ENUM || (exports.ACCESS_ENUM = {}));
+// TODO removeme
 var TRANSFEROUT_TYPES_ENUM;
 (function (TRANSFEROUT_TYPES_ENUM) {
     TRANSFEROUT_TYPES_ENUM["transferOut"] = "transferOut";
     TRANSFEROUT_TYPES_ENUM["died"] = "died";
 })(TRANSFEROUT_TYPES_ENUM = exports.TRANSFEROUT_TYPES_ENUM || (exports.TRANSFEROUT_TYPES_ENUM = {}));
+// TODO removeme
 var TRANSFEROUT_REASON_ENUM;
 (function (TRANSFEROUT_REASON_ENUM) {
     TRANSFEROUT_REASON_ENUM["leikoz"] = "leikoz";
@@ -201,6 +205,7 @@ var TRANSFEROUT_REASON_ENUM;
     TRANSFEROUT_REASON_ENUM["theft"] = "theft";
     TRANSFEROUT_REASON_ENUM["dead"] = "dead";
 })(TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_REASON_ENUM || (exports.TRANSFEROUT_REASON_ENUM = {}));
+// TODO removeme
 var DISEASES_ENUM;
 (function (DISEASES_ENUM) {
     DISEASES_ENUM["PREVENTION"] = "prevention";
@@ -225,6 +230,7 @@ var DISEASES_ENUM;
     DISEASES_ENUM["SYNCHRONIZATION"] = "synchronization";
     DISEASES_ENUM["OTHER"] = "other";
 })(DISEASES_ENUM = exports.DISEASES_ENUM || (exports.DISEASES_ENUM = {}));
+// TODO removeme
 var MEDMETHOD_ENUM;
 (function (MEDMETHOD_ENUM) {
     MEDMETHOD_ENUM["SUBCUTANEOUSLY"] = "subcutaneously";
@@ -236,6 +242,7 @@ var MEDMETHOD_ENUM;
     MEDMETHOD_ENUM["INTRAUTERINE"] = "intrauterine";
     MEDMETHOD_ENUM["INTRAVAGINALLY"] = "intravaginally";
 })(MEDMETHOD_ENUM = exports.MEDMETHOD_ENUM || (exports.MEDMETHOD_ENUM = {}));
+// TODO removeme
 var EVENT_EXEC_STATUS_ENUM;
 (function (EVENT_EXEC_STATUS_ENUM) {
     EVENT_EXEC_STATUS_ENUM["waiting"] = "waiting";

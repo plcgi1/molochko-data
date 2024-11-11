@@ -50,3 +50,4 @@ export declare const animalTagEnums: typeof _animalTagEnums.enums;
 export declare const importEnums: typeof _importEnums.enums;
 export declare const animalForEventFilters: typeof _animalForEventFilters;
 export declare const animalEnums: typeof _animalEnums.enums;
+export declare const eventEnums: typeof _animalForEventFilters.enums;
