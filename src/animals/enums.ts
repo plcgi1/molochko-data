@@ -10,7 +10,7 @@ export enum ANIMAL_STATUS_ENUM {
   open = 'open', // Яловая
   fresh = 'fresh', // Новотельная
   dry = 'dry', // Сухостой
-	lateDry = 'lateDry', // Поздний Сухостой
+  lateDry = 'lateDry', // Поздний Сухостой
   dnb = 'dnb', // Брак
   sold = 'sold', // Продана
   died = 'died', // Сдохла

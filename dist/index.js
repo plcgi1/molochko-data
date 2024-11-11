@@ -40,4 +40,4 @@ exports.customListEnums = _clEnums.enums;
 exports.animalTagEnums = _animalTagEnums.enums;
 exports.importEnums = _importEnums.enums;
 exports.animalForEventFilters = _animalForEventFilters;
-exports.animalEnums = _animalEnums;
+exports.animalEnums = _animalEnums.enums;

@@ -7,6 +7,7 @@ import * as _clEnums from './custom-list';
 import * as _importEnums from './import-data';
 import * as _animalTagEnums from './animal-tag';
 import * as _animalEnums from './animals';
+import * as _eventEnums from './event';
 
 export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
 export const rolePermissions = _rolePermissions;
@@ -16,3 +17,4 @@ export const animalTagEnums = _animalTagEnums.enums;
 export const importEnums = _importEnums.enums;
 export const animalForEventFilters = _animalForEventFilters;
 export const animalEnums = _animalEnums.enums;
+export const eventEnums = _eventEnums.enums;

@@ -40,6 +40,7 @@ export enum ANIMAL_GENDER_ENUM {
 // брак,
 // обрезка копыт,
 
+// TODO removeme
 export enum EVENT_TYPES_ENUM {
   otel = 'otel', // ОТЕЛ ----- addTocalendar
   recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ * ----- addTocalendar
@@ -125,6 +126,7 @@ export enum COW_STATUS {
   DIED = 'died',
 }
 
+// TODO removeme
 // heifer, bred, open, fresh
 export enum EVENT_ERROR_REASON_ENUM {
   statusNotAllowed = 'animal-status-not-allowed',
@@ -176,11 +178,13 @@ export enum ACCESS_ENUM {
   write = 'write',
 }
 
+// TODO removeme
 export enum TRANSFEROUT_TYPES_ENUM {
   transferOut = 'transferOut',
   died = 'died',
 }
 
+// TODO removeme
 export enum TRANSFEROUT_REASON_ENUM {
   leikoz = 'leikoz', // Лейкоз
   tuberkulez = 'tuberkulez', // Туберкулез
@@ -198,6 +202,7 @@ export enum TRANSFEROUT_REASON_ENUM {
   dead = 'dead', // сдохла
 }
 
+// TODO removeme
 export enum DISEASES_ENUM {
   PREVENTION = 'prevention', // Профилактика
   VACCTINATION = 'vaccination', // Вакцинация
@@ -221,7 +226,7 @@ export enum DISEASES_ENUM {
   SYNCHRONIZATION = 'synchronization', // Синхронизация
   OTHER = 'other', // Иное
 }
-
+// TODO removeme
 export enum MEDMETHOD_ENUM {
   SUBCUTANEOUSLY = 'subcutaneously', // подкожно
   NASALLY = 'nasally', // нозально
@@ -233,6 +238,7 @@ export enum MEDMETHOD_ENUM {
   INTRAVAGINALLY = 'intravaginally', // внутривагинально
 }
 
+// TODO removeme
 export enum EVENT_EXEC_STATUS_ENUM {
   waiting = 'waiting',
   done = 'done',
