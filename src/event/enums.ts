@@ -3,7 +3,9 @@ export enum EVENT_ERROR_REASON_ENUM {
   animalTooYoung = 'animal-too-young',
   animalInsemenatedAtEventDate = 'animal-insemenated-at-event-date',
   animalInVWPForEventDate = 'animal-in-VWP-for-event-date',
-	animalInDryForEventDate = 'animal-in-dry-for-event-date'
+  animalInDryForEventDate = 'animal-in-dry-for-event-date',
+	eventsBeforeShouldBeInsemOrRecheck = 'event-before-shouldbe-osem-or-recheck',
+	tooEarlyToRecheckAfterInsemenation = 'too-early-to-recheck-after-insemenation'
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {

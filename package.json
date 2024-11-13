@@ -1,6 +1,6 @@
 {
   "name": "@molochko-dev/data",
-  "version": "1.4.76",
+  "version": "1.4.77",
   "description": "",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
