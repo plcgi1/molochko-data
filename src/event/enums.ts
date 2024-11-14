@@ -4,8 +4,17 @@ export enum EVENT_ERROR_REASON_ENUM {
   animalInsemenatedAtEventDate = 'animal-insemenated-at-event-date',
   animalInVWPForEventDate = 'animal-in-VWP-for-event-date',
   animalInDryForEventDate = 'animal-in-dry-for-event-date',
-	eventsBeforeShouldBeInsemOrRecheck = 'event-before-shouldbe-osem-or-recheck',
-	tooEarlyToRecheckAfterInsemenation = 'too-early-to-recheck-after-insemenation'
+  eventsBeforeShouldBeInsemOrRecheck = 'event-before-shouldbe-osem-or-recheck',
+  tooEarlyToRecheckAfterInsemenation = 'too-early-to-recheck-after-insemenation',
+
+  recheckMustbeBefore = 'recheck-must-be-before',
+  recheckMustbePregnant = 'recheck-must-be-pregnant',
+  tooEarlyToDry = 'too-early-to-dry',
+  noDryAfterFirstInsemenation = 'no-dry-after-first-insemenation',
+
+  dryMustBeBefore = 'dry-must-be-before',
+	tooEarlyLateToDry = 'too-early-to-late-dry',
+	noLateDryAfterFirstInsemenation = 'no-late-dry-after-first-insemenation',
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {
