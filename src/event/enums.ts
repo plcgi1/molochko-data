@@ -16,9 +16,9 @@ export enum EVENT_ERROR_REASON_ENUM {
   tooEarlyLateToDry = 'too-early-to-late-dry',
   noLateDryAfterFirstInsemenation = 'no-late-dry-after-first-insemenation',
 
-	lateDryMustBeBeforeCalving = 'late-dry-must-be-before-calving',
+  lateDryMustBeBeforeCalving = 'late-dry-must-be-before-calving',
   dryMustBeBeforeLateDryForCalving = 'dry-must-be-before-late-dry-for-calving',
-  animalNotInCalvingPeriod = 'animal-not-in-calving-period'
+  animalNotInCalvingPeriod = 'animal-not-in-calving-period',
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {
@@ -105,6 +105,7 @@ export enum EVENT_TYPES_ENUM {
   pozSuhostoi = 'pozSuhostoi', // ПОЗСУХОСТОЙ
   ves = 'ves', // ВЕС
   rost = 'rost', // РОСТ
+  biometry = 'biometry',
   upitannost = 'upitannost', // УПИТАННОСТЬ
   zaboi = 'zaboi', // ЗАБОЙ
   sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
