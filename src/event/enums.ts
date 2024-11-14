@@ -13,8 +13,12 @@ export enum EVENT_ERROR_REASON_ENUM {
   noDryAfterFirstInsemenation = 'no-dry-after-first-insemenation',
 
   dryMustBeBefore = 'dry-must-be-before',
-	tooEarlyLateToDry = 'too-early-to-late-dry',
-	noLateDryAfterFirstInsemenation = 'no-late-dry-after-first-insemenation',
+  tooEarlyLateToDry = 'too-early-to-late-dry',
+  noLateDryAfterFirstInsemenation = 'no-late-dry-after-first-insemenation',
+
+	lateDryMustBeBeforeCalving = 'late-dry-must-be-before-calving',
+  dryMustBeBeforeLateDryForCalving = 'dry-must-be-before-late-dry-for-calving',
+  animalNotInCalvingPeriod = 'animal-not-in-calving-period'
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {
