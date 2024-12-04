@@ -36,6 +36,7 @@ export enum CLIST_MODELS_ENUM {
   org = 'org',
   protocol = 'protocol',
   treatment = 'treatment',
+  animalMetrics = 'animalMetrics',
 }
 
 export enum CLIST_DATASOURCE_ENUM {
