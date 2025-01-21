@@ -41,6 +41,7 @@ export enum CLIST_MODELS_ENUM {
 
 export enum CLIST_DATASOURCE_ENUM {
   animals = 'animals',
+  animalMetrics = 'animalMetrics',
   events = 'events',
 }
 
