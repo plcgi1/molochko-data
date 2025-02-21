@@ -1,6 +1,6 @@
 {
   "name": "@molochko-dev/data",
-  "version": "1.4.82",
+  "version": "1.4.83",
   "description": "",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
@@ -13,7 +13,8 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix=true",
-    "pub": "npm run lint:fix && npm test && npm run build && npm publish"
+    "patch-version": "npm version patch --no-git-tag-version",
+    "pub": "npm run lint:fix && npm test && npm run patch-version && npm run build && npm publish"
   },
   "keywords": [
     "molochko-data"
