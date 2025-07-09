@@ -1,3 +1,3 @@
 export enum EQ_PROFILE {
-    animals = 'animals',
+    animal = 'animal',
 }
