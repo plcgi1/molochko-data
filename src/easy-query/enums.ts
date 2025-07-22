@@ -1,5 +1,6 @@
 export enum EQ_PROFILE {
-    animal = 'animal',
+  animal = 'animal',
+  animalReport = 'animalReport'
 }
 
 export enum EQ_STATUS_ENUM {
