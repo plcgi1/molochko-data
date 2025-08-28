@@ -8,4 +8,9 @@ export enum EQ_STATUS_ENUM {
   published = 'published',
 }
 
+export enum EQ_CATEGORY_TYPE_ENUM {
+  system = 'system',
+  user = 'user',
+}
+
 export const EQ_FORBIDDEN_WORDS =  ['*','insert', 'update', 'delete', 'drop', 'create', 'alter', 'change']
