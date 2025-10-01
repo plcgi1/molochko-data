@@ -7,6 +7,7 @@ import * as _importEnums from './import-data';
 import * as _animalTagEnums from './animal-tag';
 import * as _animalEnums from './animals';
 import * as _eqEnums from './easy-query';
+import * as _orgConstants from './org';
 export declare const enums: {
     BREED: typeDefinitions.EnumItem[];
     BREED_AS_OBJECT: typeDefinitions.EnumArrayAsObject;
@@ -53,3 +54,4 @@ export declare const animalForEventFilters: typeof _animalForEventFilters;
 export declare const animalEnums: typeof _animalEnums.enums;
 export declare const eventEnums: typeof _animalForEventFilters.enums;
 export declare const eqEnums: typeof _eqEnums.enums;
+export declare const orgConstants: typeof _orgConstants.constants;
