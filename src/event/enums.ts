@@ -89,7 +89,9 @@ export enum EVENT_TYPES_ENUM {
   otel = 'otel', // ОТЕЛ ----- addTocalendar
   recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ * ----- addTocalendar
   ohota = 'ohota', // ОХОТА ----- addTocalendar
-  osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
+  // TODO osemenenie - удалить
+  osemenenie = 'breeding', // ОСЕМЕНЕНИЕ *
+  breeding = 'breeding', // ОСЕМЕНЕНИЕ *
   stelnaya = 'stelnaya', // СТЕЛЬНАЯ
   yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ) ----- addTocalendar
   stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ ----- addTocalendar
