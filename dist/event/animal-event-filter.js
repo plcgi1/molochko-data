@@ -39,7 +39,24 @@ class AnimalEventFilter {
     fatnessFilter(animals) {
         return animals;
     }
+    // TODO удалить
     osemenenieFilter(animals) {
+        const result = animals.filter((animal) => {
+            const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
+            const statusOk = this.statusFilter(animal, [
+                this.status.HEIFER,
+                this.status.BRED,
+                this.status.OPEN,
+                this.status.FRESH,
+            ]);
+            const ageOk = this.ageFilter(animal, this.defaultCowAge);
+            if (genderOk && statusOk && ageOk) {
+                return animal;
+            }
+        });
+        return result;
+    }
+    breedingFilter(animals) {
         const result = animals.filter((animal) => {
             const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
             const statusOk = this.statusFilter(animal, [
@@ -116,7 +133,7 @@ class AnimalEventFilter {
             case enums_1.EVENT_TYPES_ENUM.neosem:
                 return this.neosemFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.osemenenie:
-                return this.osemenenieFilter(animals);
+                return this.breedingFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.otel:
                 return this.otelFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.recheck:
