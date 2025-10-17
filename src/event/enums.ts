@@ -91,7 +91,7 @@ export enum EVENT_TYPES_ENUM {
   ohota = 'ohota', // ОХОТА ----- addTocalendar
   // TODO osemenenie - удалить
   osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
-  breeding = 'breeding', // ОСЕМЕНЕНИЕ *
+  insemenation = 'insemenation', // ОСЕМЕНЕНИЕ *
   stelnaya = 'stelnaya', // СТЕЛЬНАЯ
   yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ) ----- addTocalendar
   stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ ----- addTocalendar
