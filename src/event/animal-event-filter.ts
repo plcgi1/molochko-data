@@ -72,7 +72,7 @@ class AnimalEventFilter {
     return result;
   }
 
-  breedingFilter<T extends BaseAnimal>(animals: T[]): T[] {
+  insemenationFilter<T extends BaseAnimal>(animals: T[]): T[] {
     const result = animals.filter((animal) => {
       const genderOk = this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
       const statusOk = this.statusFilter(animal, [
@@ -161,8 +161,8 @@ class AnimalEventFilter {
         return this.abortFilter(animals);
       case EVENT_TYPES_ENUM.neosem:
         return this.neosemFilter(animals);
-      case EVENT_TYPES_ENUM.osemenenie:
-        return this.breedingFilter(animals);
+      case EVENT_TYPES_ENUM.insemenation:
+        return this.insemenationFilter(animals);
       case EVENT_TYPES_ENUM.otel:
         return this.otelFilter(animals);
       case EVENT_TYPES_ENUM.recheck:

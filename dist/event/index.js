@@ -22,9 +22,18 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.enums = exports.filter = void 0;
 const animal_event_filter_1 = require("./animal-event-filter");
 Object.defineProperty(exports, "filter", { enumerable: true, get: function () { return animal_event_filter_1.filter; } });
 const _enums = __importStar(require("./enums"));
 exports.enums = _enums;
+__exportStar(require("./enums"), exports);
+// export const events = {
+//     ..._enums
+// };
+//
+// export type events = typeof events;

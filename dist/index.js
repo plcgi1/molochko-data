@@ -23,7 +23,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.orgConstants = exports.eqEnums = exports.eventEnums = exports.animalEnums = exports.animalForEventFilters = exports.importEnums = exports.animalTagEnums = exports.customListEnums = exports.types = exports.rolePermissions = exports.enums = void 0;
+exports.event = exports.orgConstants = exports.eqEnums = exports.eventEnums = exports.animalEnums = exports.animalForEventFilters = exports.importEnums = exports.animalTagEnums = exports.customListEnums = exports.types = exports.rolePermissions = exports.enums = void 0;
 const dataEnums = __importStar(require("./enums"));
 const breed_1 = require("./breed");
 const typeDefinitions = __importStar(require("./types"));
@@ -47,3 +47,6 @@ exports.animalEnums = _animalEnums.enums;
 exports.eventEnums = _eventEnums.enums;
 exports.eqEnums = _eqEnums.enums;
 exports.orgConstants = _orgConstants.constants;
+// export { events } from './event';
+// export type { events as EventType } from './event';
+exports.event = __importStar(require("./event"));

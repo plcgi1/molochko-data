@@ -47,7 +47,7 @@ var EVENT_TYPES_ENUM;
     EVENT_TYPES_ENUM["otel"] = "otel";
     EVENT_TYPES_ENUM["recheck"] = "recheck";
     EVENT_TYPES_ENUM["ohota"] = "ohota";
-    EVENT_TYPES_ENUM["osemenenie"] = "osemenenie";
+    EVENT_TYPES_ENUM["insemenation"] = "insemenation";
     EVENT_TYPES_ENUM["stelnaya"] = "stelnaya";
     EVENT_TYPES_ENUM["yalovaya"] = "yalovaya";
     EVENT_TYPES_ENUM["stelneotpos"] = "stelneotpos";

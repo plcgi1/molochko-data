@@ -56,7 +56,7 @@ class AnimalEventFilter {
         });
         return result;
     }
-    breedingFilter(animals) {
+    insemenationFilter(animals) {
         const result = animals.filter((animal) => {
             const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
             const statusOk = this.statusFilter(animal, [
@@ -132,8 +132,8 @@ class AnimalEventFilter {
                 return this.abortFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.neosem:
                 return this.neosemFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.osemenenie:
-                return this.breedingFilter(animals);
+            case enums_1.EVENT_TYPES_ENUM.insemenation:
+                return this.insemenationFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.otel:
                 return this.otelFilter(animals);
             case enums_1.EVENT_TYPES_ENUM.recheck:

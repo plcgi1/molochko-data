@@ -29,7 +29,7 @@ export declare enum EVENT_TYPES_ENUM {
     otel = "otel",
     recheck = "recheck",
     ohota = "ohota",
-    osemenenie = "osemenenie",
+    insemenation = "insemenation",
     stelnaya = "stelnaya",
     yalovaya = "yalovaya",
     stelneotpos = "stelneotpos",
