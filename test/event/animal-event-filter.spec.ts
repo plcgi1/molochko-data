@@ -1,6 +1,7 @@
 import { filter } from '../../src/event';
-import { ANIMAL_GENDER_ENUM, COW_STATUS, EVENT_TYPES_ENUM } from '../../src/enums';
+import { ANIMAL_GENDER_ENUM, COW_STATUS } from '../../src/enums';
 import { IAnimal } from '../../src/types';
+import { EVENT_TYPES_ENUM } from '../../src/event'
 
 function getYoungDob() {
   const d = new Date();
@@ -138,12 +139,12 @@ describe('AnimalForEventFilter', () => {
     testtObject(EVENT_TYPES_ENUM.neosem, 8);
   });
 
-  it(`event type: ${EVENT_TYPES_ENUM.osemenenie}`, () => {
-    testtObject(EVENT_TYPES_ENUM.osemenenie, 4);
+  it(`event type: ${EVENT_TYPES_ENUM.insemenation}`, () => {
+    testtObject(EVENT_TYPES_ENUM.insemenation, 4);
   });
 
-  it(`event type: ${EVENT_TYPES_ENUM.otel}`, () => {
-    testtObject(EVENT_TYPES_ENUM.otel, 3);
+  it(`event type: ${EVENT_TYPES_ENUM.calving}`, () => {
+    testtObject(EVENT_TYPES_ENUM.calving, 3);
   });
 
   it(`event type: ${EVENT_TYPES_ENUM.recheck}`, () => {

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.filter = void 0;
 const enums_1 = require("../enums");
 const date_1 = require("../helpers/date");
+const event_1 = require("../event");
 /*
 
 const filtered = filter(animals, eventType)
@@ -72,7 +73,19 @@ class AnimalEventFilter {
         });
         return result;
     }
+    // TODO удалить
     otelFilter(animals) {
+        const result = animals.filter((animal) => {
+            const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
+            const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
+            const ageOk = this.ageFilter(animal, this.defaultCowAge);
+            if (genderOk && statusOk && ageOk) {
+                return animal;
+            }
+        });
+        return result;
+    }
+    calvingFilter(animals) {
         const result = animals.filter((animal) => {
             const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
             const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
@@ -90,7 +103,7 @@ class AnimalEventFilter {
             let availableStatus = [this.status.BRED, this.status.PREGNANT, this.status.DRY];
             if (animal.animalEventRelation) {
                 const previousRechecks = animal.animalEventRelation.filter((row) => {
-                    return row.eventDetail.type === enums_1.EVENT_TYPES_ENUM.recheck;
+                    return row.eventDetail.type === event_1.EVENT_TYPES_ENUM.recheck;
                 });
                 if (previousRechecks.length == 0) {
                     availableStatus = [this.status.BRED];
@@ -128,30 +141,30 @@ class AnimalEventFilter {
     }
     filter(animals, eventType) {
         switch (eventType) {
-            case enums_1.EVENT_TYPES_ENUM.abort:
+            case event_1.EVENT_TYPES_ENUM.abort:
                 return this.abortFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.neosem:
+            case event_1.EVENT_TYPES_ENUM.neosem:
                 return this.neosemFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.insemenation:
+            case event_1.EVENT_TYPES_ENUM.insemenation:
                 return this.insemenationFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.otel:
-                return this.otelFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.recheck:
+            case event_1.EVENT_TYPES_ENUM.calving:
+                return this.calvingFilter(animals);
+            case event_1.EVENT_TYPES_ENUM.recheck:
                 return this.recheckFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.suhostoi:
+            case event_1.EVENT_TYPES_ENUM.suhostoi:
                 return this.suhostoiFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.pozSuhostoi:
+            case event_1.EVENT_TYPES_ENUM.pozSuhostoi:
                 return this.pozSuhostoiFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.perevod:
+            case event_1.EVENT_TYPES_ENUM.perevod:
                 return this.perevodFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.transferOut:
+            case event_1.EVENT_TYPES_ENUM.transferOut:
                 return this.transferOutFilter(animals);
-            case enums_1.EVENT_TYPES_ENUM.treatment:
+            case event_1.EVENT_TYPES_ENUM.treatment:
                 return this.treatmentFilter(animals);
-            case (enums_1.EVENT_TYPES_ENUM.ves,
-                enums_1.EVENT_TYPES_ENUM.rost,
-                enums_1.EVENT_TYPES_ENUM.upitannost,
-                enums_1.EVENT_TYPES_ENUM.ohota):
+            case (event_1.EVENT_TYPES_ENUM.ves,
+                event_1.EVENT_TYPES_ENUM.rost,
+                event_1.EVENT_TYPES_ENUM.upitannost,
+                event_1.EVENT_TYPES_ENUM.ohota):
                 return this.weightFilter(animals);
             default:
                 return animals;

@@ -1,11 +1,12 @@
 import {
   USER_PERMISSION_ENUM,
   USER_PERMISSION_METHOD_ENUM,
-  EVENT_TYPES_ENUM,
   ANIMAL_GENDER_ENUM,
   COW_STATUS,
   BULL_STATUS,
 } from './enums';
+
+import { EVENT_TYPES_ENUM} from "./event";
 
 export interface EnumItem {
   readonly id: string;

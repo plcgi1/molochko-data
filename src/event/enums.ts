@@ -86,11 +86,13 @@ export enum MEDMETHOD_ENUM {
 }
 
 export enum EVENT_TYPES_ENUM {
+  // TODO otel - удалить
   otel = 'otel', // ОТЕЛ ----- addTocalendar
+  calving = 'calving', // ОТЕЛ ----- addTocalendar
   recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ * ----- addTocalendar
   ohota = 'ohota', // ОХОТА ----- addTocalendar
   // TODO osemenenie - удалить
-  osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
+  // osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
   insemenation = 'insemenation', // ОСЕМЕНЕНИЕ *
   stelnaya = 'stelnaya', // СТЕЛЬНАЯ
   yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ) ----- addTocalendar

@@ -1,7 +1,7 @@
 import { AnimalStatus, BaseAnimal } from '../types';
-import { ANIMAL_GENDER_ENUM, COW_STATUS, EVENT_TYPES_ENUM } from '../enums';
+import { ANIMAL_GENDER_ENUM, COW_STATUS } from '../enums';
 import { getMonthFromDate } from '../helpers/date';
-
+import { EVENT_TYPES_ENUM } from '../event'
 /*
 
 const filtered = filter(animals, eventType)
@@ -89,8 +89,21 @@ class AnimalEventFilter {
 
     return result;
   }
-
+  // TODO удалить
   otelFilter<T extends BaseAnimal>(animals: T[]): T[] {
+    const result = animals.filter((animal) => {
+      const genderOk = this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
+      const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
+      const ageOk = this.ageFilter(animal, this.defaultCowAge);
+
+      if (genderOk && statusOk && ageOk) {
+        return animal;
+      }
+    });
+    return result;
+  }
+
+  calvingFilter<T extends BaseAnimal>(animals: T[]): T[] {
     const result = animals.filter((animal) => {
       const genderOk = this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
       const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
@@ -163,8 +176,8 @@ class AnimalEventFilter {
         return this.neosemFilter(animals);
       case EVENT_TYPES_ENUM.insemenation:
         return this.insemenationFilter(animals);
-      case EVENT_TYPES_ENUM.otel:
-        return this.otelFilter(animals);
+      case EVENT_TYPES_ENUM.calving:
+        return this.calvingFilter(animals);
       case EVENT_TYPES_ENUM.recheck:
         return this.recheckFilter(animals);
       case EVENT_TYPES_ENUM.suhostoi:
