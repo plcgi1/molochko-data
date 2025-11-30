@@ -23,7 +23,7 @@ export const animalEnums = _animalEnums.enums;
 export const eventEnums = _eventEnums.enums;
 export const eqEnums = _eqEnums.enums
 export const orgConstants = _orgConstants.constants
-export const milkEnums = _milkEnums
+export const milkEnums = _milkEnums.enums
 
 // export { events } from './event';
 // export type { events as EventType } from './event';

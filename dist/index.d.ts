@@ -56,5 +56,5 @@ export declare const animalEnums: typeof _animalEnums.enums;
 export declare const eventEnums: typeof _animalForEventFilters.enums;
 export declare const eqEnums: typeof _eqEnums.enums;
 export declare const orgConstants: typeof _orgConstants.constants;
-export declare const milkEnums: typeof _milkEnums;
+export declare const milkEnums: typeof _milkEnums.enums;
 export * as event from './event';

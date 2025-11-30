@@ -48,7 +48,7 @@ exports.animalEnums = _animalEnums.enums;
 exports.eventEnums = _eventEnums.enums;
 exports.eqEnums = _eqEnums.enums;
 exports.orgConstants = _orgConstants.constants;
-exports.milkEnums = _milkEnums;
+exports.milkEnums = _milkEnums.enums;
 // export { events } from './event';
 // export type { events as EventType } from './event';
 exports.event = __importStar(require("./event"));
