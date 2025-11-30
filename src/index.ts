@@ -10,6 +10,7 @@ import * as _animalEnums from './animals';
 import * as _eventEnums from './event';
 import * as _eqEnums from './easy-query'
 import * as _orgConstants from './org'
+import * as _milkEnums from './milk'
 
 export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
 export const rolePermissions = _rolePermissions;
@@ -22,6 +23,7 @@ export const animalEnums = _animalEnums.enums;
 export const eventEnums = _eventEnums.enums;
 export const eqEnums = _eqEnums.enums
 export const orgConstants = _orgConstants.constants
+export const milkEnums = _milkEnums
 
 // export { events } from './event';
 // export type { events as EventType } from './event';
