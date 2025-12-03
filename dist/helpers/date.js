@@ -12,6 +12,10 @@ const getMonthFromDate = (dateString) => {
 exports.getMonthFromDate = getMonthFromDate;
 /* преобразование строки 251201 в дату*/
 function datestrToDate(dateStr) {
+    const re = /^((25|26|27|28|29|30|31|32|33)(01|02|03|04|05|06|07|08|09|10|11|12)\d\d)$/;
+    if (!re.test(dateStr)) {
+        return null;
+    }
     const year = '20' + dateStr.substring(0, 2); // 2022
     const month = dateStr.substring(2, 4); // 12
     const day = dateStr.substring(4, 6); // 02
