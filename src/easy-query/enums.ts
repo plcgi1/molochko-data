@@ -1,6 +1,6 @@
 export enum EQ_PROFILE {
   animal = 'animal',
-  animalReport = 'animalReport'
+  animalReport = 'animalReport',
 }
 
 export enum EQ_STATUS_ENUM {
@@ -13,4 +13,13 @@ export enum EQ_CATEGORY_TYPE_ENUM {
   user = 'user',
 }
 
-export const EQ_FORBIDDEN_WORDS =  ['*','insert', 'update', 'delete', 'drop', 'create', 'alter', 'change']
+export const EQ_FORBIDDEN_WORDS = [
+  '*',
+  'insert',
+  'update',
+  'delete',
+  'drop',
+  'create',
+  'alter',
+  'change',
+];

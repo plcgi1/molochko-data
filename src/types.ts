@@ -6,7 +6,7 @@ import {
   BULL_STATUS,
 } from './enums';
 
-import { EVENT_TYPES_ENUM} from "./event";
+import { EVENT_TYPES_ENUM } from './event';
 
 export interface EnumItem {
   readonly id: string;

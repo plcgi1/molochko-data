@@ -1,7 +1,7 @@
 import { AnimalStatus, BaseAnimal } from '../types';
 import { ANIMAL_GENDER_ENUM, COW_STATUS } from '../enums';
 import { getMonthFromDate } from '../helpers/date';
-import { EVENT_TYPES_ENUM } from '../event'
+import { EVENT_TYPES_ENUM } from '../event';
 /*
 
 const filtered = filter(animals, eventType)

@@ -1,7 +1,7 @@
 import { filter } from '../../src/event';
 import { ANIMAL_GENDER_ENUM, COW_STATUS } from '../../src/enums';
 import { IAnimal } from '../../src/types';
-import { EVENT_TYPES_ENUM } from '../../src/event'
+import { EVENT_TYPES_ENUM } from '../../src/event';
 
 function getYoungDob() {
   const d = new Date();

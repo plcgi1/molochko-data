@@ -11,6 +11,7 @@ import * as _eventEnums from './event';
 import * as _eqEnums from './easy-query';
 import * as _orgConstants from './org';
 import * as _milkEnums from './milk';
+import * as _notificationEnums from './notification';
 import * as _dateHelpers from './helpers/date';
 export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
 export const rolePermissions = _rolePermissions;
@@ -24,6 +25,7 @@ export const eventEnums = _eventEnums.enums;
 export const eqEnums = _eqEnums.enums;
 export const orgConstants = _orgConstants.constants;
 export const milkEnums = _milkEnums.enums;
+export const notificationEnums = _notificationEnums.enums;
 export const dateHelpers = _dateHelpers;
 
 // export { events } from './event';
