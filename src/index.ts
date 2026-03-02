@@ -12,6 +12,7 @@ import * as _eqEnums from './easy-query';
 import * as _orgConstants from './org';
 import * as _milkEnums from './milk';
 import * as _notificationEnums from './notification';
+import * as _herdKpi from './herd-kpi';
 import * as _dateHelpers from './helpers/date';
 export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
 export const rolePermissions = _rolePermissions;
@@ -26,6 +27,7 @@ export const eqEnums = _eqEnums.enums;
 export const orgConstants = _orgConstants.constants;
 export const milkEnums = _milkEnums.enums;
 export const notificationEnums = _notificationEnums.enums;
+export const herdKpiEnums = _herdKpi.enums;
 export const dateHelpers = _dateHelpers;
 
 // export { events } from './event';
