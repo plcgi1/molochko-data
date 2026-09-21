@@ -7,6 +7,7 @@ var SYSTEM_USER_ROLES_ENUM;
     SYSTEM_USER_ROLES_ENUM["user"] = "user";
     SYSTEM_USER_ROLES_ENUM["admin"] = "admin";
     SYSTEM_USER_ROLES_ENUM["root"] = "root";
+    SYSTEM_USER_ROLES_ENUM["blocked"] = "blocked";
 })(SYSTEM_USER_ROLES_ENUM = exports.SYSTEM_USER_ROLES_ENUM || (exports.SYSTEM_USER_ROLES_ENUM = {}));
 var USER_STATUSES_ENUM;
 (function (USER_STATUSES_ENUM) {
