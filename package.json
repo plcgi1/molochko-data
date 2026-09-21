@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git@github.com:molochko-tech/molocko-data.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "rm -rf dist/ && tsc",
     "test": "jest --config=jest.config.js",
