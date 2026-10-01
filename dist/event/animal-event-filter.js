@@ -40,23 +40,6 @@ class AnimalEventFilter {
     fatnessFilter(animals) {
         return animals;
     }
-    // TODO удалить
-    osemenenieFilter(animals) {
-        const result = animals.filter((animal) => {
-            const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
-            const statusOk = this.statusFilter(animal, [
-                this.status.HEIFER,
-                this.status.BRED,
-                this.status.OPEN,
-                this.status.FRESH,
-            ]);
-            const ageOk = this.ageFilter(animal, this.defaultCowAge);
-            if (genderOk && statusOk && ageOk) {
-                return animal;
-            }
-        });
-        return result;
-    }
     insemenationFilter(animals) {
         const result = animals.filter((animal) => {
             const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
@@ -66,18 +49,6 @@ class AnimalEventFilter {
                 this.status.OPEN,
                 this.status.FRESH,
             ]);
-            const ageOk = this.ageFilter(animal, this.defaultCowAge);
-            if (genderOk && statusOk && ageOk) {
-                return animal;
-            }
-        });
-        return result;
-    }
-    // TODO удалить
-    otelFilter(animals) {
-        const result = animals.filter((animal) => {
-            const genderOk = this.genderFilter(animal, enums_1.ANIMAL_GENDER_ENUM.cow);
-            const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
             const ageOk = this.ageFilter(animal, this.defaultCowAge);
             if (genderOk && statusOk && ageOk) {
                 return animal;
