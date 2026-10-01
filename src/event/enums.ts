@@ -115,4 +115,6 @@ export enum EVENT_TYPES_ENUM {
   sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
   transferOut = 'transferOut', // выбытие
   treatment = 'treatment', // лечение
+
+  retagging = 'retagging', // перебирковка
 }

@@ -53,24 +53,6 @@ class AnimalEventFilter {
   fatnessFilter<T extends BaseAnimal>(animals: T[]): T[] {
     return animals;
   }
-  // TODO удалить
-  osemenenieFilter<T extends BaseAnimal>(animals: T[]): T[] {
-    const result = animals.filter((animal) => {
-      const genderOk = this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
-      const statusOk = this.statusFilter(animal, [
-        this.status.HEIFER,
-        this.status.BRED,
-        this.status.OPEN,
-        this.status.FRESH,
-      ]);
-      const ageOk = this.ageFilter(animal, this.defaultCowAge);
-      if (genderOk && statusOk && ageOk) {
-        return animal;
-      }
-    });
-
-    return result;
-  }
 
   insemenationFilter<T extends BaseAnimal>(animals: T[]): T[] {
     const result = animals.filter((animal) => {
@@ -87,19 +69,6 @@ class AnimalEventFilter {
       }
     });
 
-    return result;
-  }
-  // TODO удалить
-  otelFilter<T extends BaseAnimal>(animals: T[]): T[] {
-    const result = animals.filter((animal) => {
-      const genderOk = this.genderFilter(animal, ANIMAL_GENDER_ENUM.cow);
-      const statusOk = this.statusFilter(animal, [this.status.DRY, this.status.PREGNANT]);
-      const ageOk = this.ageFilter(animal, this.defaultCowAge);
-
-      if (genderOk && statusOk && ageOk) {
-        return animal;
-      }
-    });
     return result;
   }
 
