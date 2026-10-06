@@ -132,10 +132,7 @@ class AnimalEventFilter {
                 return this.transferOutFilter(animals);
             case event_1.EVENT_TYPES_ENUM.treatment:
                 return this.treatmentFilter(animals);
-            case (event_1.EVENT_TYPES_ENUM.ves,
-                event_1.EVENT_TYPES_ENUM.rost,
-                event_1.EVENT_TYPES_ENUM.upitannost,
-                event_1.EVENT_TYPES_ENUM.ohota):
+            case event_1.EVENT_TYPES_ENUM.ohota:
                 return this.weightFilter(animals);
             default:
                 return animals;

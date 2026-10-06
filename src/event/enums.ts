@@ -86,33 +86,20 @@ export enum MEDMETHOD_ENUM {
 }
 
 export enum EVENT_TYPES_ENUM {
-  // TODO otel - удалить
-  otel = 'otel', // ОТЕЛ ----- addTocalendar
   calving = 'calving', // ОТЕЛ ----- addTocalendar
   recheck = 'recheck', // ПЕРЕПРОВЕРИТЬ * ----- addTocalendar
   ohota = 'ohota', // ОХОТА ----- addTocalendar
-  // TODO osemenenie - удалить
-  // osemenenie = 'osemenenie', // ОСЕМЕНЕНИЕ *
   insemenation = 'insemenation', // ОСЕМЕНЕНИЕ *
-  stelnaya = 'stelnaya', // СТЕЛЬНАЯ
-  yalovaya = 'yalovaya', // ЯЛОВАЯ (НЕ СТЕЛЬНАЯ) ----- addTocalendar
-  stelneotpos = 'stelneotpos', // СТЕЛЬНАЯ НЕ ОТ ПОС ОСЕМЕНЕНИЯ ----- addTocalendar
   perevod = 'perevod', // ПЕРЕВОД
-  kbiku = 'kbiku', // КБЫКУ ----- addTocalendar
   suhostoi = 'suhostoi', //'СУХОСТОЙ ----- addTocalendar
   abort = 'abort', // АБОРТ
   neosem = 'neosem', // НЕОСЕМ (БРАК) *
   prodazha = 'prodazha', // ПРОДАЖА ----- addTocalendar
-  pala = 'pala', // ПАЛА ----- addTocalendar
-  zamenaNomera = 'zamenaNomera', // ЗАМЕНА НОМЕРА ----- addTocalendar
-  obrKopit = 'obrKopit', // ОБРАБОТКА КОПЫТ
+  // pala = 'pala', // ПАЛА ----- addTocalendar
+  // obrKopit = 'obrKopit', // ОБРАБОТКА КОПЫТ
   pozSuhostoi = 'pozSuhostoi', // ПОЗСУХОСТОЙ
-  ves = 'ves', // ВЕС
-  rost = 'rost', // РОСТ
   biometry = 'biometry',
-  upitannost = 'upitannost', // УПИТАННОСТЬ
-  zaboi = 'zaboi', // ЗАБОЙ
-  sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
+  // sinchronizatsia = 'sinchronizatsia', // СИНХРОНИЗАЦИЯ
   transferOut = 'transferOut', // выбытие
   treatment = 'treatment', // лечение
 
