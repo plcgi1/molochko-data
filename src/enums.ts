@@ -4,6 +4,7 @@ export enum SYSTEM_USER_ROLES_ENUM {
   user = 'user',
   admin = 'admin',
   root = 'root',
+  blocked = 'blocked',
 }
 
 export enum USER_STATUSES_ENUM {

@@ -2,7 +2,8 @@ export declare const BCRYPT_SALT: number;
 export declare enum SYSTEM_USER_ROLES_ENUM {
     user = "user",
     admin = "admin",
-    root = "root"
+    root = "root",
+    blocked = "blocked"
 }
 export declare enum USER_STATUSES_ENUM {
     waiting = "waiting",
