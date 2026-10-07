@@ -104,4 +104,5 @@ export enum EVENT_TYPES_ENUM {
   treatment = 'treatment', // лечение
 
   retagging = 'retagging', // перебирковка
+  changeGroup = 'changeGroup', // смена группы
 }
