@@ -28,6 +28,7 @@ Published to npm: `https://registry.npmjs.org/@molochko-dev/data`
 npm run build          # rm -rf dist/ && tsc (compile to dist/)
 npm test               # jest
 npm run lint:fix       # eslint auto-fix
+npm run format         # formats code 
 npm run pub            # lint:fix → test → patch-version → build → npm publish
 npm run patch-version  # npm version patch --no-git-tag-version
 ```
@@ -406,22 +407,15 @@ Then run `npm install` / `yarn install` in each consumer.
 ## 11. Domain Terms (Russian → English)
 
 Event type enum values use transliterated Russian:
-- `otel` / `calving` — calving (birth)
+- `calving` — calving (birth)
 - `ohota` — estrus / heat
 - `suhostoi` — dry period
 - `pozSuhostoi` — late dry period
-- `stelnaya` — pregnant
-- `yalovaya` — barren
 - `neosem` — failed insemination
 - `perevod` — transfer between groups
 - `prodazha` — sale
-- `pala` — death
-- `zaboi` — slaughter
 - `sinchronizatsia` — synchronization protocol
 - `transferOut` — disposal/removal
-- `upitannost` — body condition score
-- `ves` — weight
-- `rost` — height
-- `obrKopit` — hoof trimming
-- `zamenaNomera` — tag replacement
-- `kbiku` — bull breeding
+- `biometry` — body condition score + weight + height
+- `retagging` — tag replacement
+- `changeGroup` — animal group changing
