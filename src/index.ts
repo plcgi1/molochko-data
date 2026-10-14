@@ -30,6 +30,4 @@ export const notificationEnums = _notificationEnums.enums;
 export const herdKpiEnums = _herdKpi.enums;
 export const dateHelpers = _dateHelpers;
 
-// export { events } from './event';
-// export type { events as EventType } from './event';
 export * as event from './event';

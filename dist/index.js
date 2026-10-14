@@ -55,6 +55,4 @@ exports.milkEnums = _milkEnums.enums;
 exports.notificationEnums = _notificationEnums.enums;
 exports.herdKpiEnums = _herdKpi.enums;
 exports.dateHelpers = _dateHelpers;
-// export { events } from './event';
-// export type { events as EventType } from './event';
 exports.event = __importStar(require("./event"));

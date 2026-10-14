@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SUPPORTED_LANG_ENUM = exports.CLIST_AFUNCTIONS_ENUM = exports.CLIST_STATUS_ENUM = exports.CLIST_DATASOURCE_ENUM = exports.CLIST_CONDITION_ENUM = exports.CLIST_TYPE_ENUM = exports.CLIST_DATE_OPERATOR_ENUM = exports.CLIST_STRING_OPERATOR_ENUM = exports.CLIST_NUMBER_OPERATOR_ENUM = exports.EVENT_EXEC_STATUS_ENUM = exports.MEDMETHOD_ENUM = exports.DISEASES_ENUM = exports.TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_TYPES_ENUM = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_ENUM = exports.EVENT_ERROR_REASON_ENUM = exports.COW_STATUS = exports.BULL_STATUS = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_ENUM = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
+exports.SUPPORTED_LANG_ENUM = exports.CLIST_AFUNCTIONS_ENUM = exports.CLIST_STATUS_ENUM = exports.CLIST_DATASOURCE_ENUM = exports.CLIST_CONDITION_ENUM = exports.CLIST_TYPE_ENUM = exports.CLIST_DATE_OPERATOR_ENUM = exports.CLIST_STRING_OPERATOR_ENUM = exports.CLIST_NUMBER_OPERATOR_ENUM = exports.ACCESS_ENUM = exports.USER_PERMISSION_METHOD_ENUM = exports.USER_PERMISSION_ENUM = exports.TAG_TYPE_ENUM = exports.COMMON_SIMPLE_STATUS_ENUM = exports.COW_STATUS = exports.BULL_STATUS = exports.ANIMAL_STATUS_ENUM = exports.SEED_CODES_ENUM = exports.SEED_STATUS_ENUM = exports.SEED_TYPE_ENUM = exports.EVENT_TYPES_ENUM = exports.ANIMAL_GENDER_ENUM = exports.TOKEN_TYPE_ENUM = exports.ORG_TYPE_ENUM = exports.USER_STATUSES_ENUM = exports.SYSTEM_USER_ROLES_ENUM = exports.BCRYPT_SALT = void 0;
 exports.BCRYPT_SALT = 12;
 var SYSTEM_USER_ROLES_ENUM;
 (function (SYSTEM_USER_ROLES_ENUM) {
@@ -130,24 +130,6 @@ var COW_STATUS;
     COW_STATUS["SOLD"] = "sold";
     COW_STATUS["DIED"] = "died";
 })(COW_STATUS = exports.COW_STATUS || (exports.COW_STATUS = {}));
-// TODO removeme
-// heifer, bred, open, fresh
-var EVENT_ERROR_REASON_ENUM;
-(function (EVENT_ERROR_REASON_ENUM) {
-    EVENT_ERROR_REASON_ENUM["statusNotAllowed"] = "animal-status-not-allowed";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedPregnant"] = "animal-status-not-allowed-pregnant";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedDry"] = "animal-status-not-allowed-dry";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedDnb"] = "animal-status-not-allowed-dnb";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedSold"] = "animal-status-not-allowed-sold";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedDied"] = "animal-status-not-allowed-died";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedBred"] = "animal-status-not-allowed-bred";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedFresh"] = "animal-status-not-allowed-fresh";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedHeifer"] = "animal-status-not-allowed-heifer";
-    EVENT_ERROR_REASON_ENUM["statusNotAllowedOpen"] = "animal-status-not-allowed-open";
-    EVENT_ERROR_REASON_ENUM["statusForFirstRecheckBredOnly"] = "animal-status-for-first-recheck-bred-only";
-    EVENT_ERROR_REASON_ENUM["notACow"] = "animal-not-a-cow";
-    EVENT_ERROR_REASON_ENUM["tooYoung"] = "animal-too-young";
-})(EVENT_ERROR_REASON_ENUM = exports.EVENT_ERROR_REASON_ENUM || (exports.EVENT_ERROR_REASON_ENUM = {}));
 var COMMON_SIMPLE_STATUS_ENUM;
 (function (COMMON_SIMPLE_STATUS_ENUM) {
     COMMON_SIMPLE_STATUS_ENUM["failed"] = "failed";
@@ -182,75 +164,6 @@ var ACCESS_ENUM;
     ACCESS_ENUM["read"] = "read";
     ACCESS_ENUM["write"] = "write";
 })(ACCESS_ENUM = exports.ACCESS_ENUM || (exports.ACCESS_ENUM = {}));
-// TODO removeme
-var TRANSFEROUT_TYPES_ENUM;
-(function (TRANSFEROUT_TYPES_ENUM) {
-    TRANSFEROUT_TYPES_ENUM["transferOut"] = "transferOut";
-    TRANSFEROUT_TYPES_ENUM["died"] = "died";
-})(TRANSFEROUT_TYPES_ENUM = exports.TRANSFEROUT_TYPES_ENUM || (exports.TRANSFEROUT_TYPES_ENUM = {}));
-// TODO removeme
-var TRANSFEROUT_REASON_ENUM;
-(function (TRANSFEROUT_REASON_ENUM) {
-    TRANSFEROUT_REASON_ENUM["leikoz"] = "leikoz";
-    TRANSFEROUT_REASON_ENUM["tuberkulez"] = "tuberkulez";
-    TRANSFEROUT_REASON_ENUM["klostirikoz"] = "klostirikoz";
-    TRANSFEROUT_REASON_ENUM["nekrobacilez"] = "nekrobacilez";
-    TRANSFEROUT_REASON_ENUM["aktinomikoz"] = "aktinomikoz";
-    TRANSFEROUT_REASON_ENUM["ginekologic"] = "ginekologic";
-    TRANSFEROUT_REASON_ENUM["metabolicDisorders"] = "metabolicDisorders";
-    TRANSFEROUT_REASON_ENUM["Infertility"] = "infertility";
-    TRANSFEROUT_REASON_ENUM["udderDiseases"] = "udderDiseases";
-    TRANSFEROUT_REASON_ENUM["lameness"] = "lameness";
-    TRANSFEROUT_REASON_ENUM["breedingSales"] = "breedingSales";
-    TRANSFEROUT_REASON_ENUM["salesToThePublic"] = "salesToThePublic";
-    TRANSFEROUT_REASON_ENUM["theft"] = "theft";
-    TRANSFEROUT_REASON_ENUM["dead"] = "dead";
-})(TRANSFEROUT_REASON_ENUM = exports.TRANSFEROUT_REASON_ENUM || (exports.TRANSFEROUT_REASON_ENUM = {}));
-// TODO removeme
-var DISEASES_ENUM;
-(function (DISEASES_ENUM) {
-    DISEASES_ENUM["PREVENTION"] = "prevention";
-    DISEASES_ENUM["VACCTINATION"] = "vaccination";
-    DISEASES_ENUM["MASTITIS"] = "mastitis";
-    DISEASES_ENUM["METRITIS"] = "metritis";
-    DISEASES_ENUM["PARESIS"] = "paresis";
-    DISEASES_ENUM["TEMPERATURE"] = "temperature";
-    DISEASES_ENUM["ABOMASUM_DISPLACEMENT"] = "abomasum_displacement";
-    DISEASES_ENUM["LAMENESS"] = "lameness";
-    DISEASES_ENUM["INJURY"] = "injury";
-    DISEASES_ENUM["DEHORNING"] = "dehorning";
-    DISEASES_ENUM["METABOLIC_DISEASE"] = "metabolic disease";
-    DISEASES_ENUM["DIARRHEA"] = "diarrhea";
-    DISEASES_ENUM["ATONY"] = "atony";
-    DISEASES_ENUM["PNEUMONIA"] = "pneumonia";
-    DISEASES_ENUM["TYMPANY"] = "tympany";
-    DISEASES_ENUM["HEALTHY"] = "healthy";
-    DISEASES_ENUM["KETOSIS"] = "ketosis";
-    DISEASES_ENUM["CONJUNCTEVITIS"] = "conjunctevitis";
-    DISEASES_ENUM["DIPEPSIA"] = "dipepsia";
-    DISEASES_ENUM["SYNCHRONIZATION"] = "synchronization";
-    DISEASES_ENUM["OTHER"] = "other";
-})(DISEASES_ENUM = exports.DISEASES_ENUM || (exports.DISEASES_ENUM = {}));
-// TODO removeme
-var MEDMETHOD_ENUM;
-(function (MEDMETHOD_ENUM) {
-    MEDMETHOD_ENUM["SUBCUTANEOUSLY"] = "subcutaneously";
-    MEDMETHOD_ENUM["NASALLY"] = "nasally";
-    MEDMETHOD_ENUM["INTRAMUSCULARLY"] = "intramuscularly";
-    MEDMETHOD_ENUM["INTRACISTERNALLY"] = "intracesternally";
-    MEDMETHOD_ENUM["ORALLY"] = "orally";
-    MEDMETHOD_ENUM["INTRAVENOUSLY"] = "intravenously";
-    MEDMETHOD_ENUM["INTRAUTERINE"] = "intrauterine";
-    MEDMETHOD_ENUM["INTRAVAGINALLY"] = "intravaginally";
-})(MEDMETHOD_ENUM = exports.MEDMETHOD_ENUM || (exports.MEDMETHOD_ENUM = {}));
-// TODO removeme
-var EVENT_EXEC_STATUS_ENUM;
-(function (EVENT_EXEC_STATUS_ENUM) {
-    EVENT_EXEC_STATUS_ENUM["waiting"] = "waiting";
-    EVENT_EXEC_STATUS_ENUM["done"] = "done";
-    EVENT_EXEC_STATUS_ENUM["cancel"] = "cancel";
-    EVENT_EXEC_STATUS_ENUM["block"] = "block";
-})(EVENT_EXEC_STATUS_ENUM = exports.EVENT_EXEC_STATUS_ENUM || (exports.EVENT_EXEC_STATUS_ENUM = {}));
 // TODO removeme
 var CLIST_NUMBER_OPERATOR_ENUM;
 (function (CLIST_NUMBER_OPERATOR_ENUM) {
@@ -316,4 +229,5 @@ var SUPPORTED_LANG_ENUM;
 (function (SUPPORTED_LANG_ENUM) {
     SUPPORTED_LANG_ENUM["ru"] = "ru";
     SUPPORTED_LANG_ENUM["en"] = "en";
+    SUPPORTED_LANG_ENUM["it"] = "it";
 })(SUPPORTED_LANG_ENUM = exports.SUPPORTED_LANG_ENUM || (exports.SUPPORTED_LANG_ENUM = {}));

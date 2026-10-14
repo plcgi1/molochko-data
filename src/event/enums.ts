@@ -19,6 +19,13 @@ export enum EVENT_ERROR_REASON_ENUM {
   lateDryMustBeBeforeCalving = 'late-dry-must-be-before-calving',
   dryMustBeBeforeLateDryForCalving = 'dry-must-be-before-late-dry-for-calving',
   animalNotInCalvingPeriod = 'animal-not-in-calving-period',
+  statusNotAllowed = 'animal-status-not-allowed',
+}
+
+export enum EVENT_GROUPS {
+  lifecycle = 'lifecycle',
+  veterinary = 'veterinary',
+  other = 'other',
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {
@@ -105,4 +112,18 @@ export enum EVENT_TYPES_ENUM {
 
   retagging = 'retagging', // перебирковка
   changeGroup = 'changeGroup', // смена группы
+}
+
+export interface EVENT_BY_GROUPS {
+  [EVENT_GROUPS.lifecycle]: [
+    EVENT_TYPES_ENUM.insemenation,
+    EVENT_TYPES_ENUM.recheck,
+    EVENT_TYPES_ENUM.ohota,
+    EVENT_TYPES_ENUM.suhostoi,
+    EVENT_TYPES_ENUM.pozSuhostoi,
+    EVENT_TYPES_ENUM.abort,
+    EVENT_TYPES_ENUM.neosem,
+    EVENT_TYPES_ENUM.calving,
+  ];
+  [EVENT_GROUPS.veterinary]: [EVENT_TYPES_ENUM.treatment];
 }
