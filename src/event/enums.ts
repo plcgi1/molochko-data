@@ -25,7 +25,7 @@ export enum EVENT_ERROR_REASON_ENUM {
 export enum EVENT_GROUPS {
   lifecycle = 'lifecycle',
   veterinary = 'veterinary',
-  other = 'other',
+  outOfPlan = 'outOfPlan',
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {
@@ -126,4 +126,10 @@ export interface EVENT_BY_GROUPS {
     EVENT_TYPES_ENUM.calving,
   ];
   [EVENT_GROUPS.veterinary]: [EVENT_TYPES_ENUM.treatment];
+  [EVENT_GROUPS.outOfPlan]: [
+    EVENT_TYPES_ENUM.biometry,
+    EVENT_TYPES_ENUM.transferOut, // выбытие
+    EVENT_TYPES_ENUM.retagging,
+    EVENT_TYPES_ENUM.changeGroup,
+  ];
 }
