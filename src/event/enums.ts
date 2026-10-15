@@ -116,9 +116,9 @@ export enum EVENT_TYPES_ENUM {
 
 export interface EVENT_BY_GROUPS {
   [EVENT_GROUPS.lifecycle]: [
+    EVENT_TYPES_ENUM.ohota,
     EVENT_TYPES_ENUM.insemenation,
     EVENT_TYPES_ENUM.recheck,
-    EVENT_TYPES_ENUM.ohota,
     EVENT_TYPES_ENUM.suhostoi,
     EVENT_TYPES_ENUM.pozSuhostoi,
     EVENT_TYPES_ENUM.abort,
