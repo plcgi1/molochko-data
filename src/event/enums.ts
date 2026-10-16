@@ -114,7 +114,7 @@ export enum EVENT_TYPES_ENUM {
   changeGroup = 'changeGroup', // смена группы
 }
 
-export interface EVENT_BY_GROUPS {
+export const EVENT_BY_GROUPS = {
   [EVENT_GROUPS.lifecycle]: [
     EVENT_TYPES_ENUM.ohota,
     EVENT_TYPES_ENUM.insemenation,
@@ -124,12 +124,12 @@ export interface EVENT_BY_GROUPS {
     EVENT_TYPES_ENUM.abort,
     EVENT_TYPES_ENUM.neosem,
     EVENT_TYPES_ENUM.calving,
-  ];
-  [EVENT_GROUPS.veterinary]: [EVENT_TYPES_ENUM.treatment];
+  ],
+  [EVENT_GROUPS.veterinary]: [EVENT_TYPES_ENUM.treatment],
   [EVENT_GROUPS.outOfPlan]: [
     EVENT_TYPES_ENUM.biometry,
     EVENT_TYPES_ENUM.transferOut, // выбытие
     EVENT_TYPES_ENUM.retagging,
     EVENT_TYPES_ENUM.changeGroup,
-  ];
-}
+  ],
+};
