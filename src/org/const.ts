@@ -1,12 +1,16 @@
 export const CDefaultOrgSettings = {
   events: {
-    minInsemenationAgeDays: 540,
-    periodForRecheckAfterInsemenation: [30, 220],
     periodInsemenationAfterLastCalving: [40, 60],
     periodForDryAfterInsemenation: [220, 250],
     periodForLateDryAfterInsemenation: [250, 275],
     periodCalvingAfterInsemenation: [275, 310],
     periodGuessCalving: [365, 410],
+    minInsemenationAgeDays: 540,
+    periodFirstHeatAfterBirth: [300, 450],
+    periodInsemenationAfterOhota: [0, 1],
+    periodForRecheckAfterInsemenation: [30, 220],
+    periodInseminationAfterOpenRecheck: [18, 24],
+    periodAbortAfterPregnantRecheck: [30, 60],
   },
   reports: {
     pagingPeriod: 21, // days
