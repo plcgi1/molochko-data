@@ -40,6 +40,7 @@ export enum TRANSFEROUT_TYPES_ENUM {
   died = 'died',
 }
 
+/** @deprecated Use DISPOSAL_REASON_CODE_ENUM; kept for events stored before the disposal reason dictionary. */
 export enum TRANSFEROUT_REASON_ENUM {
   leikoz = 'leikoz', // Лейкоз
   tuberkulez = 'tuberkulez', // Туберкулез
@@ -186,4 +187,84 @@ export const TRANSFER_REASON_CODE_CATEGORY: Record<
   [TRANSFER_REASON_CODE_ENUM.reorg]: TRANSFER_REASON_CATEGORY_ENUM.org,
   [TRANSFER_REASON_CODE_ENUM.space]: TRANSFER_REASON_CATEGORY_ENUM.org,
   [TRANSFER_REASON_CODE_ENUM.other]: TRANSFER_REASON_CATEGORY_ENUM.org,
+};
+
+export enum DISPOSAL_REASON_CATEGORY_ENUM {
+  health = 'health', // незаразные болезни и травмы
+  infect = 'infect', // инфекционные болезни
+  zoo = 'zoo', // зоотехнические причины
+  sale = 'sale', // продажа
+  other = 'other', // прочее
+}
+
+// Коды стандартных причин выбытия; коды TRANSFEROUT_REASON_ENUM сохранены
+export enum DISPOSAL_REASON_CODE_ENUM {
+  respiratory = 'respiratory', // Болезни органов дыхания
+  calvingInjury = 'calvingInjury', // Новотел / родовые травмы
+  abomasumDisplacement = 'abomasumDisplacement', // Смещение сычуга
+  lameness = 'lameness', // Болезни конечностей (хромота)
+  injury = 'injury', // Травма
+  hipInjury = 'hipInjury', // Растяжение / ТБС
+  metabolicDisorders = 'metabolicDisorders', // Нарушение обмена веществ
+  udderDiseases = 'udderDiseases', // Болезни и травмы вымени
+  circulatory = 'circulatory', // Болезни органов кровообращения
+  digestive = 'digestive', // Болезни ЖКТ
+  ginekologic = 'ginekologic', // Гинекологические заболевания
+  leikoz = 'leikoz', // Лейкоз
+  tuberkulez = 'tuberkulez', // Туберкулёз
+  klostirikoz = 'klostirikoz', // Клостридиоз
+  nekrobacilez = 'nekrobacilez', // Некробактериоз
+  aktinomikoz = 'aktinomikoz', // Актиномикоз
+  zooCull = 'zooCull', // Зоотехнический брак
+  infertility = 'infertility', // Воспроизводство (бесплодие)
+  lowYield = 'lowYield', // Низкая продуктивность
+  salesToThePublic = 'salesToThePublic', // Продажа населению
+  breedingSales = 'breedingSales', // Племпродажа
+  theft = 'theft', // Кража
+  other = 'other', // Другое
+  dead = 'dead', // Сдохла (устаревшая, заменена типом «Падёж»)
+}
+
+export const DISPOSAL_REASON_CODE_CATEGORY: Record<
+  DISPOSAL_REASON_CODE_ENUM,
+  DISPOSAL_REASON_CATEGORY_ENUM
+> = {
+  [DISPOSAL_REASON_CODE_ENUM.respiratory]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.calvingInjury]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.abomasumDisplacement]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.lameness]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.injury]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.hipInjury]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.metabolicDisorders]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.udderDiseases]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.circulatory]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.digestive]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.ginekologic]: DISPOSAL_REASON_CATEGORY_ENUM.health,
+  [DISPOSAL_REASON_CODE_ENUM.leikoz]: DISPOSAL_REASON_CATEGORY_ENUM.infect,
+  [DISPOSAL_REASON_CODE_ENUM.tuberkulez]: DISPOSAL_REASON_CATEGORY_ENUM.infect,
+  [DISPOSAL_REASON_CODE_ENUM.klostirikoz]: DISPOSAL_REASON_CATEGORY_ENUM.infect,
+  [DISPOSAL_REASON_CODE_ENUM.nekrobacilez]: DISPOSAL_REASON_CATEGORY_ENUM.infect,
+  [DISPOSAL_REASON_CODE_ENUM.aktinomikoz]: DISPOSAL_REASON_CATEGORY_ENUM.infect,
+  [DISPOSAL_REASON_CODE_ENUM.zooCull]: DISPOSAL_REASON_CATEGORY_ENUM.zoo,
+  [DISPOSAL_REASON_CODE_ENUM.infertility]: DISPOSAL_REASON_CATEGORY_ENUM.zoo,
+  [DISPOSAL_REASON_CODE_ENUM.lowYield]: DISPOSAL_REASON_CATEGORY_ENUM.zoo,
+  [DISPOSAL_REASON_CODE_ENUM.salesToThePublic]: DISPOSAL_REASON_CATEGORY_ENUM.sale,
+  [DISPOSAL_REASON_CODE_ENUM.breedingSales]: DISPOSAL_REASON_CATEGORY_ENUM.sale,
+  [DISPOSAL_REASON_CODE_ENUM.theft]: DISPOSAL_REASON_CATEGORY_ENUM.other,
+  [DISPOSAL_REASON_CODE_ENUM.other]: DISPOSAL_REASON_CATEGORY_ENUM.other,
+  [DISPOSAL_REASON_CODE_ENUM.dead]: DISPOSAL_REASON_CATEGORY_ENUM.other,
+};
+
+export enum DISPOSAL_REASON_OUTCOME_ENUM {
+  sold = 'sold', // животное продано
+  theft = 'theft', // животное украдено
+}
+
+// Исход стандартной причины задаёт статус животного; у остальных причин исхода нет
+export const DISPOSAL_REASON_CODE_OUTCOME: Partial<
+  Record<DISPOSAL_REASON_CODE_ENUM, DISPOSAL_REASON_OUTCOME_ENUM>
+> = {
+  [DISPOSAL_REASON_CODE_ENUM.salesToThePublic]: DISPOSAL_REASON_OUTCOME_ENUM.sold,
+  [DISPOSAL_REASON_CODE_ENUM.breedingSales]: DISPOSAL_REASON_OUTCOME_ENUM.sold,
+  [DISPOSAL_REASON_CODE_ENUM.theft]: DISPOSAL_REASON_OUTCOME_ENUM.theft,
 };
