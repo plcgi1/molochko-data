@@ -14,6 +14,8 @@ import * as _milkEnums from './milk';
 import * as _notificationEnums from './notification';
 import * as _herdKpi from './herd-kpi';
 import * as _dateHelpers from './helpers/date';
+import * as _orgEnums from './org';
+
 export const enums = { ...dataEnums, BREED, BREED_AS_OBJECT };
 export const rolePermissions = _rolePermissions;
 export const types = typeDefinitions;
@@ -25,6 +27,7 @@ export const animalEnums = _animalEnums.enums;
 export const eventEnums = _eventEnums.enums;
 export const eqEnums = _eqEnums.enums;
 export const orgConstants = _orgConstants.constants;
+export const orgEnums = _orgEnums.enums;
 export const milkEnums = _milkEnums.enums;
 export const notificationEnums = _notificationEnums.enums;
 export const herdKpiEnums = _herdKpi.enums;

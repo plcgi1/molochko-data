@@ -133,3 +133,57 @@ export const EVENT_BY_GROUPS = {
     EVENT_TYPES_ENUM.changeGroup,
   ],
 };
+
+export enum TRANSFER_REASON_CATEGORY_ENUM {
+  repro = 'repro', // репродукция
+  health = 'health', // здоровье
+  prod = 'prod', // продуктивность
+  young = 'young', // молодняк
+  org = 'org', // организационные
+}
+
+// Standard reasons of perevod / changeGroup events, labelled on the frontend by code
+export enum TRANSFER_REASON_CODE_ENUM {
+  dryoff = 'dryoff', // запуск
+  closeup = 'closeup', // подготовка к отёлу
+  calved = 'calved', // после отёла
+  freshEnd = 'freshEnd', // окончание новотельного периода
+  sync = 'sync', // синхронизация / осеменение
+  treat = 'treat', // лечение
+  lame = 'lame', // хромота / обработка копыт
+  withdraw = 'withdraw', // молоко в отбраковку (каренция)
+  recover = 'recover', // выздоровление
+  quarantine = 'quarantine', // карантин
+  yield = 'yield', // по уровню удоя
+  ration = 'ration', // смена рациона
+  wean = 'wean', // отъём телят
+  heifer = 'heifer', // нетель в дойное стадо
+  site = 'site', // перевод на другую площадку
+  reorg = 'reorg', // переформирование групп
+  space = 'space', // нехватка мест
+  other = 'other', // другое (нужен комментарий)
+}
+
+export const TRANSFER_REASON_CODE_CATEGORY: Record<
+  TRANSFER_REASON_CODE_ENUM,
+  TRANSFER_REASON_CATEGORY_ENUM
+> = {
+  [TRANSFER_REASON_CODE_ENUM.dryoff]: TRANSFER_REASON_CATEGORY_ENUM.repro,
+  [TRANSFER_REASON_CODE_ENUM.closeup]: TRANSFER_REASON_CATEGORY_ENUM.repro,
+  [TRANSFER_REASON_CODE_ENUM.calved]: TRANSFER_REASON_CATEGORY_ENUM.repro,
+  [TRANSFER_REASON_CODE_ENUM.freshEnd]: TRANSFER_REASON_CATEGORY_ENUM.repro,
+  [TRANSFER_REASON_CODE_ENUM.sync]: TRANSFER_REASON_CATEGORY_ENUM.repro,
+  [TRANSFER_REASON_CODE_ENUM.treat]: TRANSFER_REASON_CATEGORY_ENUM.health,
+  [TRANSFER_REASON_CODE_ENUM.lame]: TRANSFER_REASON_CATEGORY_ENUM.health,
+  [TRANSFER_REASON_CODE_ENUM.withdraw]: TRANSFER_REASON_CATEGORY_ENUM.health,
+  [TRANSFER_REASON_CODE_ENUM.recover]: TRANSFER_REASON_CATEGORY_ENUM.health,
+  [TRANSFER_REASON_CODE_ENUM.quarantine]: TRANSFER_REASON_CATEGORY_ENUM.health,
+  [TRANSFER_REASON_CODE_ENUM.yield]: TRANSFER_REASON_CATEGORY_ENUM.prod,
+  [TRANSFER_REASON_CODE_ENUM.ration]: TRANSFER_REASON_CATEGORY_ENUM.prod,
+  [TRANSFER_REASON_CODE_ENUM.wean]: TRANSFER_REASON_CATEGORY_ENUM.young,
+  [TRANSFER_REASON_CODE_ENUM.heifer]: TRANSFER_REASON_CATEGORY_ENUM.young,
+  [TRANSFER_REASON_CODE_ENUM.site]: TRANSFER_REASON_CATEGORY_ENUM.org,
+  [TRANSFER_REASON_CODE_ENUM.reorg]: TRANSFER_REASON_CATEGORY_ENUM.org,
+  [TRANSFER_REASON_CODE_ENUM.space]: TRANSFER_REASON_CATEGORY_ENUM.org,
+  [TRANSFER_REASON_CODE_ENUM.other]: TRANSFER_REASON_CATEGORY_ENUM.org,
+};
