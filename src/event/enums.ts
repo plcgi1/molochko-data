@@ -23,9 +23,10 @@ export enum EVENT_ERROR_REASON_ENUM {
 }
 
 export enum EVENT_GROUPS {
-  lifecycle = 'lifecycle',
-  veterinary = 'veterinary',
-  outOfPlan = 'outOfPlan',
+  lifecycle = 'lifecycle', // Жизненный цикл
+  veterinary = 'veterinary', // Медицина (лечение, прививки)
+  movement = 'movement', // Перемещения
+  other = 'other', // Другие
 }
 
 export enum EVENT_EXEC_STATUS_ENUM {
@@ -115,25 +116,38 @@ export enum EVENT_TYPES_ENUM {
   changeGroup = 'changeGroup', // смена группы
 }
 
-export const EVENT_BY_GROUPS = {
-  [EVENT_GROUPS.lifecycle]: [
-    EVENT_TYPES_ENUM.ohota,
-    EVENT_TYPES_ENUM.insemenation,
-    EVENT_TYPES_ENUM.recheck,
-    EVENT_TYPES_ENUM.suhostoi,
-    EVENT_TYPES_ENUM.pozSuhostoi,
-    EVENT_TYPES_ENUM.abort,
-    EVENT_TYPES_ENUM.neosem,
-    EVENT_TYPES_ENUM.calving,
-  ],
-  [EVENT_GROUPS.veterinary]: [EVENT_TYPES_ENUM.treatment],
-  [EVENT_GROUPS.outOfPlan]: [
-    EVENT_TYPES_ENUM.biometry,
-    EVENT_TYPES_ENUM.transferOut, // выбытие
-    EVENT_TYPES_ENUM.retagging,
-    EVENT_TYPES_ENUM.changeGroup,
-  ],
+/**
+ * The group of every event type. A Record, so a new EVENT_TYPES_ENUM value without a group
+ * does not compile. Key order sets the order inside EVENT_BY_GROUPS lists.
+ */
+export const EVENT_GROUP_BY_TYPE: Record<EVENT_TYPES_ENUM, EVENT_GROUPS> = {
+  [EVENT_TYPES_ENUM.ohota]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.insemenation]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.recheck]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.suhostoi]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.pozSuhostoi]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.abort]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.neosem]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.calving]: EVENT_GROUPS.lifecycle,
+  [EVENT_TYPES_ENUM.treatment]: EVENT_GROUPS.veterinary,
+  [EVENT_TYPES_ENUM.perevod]: EVENT_GROUPS.movement,
+  [EVENT_TYPES_ENUM.changeGroup]: EVENT_GROUPS.movement,
+  [EVENT_TYPES_ENUM.transferOut]: EVENT_GROUPS.movement, // выбытие
+  [EVENT_TYPES_ENUM.prodazha]: EVENT_GROUPS.movement,
+  [EVENT_TYPES_ENUM.biometry]: EVENT_GROUPS.other,
+  [EVENT_TYPES_ENUM.retagging]: EVENT_GROUPS.other,
 };
+
+/** Event types of each group, in EVENT_GROUP_BY_TYPE order. */
+export const EVENT_BY_GROUPS = Object.values(EVENT_GROUPS).reduce(
+  (result, group) => ({
+    ...result,
+    [group]: (Object.keys(EVENT_GROUP_BY_TYPE) as EVENT_TYPES_ENUM[]).filter(
+      (type) => EVENT_GROUP_BY_TYPE[type] === group,
+    ),
+  }),
+  {} as Record<EVENT_GROUPS, EVENT_TYPES_ENUM[]>,
+);
 
 export enum TRANSFER_REASON_CATEGORY_ENUM {
   repro = 'repro', // репродукция
